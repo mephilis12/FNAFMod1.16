@@ -1,0 +1,378 @@
+{
+  "id_map": {},
+  "mod_elements": [
+    {
+      "name": "BlackWhiteTile",
+      "type": "block",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "black_white_tile",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "FNAFBlocks",
+      "type": "tab",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fnaf_blocks",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "RedBlueTile",
+      "type": "block",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "red_blue_tile",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "RedBlackTile",
+      "type": "block",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "red_black_tile",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "BlueBlackTile",
+      "type": "block",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blue_black_tile",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "WallTile",
+      "type": "block",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "wall_tile",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "PizzaBoxClosed",
+      "type": "block",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pizza_box_closed",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "BackstageDoor",
+      "type": "block",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "backstage_door",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "BlackWall",
+      "type": "block",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "black_wall",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "TableCloth",
+      "type": "block",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "table_cloth",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "Desk",
+      "type": "block",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "desk",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "Microphone",
+      "type": "item",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "microphone",
+      "path": "~/Items"
+    },
+    {
+      "name": "PizzaBoxOpen",
+      "type": "block",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pizza_box_open",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "PizzaBoxClosedOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pizza_box_closed_on_block_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PizzaBoxOpenOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pizza_box_open_on_block_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DoorButtonOff",
+      "type": "block",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "door_button_off",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "DoorButtonOffOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "door_button_off_on_block_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DoorButtonOn",
+      "type": "block",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "door_button_on",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "DoorButtonOnOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "door_button_on_on_block_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PurpleCurtain",
+      "type": "block",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "purple_curtain",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "Stars",
+      "type": "block",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "stars",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "WhiteWall",
+      "type": "block",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "white_wall",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "EndoBlock",
+      "type": "block",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "endo_block",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "FNAFItems",
+      "type": "tab",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fnaf_items",
+      "path": "~/Items"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "block.fnaf_mod.red_blue_tile": "Red Blue Tile",
+      "itemGroup.tabfnaf_items": "FNAF Items",
+      "block.fnaf_mod.stars": "Stars",
+      "block.fnaf_mod.door_button_off": "Door Button Off",
+      "block.fnaf_mod.purple_curtain": "Purple Curtain",
+      "block.fnaf_mod.table_cloth": "Table Cloth",
+      "block.fnaf_mod.endo_block": "Endo Block",
+      "itemGroup.tabfnaf_blocks": "FNAF Blocks",
+      "block.fnaf_mod.red_black_tile": "Red Black Tile",
+      "block.fnaf_mod.black_white_tile": "Black White Tile",
+      "block.fnaf_mod.pizza_box_open": "Pizza Box Open",
+      "item.fnaf_mod.microphone": "Microphone",
+      "block.fnaf_mod.black_wall": "Black Wall",
+      "block.fnaf_mod.pizza_box_closed": "Pizza Box Closed",
+      "block.fnaf_mod.wall_tile": "Wall Tile",
+      "block.fnaf_mod.backstage_door": "Backstage Door",
+      "block.fnaf_mod.door_button_on": "Door Button Off",
+      "block.fnaf_mod.desk": "Desk",
+      "block.fnaf_mod.blue_black_tile": "Blue Black Tile",
+      "block.fnaf_mod.white_wall": "White Wall"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Blocks",
+        "children": []
+      },
+      {
+        "name": "Items",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "fnaf_mod",
+    "modName": "FNAF Mod",
+    "version": "1.0.0",
+    "author": "mephilis, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.16.5",
+    "modElementsPackage": "net.mcreator.fnafmod",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202100118117
+}

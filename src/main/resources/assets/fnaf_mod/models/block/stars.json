@@ -1,0 +1,7 @@
+{
+  "parent": "block/crop",
+  "textures": {
+    "crop": "fnaf_mod:blocks/stars",
+    "particle": "fnaf_mod:blocks/stars"
+  }
+}

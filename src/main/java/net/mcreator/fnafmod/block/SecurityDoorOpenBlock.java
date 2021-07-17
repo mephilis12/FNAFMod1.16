@@ -12,13 +12,10 @@ import net.minecraft.util.math.vector.Vector3d;
 import net.minecraft.util.math.shapes.VoxelShapes;
 import net.minecraft.util.math.shapes.VoxelShape;
 import net.minecraft.util.math.shapes.ISelectionContext;
-import net.minecraft.util.math.BlockRayTraceResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.Rotation;
 import net.minecraft.util.Mirror;
-import net.minecraft.util.Hand;
 import net.minecraft.util.Direction;
-import net.minecraft.util.ActionResultType;
 import net.minecraft.state.StateContainer;
 import net.minecraft.state.DirectionProperty;
 import net.minecraft.loot.LootContext;
@@ -29,32 +26,35 @@ import net.minecraft.item.BlockItem;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.Minecraft;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.HorizontalBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
-import net.mcreator.fnafmod.procedures.DoorButtonOnOnBlockRightClickedProcedure;
+import net.mcreator.fnafmod.procedures.OfficeDoorOpenClientDisplayRandomTickProcedure;
+import net.mcreator.fnafmod.itemgroup.FNAFBlocksItemGroup;
 import net.mcreator.fnafmod.FnafModModElements;
 
+import java.util.Random;
 import java.util.Map;
 import java.util.List;
 import java.util.HashMap;
 import java.util.Collections;
 
 @FnafModModElements.ModElement.Tag
-public class DoorButtonOnBlock extends FnafModModElements.ModElement {
-	@ObjectHolder("fnaf_mod:door_button_on")
+public class SecurityDoorOpenBlock extends FnafModModElements.ModElement {
+	@ObjectHolder("fnaf_mod:security_door_open")
 	public static final Block block = null;
-	public DoorButtonOnBlock(FnafModModElements instance) {
-		super(instance, 17);
+	public SecurityDoorOpenBlock(FnafModModElements instance) {
+		super(instance, 31);
 	}
 
 	@Override
 	public void initElements() {
 		elements.blocks.add(() -> new CustomBlock());
-		elements.items.add(() -> new BlockItem(block, new Item.Properties().group(null)).setRegistryName(block.getRegistryName()));
+		elements.items.add(() -> new BlockItem(block, new Item.Properties().group(FNAFBlocksItemGroup.tab)).setRegistryName(block.getRegistryName()));
 	}
 
 	@Override
@@ -65,10 +65,10 @@ public class DoorButtonOnBlock extends FnafModModElements.ModElement {
 	public static class CustomBlock extends Block {
 		public static final DirectionProperty FACING = HorizontalBlock.HORIZONTAL_FACING;
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(1f, 10f).setLightLevel(s -> 0).notSolid()
-					.setOpaque((bs, br, bp) -> false));
+			super(Block.Properties.create(Material.IRON).sound(SoundType.METAL).hardnessAndResistance(1f, 10f).setLightLevel(s -> 0)
+					.doesNotBlockMovement().notSolid().setOpaque((bs, br, bp) -> false));
 			this.setDefaultState(this.stateContainer.getBaseState().with(FACING, Direction.NORTH));
-			setRegistryName("door_button_on");
+			setRegistryName("security_door_open");
 		}
 
 		@Override
@@ -82,13 +82,13 @@ public class DoorButtonOnBlock extends FnafModModElements.ModElement {
 			switch ((Direction) state.get(FACING)) {
 				case SOUTH :
 				default :
-					return VoxelShapes.or(makeCuboidShape(4, 0, 4, 12, 9, 0)).withOffset(offset.x, offset.y, offset.z);
+					return VoxelShapes.or(makeCuboidShape(16, 0, 9, 0, 32, 7)).withOffset(offset.x, offset.y, offset.z);
 				case NORTH :
-					return VoxelShapes.or(makeCuboidShape(12, 0, 12, 4, 9, 16)).withOffset(offset.x, offset.y, offset.z);
+					return VoxelShapes.or(makeCuboidShape(0, 0, 7, 16, 32, 9)).withOffset(offset.x, offset.y, offset.z);
 				case EAST :
-					return VoxelShapes.or(makeCuboidShape(4, 0, 12, 0, 9, 4)).withOffset(offset.x, offset.y, offset.z);
+					return VoxelShapes.or(makeCuboidShape(9, 0, 0, 7, 32, 16)).withOffset(offset.x, offset.y, offset.z);
 				case WEST :
-					return VoxelShapes.or(makeCuboidShape(12, 0, 4, 16, 9, 12)).withOffset(offset.x, offset.y, offset.z);
+					return VoxelShapes.or(makeCuboidShape(7, 0, 16, 9, 32, 0)).withOffset(offset.x, offset.y, offset.z);
 			}
 		}
 
@@ -116,26 +116,25 @@ public class DoorButtonOnBlock extends FnafModModElements.ModElement {
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
-			return Collections.singletonList(new ItemStack(DoorButtonOffBlock.block, (int) (1)));
+			return Collections.singletonList(new ItemStack(this, 1));
 		}
 
+		@OnlyIn(Dist.CLIENT)
 		@Override
-		public ActionResultType onBlockActivated(BlockState state, World world, BlockPos pos, PlayerEntity entity, Hand hand,
-				BlockRayTraceResult hit) {
-			super.onBlockActivated(state, world, pos, entity, hand, hit);
+		public void animateTick(BlockState state, World world, BlockPos pos, Random random) {
+			super.animateTick(state, world, pos, random);
+			PlayerEntity entity = Minecraft.getInstance().player;
 			int x = pos.getX();
 			int y = pos.getY();
 			int z = pos.getZ();
-			Direction direction = hit.getFace();
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("x", x);
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
-				DoorButtonOnOnBlockRightClickedProcedure.executeProcedure($_dependencies);
+				OfficeDoorOpenClientDisplayRandomTickProcedure.executeProcedure($_dependencies);
 			}
-			return ActionResultType.SUCCESS;
 		}
 	}
 }

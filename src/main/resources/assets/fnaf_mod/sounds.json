@@ -1,1 +1,12 @@
-{}
+{
+  "door_close": {
+    "category": "block",
+    "subtitle": "subtitles.door_close",
+    "sounds": [
+      {
+        "name": "fnaf_mod:doorslam",
+        "stream": false
+      }
+    ]
+  }
+}

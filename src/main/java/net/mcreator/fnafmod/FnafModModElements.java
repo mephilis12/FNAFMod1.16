@@ -45,6 +45,7 @@ public class FnafModModElements {
 	public final List<Supplier<Enchantment>> enchantments = new ArrayList<>();
 	public static Map<ResourceLocation, net.minecraft.util.SoundEvent> sounds = new HashMap<>();
 	public FnafModModElements() {
+		sounds.put(new ResourceLocation("fnaf_mod", "door_close"), new net.minecraft.util.SoundEvent(new ResourceLocation("fnaf_mod", "door_close")));
 		try {
 			ModFileScanData modFileInfo = ModList.get().getModFileById("fnaf_mod").getFile().getScanResult();
 			Set<ModFileScanData.AnnotationData> annotations = modFileInfo.getAnnotations();

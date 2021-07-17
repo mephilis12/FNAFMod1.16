@@ -158,7 +158,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Code Stuff"
     },
     {
       "name": "PizzaBoxOpenOnBlockRightClicked",
@@ -187,7 +188,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Code Stuff"
     },
     {
       "name": "DoorButtonOff",
@@ -226,7 +228,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Code Stuff"
     },
     {
       "name": "DoorButtonOn",
@@ -265,7 +268,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Code Stuff"
     },
     {
       "name": "PurpleCurtain",
@@ -316,29 +320,310 @@
       "ids": {},
       "registry_name": "fnaf_items",
       "path": "~/Items"
+    },
+    {
+      "name": "OfficeDoor",
+      "type": "block",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "office_door",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "OfficeDoorNeighbourBlockChanges",
+      "type": "procedure",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "office_door_neighbour_block_changes",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "OfficeDoorClientDisplayRandomTick",
+      "type": "procedure",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "office_door_client_display_random_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "OfficeDoorOpenClientDisplayRandomTick",
+      "type": "procedure",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "office_door_open_client_display_random_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "SecurityDoorOpen",
+      "type": "block",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "security_door_open",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "FreddyFazbear",
+      "type": "mob",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "freddy_fazbear",
+      "path": "~/Mobs"
+    },
+    {
+      "name": "FreddyFazbearOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "freddy_fazbear_on_entity_tick_update",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Chair",
+      "type": "block",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chair",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "Cupcake",
+      "type": "item",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cupcake",
+      "path": "~/Items"
+    },
+    {
+      "name": "FreddyHead",
+      "type": "block",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "freddy_head",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "BonnieHead",
+      "type": "block",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bonnie_head",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "ChicaHead",
+      "type": "block",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chica_head",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "FoxyHead",
+      "type": "block",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "foxy_head",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "LightButtonOff",
+      "type": "block",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "light_button_off",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "LightButtonOffOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "light_button_off_on_block_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "LightButtonOn",
+      "type": "block",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "light_button_on",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "LightButtonOnOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "light_button_on_on_block_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
-  "sound_elements": [],
+  "sound_elements": [
+    {
+      "name": "door_close",
+      "files": [
+        "doorslam"
+      ],
+      "category": "block",
+      "subtitle": "Door Close"
+    }
+  ],
   "language_map": {
     "en_us": {
+      "item.fnaf_mod.cupcake": "Cupcake",
+      "block.fnaf_mod.door_button_off": "Door Button Off",
+      "subtitles.door_close": "Door Close",
+      "itemGroup.tabfnaf_blocks": "FNAF Blocks",
+      "block.fnaf_mod.office_door": "Office Door",
+      "item.fnaf_mod.microphone": "Microphone",
+      "block.fnaf_mod.black_wall": "Black Wall",
+      "block.fnaf_mod.chair": "Chair",
+      "block.fnaf_mod.wall_tile": "Wall Tile",
+      "block.fnaf_mod.backstage_door": "Backstage Door",
+      "block.fnaf_mod.door_button_on": "Door Button On",
       "block.fnaf_mod.red_blue_tile": "Red Blue Tile",
       "itemGroup.tabfnaf_items": "FNAF Items",
+      "block.fnaf_mod.foxy_head": "Foxy Head",
       "block.fnaf_mod.stars": "Stars",
-      "block.fnaf_mod.door_button_off": "Door Button Off",
+      "block.fnaf_mod.light_button_off": "Light Button Off",
       "block.fnaf_mod.purple_curtain": "Purple Curtain",
+      "block.fnaf_mod.light_button_on": "Light Button On",
+      "block.fnaf_mod.freddy_head": "Freddy Head",
       "block.fnaf_mod.table_cloth": "Table Cloth",
       "block.fnaf_mod.endo_block": "Endo Block",
-      "itemGroup.tabfnaf_blocks": "FNAF Blocks",
       "block.fnaf_mod.red_black_tile": "Red Black Tile",
       "block.fnaf_mod.black_white_tile": "Black White Tile",
       "block.fnaf_mod.pizza_box_open": "Pizza Box Open",
-      "item.fnaf_mod.microphone": "Microphone",
-      "block.fnaf_mod.black_wall": "Black Wall",
+      "block.fnaf_mod.security_door_open": "Office Door",
+      "item.fnaf_mod.freddy_fazbear_spawn_egg": "Freddy Fazbear Spawn Egg",
+      "block.fnaf_mod.bonnie_head": "Bonnie Head",
       "block.fnaf_mod.pizza_box_closed": "Pizza Box Closed",
-      "block.fnaf_mod.wall_tile": "Wall Tile",
-      "block.fnaf_mod.backstage_door": "Backstage Door",
-      "block.fnaf_mod.door_button_on": "Door Button Off",
+      "entity.fnaf_mod.freddy_fazbear": "Freddy Fazbear",
+      "block.fnaf_mod.chica_head": "Chica Head",
       "block.fnaf_mod.desk": "Desk",
       "block.fnaf_mod.blue_black_tile": "Blue Black Tile",
       "block.fnaf_mod.white_wall": "White Wall"
@@ -353,6 +638,14 @@
       },
       {
         "name": "Items",
+        "children": []
+      },
+      {
+        "name": "Code Stuff",
+        "children": []
+      },
+      {
+        "name": "Mobs",
         "children": []
       }
     ]

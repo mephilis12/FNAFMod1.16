@@ -35,7 +35,7 @@ import net.minecraft.block.HorizontalBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
-import net.mcreator.fnafmod.procedures.DoorButtonOnOnBlockRightClickedProcedure;
+import net.mcreator.fnafmod.procedures.LightButtonOnOnBlockRightClickedProcedure;
 import net.mcreator.fnafmod.FnafModModElements;
 
 import java.util.Map;
@@ -44,11 +44,11 @@ import java.util.HashMap;
 import java.util.Collections;
 
 @FnafModModElements.ModElement.Tag
-public class DoorButtonOnBlock extends FnafModModElements.ModElement {
-	@ObjectHolder("fnaf_mod:door_button_on")
+public class LightButtonOnBlock extends FnafModModElements.ModElement {
+	@ObjectHolder("fnaf_mod:light_button_on")
 	public static final Block block = null;
-	public DoorButtonOnBlock(FnafModModElements instance) {
-		super(instance, 17);
+	public LightButtonOnBlock(FnafModModElements instance) {
+		super(instance, 42);
 	}
 
 	@Override
@@ -68,7 +68,7 @@ public class DoorButtonOnBlock extends FnafModModElements.ModElement {
 			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(1f, 10f).setLightLevel(s -> 0).notSolid()
 					.setOpaque((bs, br, bp) -> false));
 			this.setDefaultState(this.stateContainer.getBaseState().with(FACING, Direction.NORTH));
-			setRegistryName("door_button_on");
+			setRegistryName("light_button_on");
 		}
 
 		@Override
@@ -82,13 +82,13 @@ public class DoorButtonOnBlock extends FnafModModElements.ModElement {
 			switch ((Direction) state.get(FACING)) {
 				case SOUTH :
 				default :
-					return VoxelShapes.or(makeCuboidShape(4, 0, 4, 12, 9, 0)).withOffset(offset.x, offset.y, offset.z);
+					return VoxelShapes.or(makeCuboidShape(4, 7, 4, 12, 16, 0)).withOffset(offset.x, offset.y, offset.z);
 				case NORTH :
-					return VoxelShapes.or(makeCuboidShape(12, 0, 12, 4, 9, 16)).withOffset(offset.x, offset.y, offset.z);
+					return VoxelShapes.or(makeCuboidShape(12, 7, 12, 4, 16, 16)).withOffset(offset.x, offset.y, offset.z);
 				case EAST :
-					return VoxelShapes.or(makeCuboidShape(4, 0, 12, 0, 9, 4)).withOffset(offset.x, offset.y, offset.z);
+					return VoxelShapes.or(makeCuboidShape(4, 7, 12, 0, 16, 4)).withOffset(offset.x, offset.y, offset.z);
 				case WEST :
-					return VoxelShapes.or(makeCuboidShape(12, 0, 4, 16, 9, 12)).withOffset(offset.x, offset.y, offset.z);
+					return VoxelShapes.or(makeCuboidShape(12, 7, 4, 16, 16, 12)).withOffset(offset.x, offset.y, offset.z);
 			}
 		}
 
@@ -116,7 +116,7 @@ public class DoorButtonOnBlock extends FnafModModElements.ModElement {
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
-			return Collections.singletonList(new ItemStack(DoorButtonOffBlock.block, (int) (1)));
+			return Collections.singletonList(new ItemStack(LightButtonOffBlock.block, (int) (1)));
 		}
 
 		@Override
@@ -133,7 +133,7 @@ public class DoorButtonOnBlock extends FnafModModElements.ModElement {
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
-				DoorButtonOnOnBlockRightClickedProcedure.executeProcedure($_dependencies);
+				LightButtonOnOnBlockRightClickedProcedure.executeProcedure($_dependencies);
 			}
 			return ActionResultType.SUCCESS;
 		}

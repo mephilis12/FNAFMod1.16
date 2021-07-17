@@ -2,18 +2,18 @@
   "_fv": 18,
   "_type": "block",
   "definition": {
-    "texture": "door_button_active",
+    "texture": "security_door",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
     "textureRight": "",
     "textureBack": "",
     "renderType": 2,
-    "customModelName": "door_button_on:default",
+    "customModelName": "security_door_open:default",
     "rotationMode": 1,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
-    "itemTexture": "door_button",
+    "itemTexture": "office_door_item",
     "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
@@ -23,27 +23,27 @@
     "disableOffset": false,
     "boundingBoxes": [
       {
-        "mx": 12.0,
+        "mx": 0.0,
         "my": 0.0,
-        "mz": 12.0,
-        "Mx": 4.0,
-        "My": 9.0,
-        "Mz": 16.0,
+        "mz": 7.0,
+        "Mx": 16.0,
+        "My": 32.0,
+        "Mz": 9.0,
         "subtract": false
       }
     ],
-    "name": "Door Button On",
+    "name": "Office Door",
     "specialInfo": [],
     "hardness": 1.0,
     "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "No creative tab entry"
+      "value": "CUSTOM:FNAFBlocks"
     },
     "destroyTool": "Not specified",
     "customDrop": {
-      "value": "CUSTOM:DoorButtonOff"
+      "value": ""
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
@@ -52,7 +52,7 @@
     "canProvidePower": false,
     "lightOpacity": 0,
     "material": {
-      "value": "ROCK"
+      "value": "IRON"
     },
     "tickRate": 10,
     "tickRandomly": false,
@@ -70,9 +70,9 @@
     "speedFactor": 1.0,
     "jumpFactor": 1.0,
     "reactionToPushing": "NORMAL",
-    "isNotColidable": false,
+    "isNotColidable": true,
     "soundOnStep": {
-      "value": "STONE"
+      "value": "METAL"
     },
     "luminance": 0,
     "unbreakable": false,
@@ -101,8 +101,8 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onRightClicked": {
-      "name": "DoorButtonOnOnBlockRightClicked"
+    "onRandomUpdateEvent": {
+      "name": "OfficeDoorOpenClientDisplayRandomTick"
     },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],

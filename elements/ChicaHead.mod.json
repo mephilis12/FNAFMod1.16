@@ -2,18 +2,18 @@
   "_fv": 18,
   "_type": "block",
   "definition": {
-    "texture": "door_button_active",
+    "texture": "chicatexture",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
     "textureRight": "",
     "textureBack": "",
     "renderType": 2,
-    "customModelName": "door_button_on:default",
+    "customModelName": "chica_head:default",
     "rotationMode": 1,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
-    "itemTexture": "door_button",
+    "itemTexture": "",
     "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
@@ -23,27 +23,27 @@
     "disableOffset": false,
     "boundingBoxes": [
       {
-        "mx": 12.0,
+        "mx": 4.0,
         "my": 0.0,
-        "mz": 12.0,
-        "Mx": 4.0,
+        "mz": 3.0,
+        "Mx": 11.0,
         "My": 9.0,
-        "Mz": 16.0,
+        "Mz": 11.0,
         "subtract": false
       }
     ],
-    "name": "Door Button On",
+    "name": "Chica Head",
     "specialInfo": [],
     "hardness": 1.0,
     "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "No creative tab entry"
+      "value": "CUSTOM:FNAFBlocks"
     },
     "destroyTool": "Not specified",
     "customDrop": {
-      "value": "CUSTOM:DoorButtonOff"
+      "value": ""
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
@@ -52,7 +52,7 @@
     "canProvidePower": false,
     "lightOpacity": 0,
     "material": {
-      "value": "ROCK"
+      "value": "WOOD"
     },
     "tickRate": 10,
     "tickRandomly": false,
@@ -72,7 +72,7 @@
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
     "soundOnStep": {
-      "value": "STONE"
+      "value": "CLOTH"
     },
     "luminance": 0,
     "unbreakable": false,
@@ -101,9 +101,6 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onRightClicked": {
-      "name": "DoorButtonOnOnBlockRightClicked"
-    },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [

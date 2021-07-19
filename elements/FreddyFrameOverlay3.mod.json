@@ -1,0 +1,12 @@
+{
+  "_fv": 18,
+  "_type": "overlay",
+  "definition": {
+    "priority": "LOWEST",
+    "components": [],
+    "baseTexture": "freddy3.png",
+    "displayCondition": {
+      "name": "FreddyFrame3"
+    }
+  }
+}

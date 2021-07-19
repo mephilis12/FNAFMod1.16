@@ -13,6 +13,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.ModList;
 import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
@@ -46,6 +47,12 @@ public class FnafModModElements {
 	public static Map<ResourceLocation, net.minecraft.util.SoundEvent> sounds = new HashMap<>();
 	public FnafModModElements() {
 		sounds.put(new ResourceLocation("fnaf_mod", "door_close"), new net.minecraft.util.SoundEvent(new ResourceLocation("fnaf_mod", "door_close")));
+		sounds.put(new ResourceLocation("fnaf_mod", "animatronic_step"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("fnaf_mod", "animatronic_step")));
+		sounds.put(new ResourceLocation("fnaf_mod", "fnaf1_scream"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("fnaf_mod", "fnaf1_scream")));
+		sounds.put(new ResourceLocation("fnaf_mod", "golden_freddy_scram"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("fnaf_mod", "golden_freddy_scram")));
 		try {
 			ModFileScanData modFileInfo = ModList.get().getModFileById("fnaf_mod").getFile().getScanResult();
 			Set<ModFileScanData.AnnotationData> annotations = modFileInfo.getAnnotations();
@@ -61,6 +68,7 @@ public class FnafModModElements {
 		}
 		Collections.sort(elements);
 		elements.forEach(FnafModModElements.ModElement::initElements);
+		MinecraftForge.EVENT_BUS.register(new FnafModModVariables(this));
 	}
 
 	public void registerSounds(RegistryEvent.Register<net.minecraft.util.SoundEvent> event) {

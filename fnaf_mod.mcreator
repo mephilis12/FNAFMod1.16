@@ -440,7 +440,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Code Stuff"
     },
     {
       "name": "Chair",
@@ -539,7 +540,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Code Stuff"
     },
     {
       "name": "LightButtonOn",
@@ -578,10 +580,577 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "FreddyFazbearThisEntityKillsAnotherOne",
+      "type": "procedure",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "freddy_fazbear_this_entity_kills_another_one",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "GoldenFreddyJumpscare",
+      "type": "overlay",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "golden_freddy_jumpscare",
+      "path": "~/Overlays"
+    },
+    {
+      "name": "GoldenFreddy",
+      "type": "mob",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "golden_freddy",
+      "path": "~/Mobs"
+    },
+    {
+      "name": "GoldenFreddyThisEntityKillsAnotherOne",
+      "type": "procedure",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "golden_freddy_this_entity_kills_another_one",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "GoldenFreddyJumpscareDisplayOverlayIngame",
+      "type": "procedure",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "golden_freddy_jumpscare_display_overlay_ingame",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "GoldenFreddyOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "golden_freddy_on_entity_tick_update",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "BonnieBunny",
+      "type": "mob",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bonnie_bunny",
+      "path": "~/Mobs"
+    },
+    {
+      "name": "ChicaChicken",
+      "type": "mob",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chica_chicken",
+      "path": "~/Mobs"
+    },
+    {
+      "name": "FoxyPirate",
+      "type": "mob",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "foxy_pirate",
+      "path": "~/Mobs"
+    },
+    {
+      "name": "FoxyJumpscareDisplayOverlayIngame",
+      "type": "procedure",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "foxy_jumpscare_display_overlay_ingame",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "FoxyPirateThisEntityKillsAnotherOne",
+      "type": "procedure",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "foxy_pirate_this_entity_kills_another_one",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "FoxyFrame1",
+      "type": "procedure",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "foxy_frame_1",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "FoxyFrame2",
+      "type": "procedure",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "foxy_frame_2",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "FoxyFrame3",
+      "type": "procedure",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "foxy_frame_3",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "FoxyFrame4",
+      "type": "procedure",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "foxy_frame_4",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "FoxyFrame5",
+      "type": "procedure",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "foxy_frame_5",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "FoxyFrameOverlay1",
+      "type": "overlay",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "foxy_frame_overlay_1",
+      "path": "~/Overlays"
+    },
+    {
+      "name": "FoxyFrameOverlay2",
+      "type": "overlay",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "foxy_frame_overlay_2",
+      "path": "~/Overlays"
+    },
+    {
+      "name": "FoxyFrameOverlay3",
+      "type": "overlay",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "foxy_frame_overlay_3",
+      "path": "~/Overlays"
+    },
+    {
+      "name": "FoxyFrameOverlay4",
+      "type": "overlay",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "foxy_frame_overlay_4",
+      "path": "~/Overlays"
+    },
+    {
+      "name": "FoxyFrameOverlay5",
+      "type": "overlay",
+      "sortid": 79,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "foxy_frame_overlay_5",
+      "path": "~/Overlays"
+    },
+    {
+      "name": "FreddyFrameOverlay1",
+      "type": "overlay",
+      "sortid": 80,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "freddy_frame_overlay_1",
+      "path": "~/Overlays"
+    },
+    {
+      "name": "FreddyFrame1",
+      "type": "procedure",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "freddy_frame_1",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "FreddyFrame2",
+      "type": "procedure",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "freddy_frame_2",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "FreddyFrame3",
+      "type": "procedure",
+      "sortid": 83,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "freddy_frame_3",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "FreddyFrame4",
+      "type": "procedure",
+      "sortid": 84,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "freddy_frame_4",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "FreddyFrame5",
+      "type": "procedure",
+      "sortid": 85,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "freddy_frame_5",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "FreddyFrameOverlay2",
+      "type": "overlay",
+      "sortid": 86,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "freddy_frame_overlay_2",
+      "path": "~/Overlays"
+    },
+    {
+      "name": "FreddyFrameOverlay3",
+      "type": "overlay",
+      "sortid": 87,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "freddy_frame_overlay_3",
+      "path": "~/Overlays"
+    },
+    {
+      "name": "FreddyFrameOverlay4",
+      "type": "overlay",
+      "sortid": 88,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "freddy_frame_overlay_4",
+      "path": "~/Overlays"
+    },
+    {
+      "name": "FreddyFrameOverlay5",
+      "type": "overlay",
+      "sortid": 89,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "freddy_frame_overlay_5",
+      "path": "~/Overlays"
     }
   ],
-  "variable_elements": [],
+  "variable_elements": [
+    {
+      "name": "goldenkill",
+      "type": "logic",
+      "scope": "world",
+      "value": "false"
+    },
+    {
+      "name": "FreddyFrame1",
+      "type": "logic",
+      "scope": "world",
+      "value": "false"
+    },
+    {
+      "name": "FreddyFrame2",
+      "type": "logic",
+      "scope": "world",
+      "value": "false"
+    },
+    {
+      "name": "FreddyFrame3",
+      "type": "logic",
+      "scope": "world",
+      "value": "false"
+    },
+    {
+      "name": "FreddyFrame4",
+      "type": "logic",
+      "scope": "world",
+      "value": "false"
+    },
+    {
+      "name": "FreddyFrame5",
+      "type": "logic",
+      "scope": "world",
+      "value": "false"
+    },
+    {
+      "name": "freddykill",
+      "type": "logic",
+      "scope": "world",
+      "value": "false"
+    },
+    {
+      "name": "FoxyFrame1",
+      "type": "logic",
+      "scope": "world",
+      "value": "false"
+    },
+    {
+      "name": "FoxyFrame2",
+      "type": "logic",
+      "scope": "world",
+      "value": "false"
+    },
+    {
+      "name": "FoxyFrame3",
+      "type": "logic",
+      "scope": "world",
+      "value": "false"
+    },
+    {
+      "name": "FoxyFrame4",
+      "type": "logic",
+      "scope": "world",
+      "value": "false"
+    },
+    {
+      "name": "FoxyFrame5",
+      "type": "logic",
+      "scope": "world",
+      "value": "false"
+    },
+    {
+      "name": "foxykill",
+      "type": "logic",
+      "scope": "world",
+      "value": "false"
+    }
+  ],
   "sound_elements": [
     {
       "name": "door_close",
@@ -590,21 +1159,52 @@
       ],
       "category": "block",
       "subtitle": "Door Close"
+    },
+    {
+      "name": "animatronic_step",
+      "files": [
+        "animatronic_step"
+      ],
+      "category": "master",
+      "subtitle": "Footstep"
+    },
+    {
+      "name": "fnaf1_scream",
+      "files": [
+        "fnaf_1_jumpscare"
+      ],
+      "category": "master",
+      "subtitle": "Jumpscare Sound"
+    },
+    {
+      "name": "golden_freddy_scram",
+      "files": [
+        "golden_freddy_scream"
+      ],
+      "category": "master",
+      "subtitle": "Jumpscare"
     }
   ],
   "language_map": {
     "en_us": {
       "item.fnaf_mod.cupcake": "Cupcake",
+      "item.fnaf_mod.foxy_pirate_spawn_egg": "Foxy the Pirate Spawn Egg",
       "block.fnaf_mod.door_button_off": "Door Button Off",
       "subtitles.door_close": "Door Close",
       "itemGroup.tabfnaf_blocks": "FNAF Blocks",
       "block.fnaf_mod.office_door": "Office Door",
+      "entity.fnaf_mod.bonnie_bunny": "Bonnie the Bunny",
       "item.fnaf_mod.microphone": "Microphone",
+      "subtitles.fnaf1_scream": "Jumpscare Sound",
+      "item.fnaf_mod.chica_chicken_spawn_egg": "Chica the Chicken Spawn Egg",
       "block.fnaf_mod.black_wall": "Black Wall",
       "block.fnaf_mod.chair": "Chair",
+      "entity.fnaf_mod.foxy_pirate": "Foxy the Pirate",
       "block.fnaf_mod.wall_tile": "Wall Tile",
       "block.fnaf_mod.backstage_door": "Backstage Door",
       "block.fnaf_mod.door_button_on": "Door Button On",
+      "item.fnaf_mod.golden_freddy_spawn_egg": "Golden Freddy Spawn Egg",
+      "entity.fnaf_mod.chica_chicken": "Chica the Chicken",
       "block.fnaf_mod.red_blue_tile": "Red Blue Tile",
       "itemGroup.tabfnaf_items": "FNAF Items",
       "block.fnaf_mod.foxy_head": "Foxy Head",
@@ -612,6 +1212,7 @@
       "block.fnaf_mod.light_button_off": "Light Button Off",
       "block.fnaf_mod.purple_curtain": "Purple Curtain",
       "block.fnaf_mod.light_button_on": "Light Button On",
+      "subtitles.golden_freddy_scram": "Jumpscare",
       "block.fnaf_mod.freddy_head": "Freddy Head",
       "block.fnaf_mod.table_cloth": "Table Cloth",
       "block.fnaf_mod.endo_block": "Endo Block",
@@ -624,9 +1225,12 @@
       "block.fnaf_mod.pizza_box_closed": "Pizza Box Closed",
       "entity.fnaf_mod.freddy_fazbear": "Freddy Fazbear",
       "block.fnaf_mod.chica_head": "Chica Head",
+      "entity.fnaf_mod.golden_freddy": "Golden Freddy",
       "block.fnaf_mod.desk": "Desk",
       "block.fnaf_mod.blue_black_tile": "Blue Black Tile",
-      "block.fnaf_mod.white_wall": "White Wall"
+      "block.fnaf_mod.white_wall": "White Wall",
+      "subtitles.animatronic_step": "Footstep",
+      "item.fnaf_mod.bonnie_bunny_spawn_egg": "Bonnie the Bunny Spawn Egg"
     }
   },
   "foldersRoot": {
@@ -646,6 +1250,10 @@
       },
       {
         "name": "Mobs",
+        "children": []
+      },
+      {
+        "name": "Overlays",
         "children": []
       }
     ]

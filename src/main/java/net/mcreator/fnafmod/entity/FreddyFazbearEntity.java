@@ -10,6 +10,7 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
 
 import net.minecraft.world.World;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.DamageSource;
 import net.minecraft.network.IPacket;
@@ -17,10 +18,10 @@ import net.minecraft.item.SpawnEggItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.inventory.EquipmentSlotType;
-import net.minecraft.entity.projectile.ArrowEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.monster.MonsterEntity;
 import net.minecraft.entity.ai.goal.WaterAvoidingRandomWalkingGoal;
+import net.minecraft.entity.ai.goal.RandomWalkingGoal;
 import net.minecraft.entity.ai.goal.NearestAttackableTargetGoal;
 import net.minecraft.entity.ai.goal.MeleeAttackGoal;
 import net.minecraft.entity.ai.goal.LookRandomlyGoal;
@@ -31,7 +32,10 @@ import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.CreatureAttribute;
+import net.minecraft.block.BlockState;
 
+import net.mcreator.fnafmod.procedures.GoldenFreddyOnEntityTickUpdateProcedure;
+import net.mcreator.fnafmod.procedures.FreddyFazbearThisEntityKillsAnotherOneProcedure;
 import net.mcreator.fnafmod.procedures.FreddyFazbearOnEntityTickUpdateProcedure;
 import net.mcreator.fnafmod.itemgroup.FNAFItemsItemGroup;
 import net.mcreator.fnafmod.item.MicrophoneItem;
@@ -68,11 +72,11 @@ public class FreddyFazbearEntity extends FnafModModElements.ModElement {
 		@SubscribeEvent
 		public void onEntityAttributeCreation(EntityAttributeCreationEvent event) {
 			AttributeModifierMap.MutableAttribute ammma = MobEntity.func_233666_p_();
-			ammma = ammma.createMutableAttribute(Attributes.MOVEMENT_SPEED, 0.3);
+			ammma = ammma.createMutableAttribute(Attributes.MOVEMENT_SPEED, 0.25);
 			ammma = ammma.createMutableAttribute(Attributes.MAX_HEALTH, 50);
 			ammma = ammma.createMutableAttribute(Attributes.ARMOR, 0);
-			ammma = ammma.createMutableAttribute(Attributes.ATTACK_DAMAGE, 3);
-			ammma = ammma.createMutableAttribute(Attributes.KNOCKBACK_RESISTANCE, 0.5);
+			ammma = ammma.createMutableAttribute(Attributes.ATTACK_DAMAGE, 20);
+			ammma = ammma.createMutableAttribute(Attributes.KNOCKBACK_RESISTANCE, 2);
 			event.put(entity, ammma.create());
 		}
 	}
@@ -98,10 +102,47 @@ public class FreddyFazbearEntity extends FnafModModElements.ModElement {
 		@Override
 		protected void registerGoals() {
 			super.registerGoals();
-			this.goalSelector.addGoal(1, new LookRandomlyGoal(this));
-			this.goalSelector.addGoal(2, new WaterAvoidingRandomWalkingGoal(this, 0.8));
-			this.goalSelector.addGoal(3, new MeleeAttackGoal(this, 1.2, false));
-			this.targetSelector.addGoal(4, new NearestAttackableTargetGoal(this, PlayerEntity.class, true, true) {
+			this.goalSelector.addGoal(1, new RandomWalkingGoal(this, 0.8) {
+				@Override
+				public boolean shouldExecute() {
+					double x = CustomEntity.this.getPosX();
+					double y = CustomEntity.this.getPosY();
+					double z = CustomEntity.this.getPosZ();
+					Entity entity = CustomEntity.this;
+					return super.shouldExecute() && FreddyFazbearOnEntityTickUpdateProcedure.executeProcedure(ImmutableMap.of("world", world));
+				}
+			});
+			this.goalSelector.addGoal(2, new LookRandomlyGoal(this) {
+				@Override
+				public boolean shouldExecute() {
+					double x = CustomEntity.this.getPosX();
+					double y = CustomEntity.this.getPosY();
+					double z = CustomEntity.this.getPosZ();
+					Entity entity = CustomEntity.this;
+					return super.shouldExecute() && FreddyFazbearOnEntityTickUpdateProcedure.executeProcedure(ImmutableMap.of("world", world));
+				}
+			});
+			this.goalSelector.addGoal(3, new WaterAvoidingRandomWalkingGoal(this, 0.8) {
+				@Override
+				public boolean shouldExecute() {
+					double x = CustomEntity.this.getPosX();
+					double y = CustomEntity.this.getPosY();
+					double z = CustomEntity.this.getPosZ();
+					Entity entity = CustomEntity.this;
+					return super.shouldExecute() && FreddyFazbearOnEntityTickUpdateProcedure.executeProcedure(ImmutableMap.of("world", world));
+				}
+			});
+			this.goalSelector.addGoal(4, new MeleeAttackGoal(this, 1.2, false) {
+				@Override
+				public boolean shouldExecute() {
+					double x = CustomEntity.this.getPosX();
+					double y = CustomEntity.this.getPosY();
+					double z = CustomEntity.this.getPosZ();
+					Entity entity = CustomEntity.this;
+					return super.shouldExecute() && FreddyFazbearOnEntityTickUpdateProcedure.executeProcedure(ImmutableMap.of("world", world));
+				}
+			});
+			this.targetSelector.addGoal(5, new NearestAttackableTargetGoal(this, PlayerEntity.class, true, true) {
 				@Override
 				public boolean shouldExecute() {
 					double x = CustomEntity.this.getPosX();
@@ -124,6 +165,12 @@ public class FreddyFazbearEntity extends FnafModModElements.ModElement {
 		}
 
 		@Override
+		public void playStepSound(BlockPos pos, BlockState blockIn) {
+			this.playSound((net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("fnaf_mod:animatronic_step")),
+					0.15f, 1);
+		}
+
+		@Override
 		public net.minecraft.util.SoundEvent getHurtSound(DamageSource ds) {
 			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.wool.hit"));
 		}
@@ -135,8 +182,6 @@ public class FreddyFazbearEntity extends FnafModModElements.ModElement {
 
 		@Override
 		public boolean attackEntityFrom(DamageSource source, float amount) {
-			if (source.getImmediateSource() instanceof ArrowEntity)
-				return false;
 			if (source == DamageSource.FALL)
 				return false;
 			if (source == DamageSource.CACTUS)
@@ -155,6 +200,23 @@ public class FreddyFazbearEntity extends FnafModModElements.ModElement {
 		}
 
 		@Override
+		public void awardKillScore(Entity entity, int score, DamageSource damageSource) {
+			super.awardKillScore(entity, score, damageSource);
+			double x = this.getPosX();
+			double y = this.getPosY();
+			double z = this.getPosZ();
+			Entity sourceentity = this;
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				FreddyFazbearThisEntityKillsAnotherOneProcedure.executeProcedure($_dependencies);
+			}
+		}
+
+		@Override
 		public void baseTick() {
 			super.baseTick();
 			double x = this.getPosX();
@@ -164,7 +226,7 @@ public class FreddyFazbearEntity extends FnafModModElements.ModElement {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("world", world);
-				FreddyFazbearOnEntityTickUpdateProcedure.executeProcedure($_dependencies);
+				GoldenFreddyOnEntityTickUpdateProcedure.executeProcedure($_dependencies);
 			}
 		}
 	}

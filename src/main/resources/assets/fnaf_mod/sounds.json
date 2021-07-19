@@ -8,5 +8,35 @@
         "stream": false
       }
     ]
+  },
+  "animatronic_step": {
+    "category": "master",
+    "subtitle": "subtitles.animatronic_step",
+    "sounds": [
+      {
+        "name": "fnaf_mod:animatronic_step",
+        "stream": false
+      }
+    ]
+  },
+  "fnaf1_scream": {
+    "category": "master",
+    "subtitle": "subtitles.fnaf1_scream",
+    "sounds": [
+      {
+        "name": "fnaf_mod:fnaf_1_jumpscare",
+        "stream": false
+      }
+    ]
+  },
+  "golden_freddy_scram": {
+    "category": "master",
+    "subtitle": "subtitles.golden_freddy_scram",
+    "sounds": [
+      {
+        "name": "fnaf_mod:golden_freddy_scream",
+        "stream": false
+      }
+    ]
   }
 }

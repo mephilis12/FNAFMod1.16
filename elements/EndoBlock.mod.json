@@ -34,14 +34,14 @@
     ],
     "name": "Endo Block",
     "specialInfo": [],
-    "hardness": 1.0,
+    "hardness": 5.0,
     "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
       "value": "CUSTOM:FNAFBlocks"
     },
-    "destroyTool": "Not specified",
+    "destroyTool": "pickaxe",
     "customDrop": {
       "value": ""
     },
@@ -69,7 +69,7 @@
     "slipperiness": 0.6,
     "speedFactor": 1.0,
     "jumpFactor": 1.0,
-    "reactionToPushing": "NORMAL",
+    "reactionToPushing": "BLOCK",
     "isNotColidable": false,
     "soundOnStep": {
       "value": "METAL"

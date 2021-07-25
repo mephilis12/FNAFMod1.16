@@ -21,7 +21,7 @@
       "falpha": 0.0
     },
     "creativeTab": {
-      "value": "CUSTOM:FNAFItems"
+      "value": "CUSTOM:FNAFMobs"
     },
     "isBoss": false,
     "bossBarColor": "PINK",
@@ -99,7 +99,7 @@
     "particleSpawningRadious": 0.5,
     "particleAmount": 4,
     "whenThisMobKillsAnother": {
-      "name": "FreddyFazbearThisEntityKillsAnotherOne"
+      "name": "ChicaChickenThisEntityKillsAnotherOne"
     },
     "onMobTickUpdate": {
       "name": "GoldenFreddyOnEntityTickUpdate"

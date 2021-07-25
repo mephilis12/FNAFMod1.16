@@ -29,6 +29,7 @@ import net.minecraft.item.BlockItem;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.client.renderer.RenderType;
+import net.minecraft.block.material.PushReaction;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.HorizontalBlock;
@@ -66,7 +67,7 @@ public class PizzaBoxOpenBlock extends FnafModModElements.ModElement {
 	public static class CustomBlock extends Block {
 		public static final DirectionProperty FACING = HorizontalBlock.HORIZONTAL_FACING;
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ROCK).sound(SoundType.CLOTH).hardnessAndResistance(1f, 10f).setLightLevel(s -> 0).notSolid()
+			super(Block.Properties.create(Material.WOOD).sound(SoundType.CLOTH).hardnessAndResistance(0.8f, 0.8f).setLightLevel(s -> 0).notSolid()
 					.setOpaque((bs, br, bp) -> false));
 			this.setDefaultState(this.stateContainer.getBaseState().with(FACING, Direction.NORTH));
 			setRegistryName("pizza_box_open");
@@ -110,6 +111,11 @@ public class PizzaBoxOpenBlock extends FnafModModElements.ModElement {
 		public BlockState getStateForPlacement(BlockItemUseContext context) {
 			;
 			return this.getDefaultState().with(FACING, context.getPlacementHorizontalFacing().getOpposite());
+		}
+
+		@Override
+		public PushReaction getPushReaction(BlockState state) {
+			return PushReaction.DESTROY;
 		}
 
 		@Override

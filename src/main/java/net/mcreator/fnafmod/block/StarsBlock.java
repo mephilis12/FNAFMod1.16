@@ -46,7 +46,7 @@ public class StarsBlock extends FnafModModElements.ModElement {
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ROCK).sound(SoundType.METAL).hardnessAndResistance(1f, 10f).setLightLevel(s -> 0).notSolid()
+			super(Block.Properties.create(Material.ROCK).sound(SoundType.METAL).hardnessAndResistance(0.8f, 0.8f).setLightLevel(s -> 0).notSolid()
 					.setOpaque((bs, br, bp) -> false));
 			setRegistryName("stars");
 		}

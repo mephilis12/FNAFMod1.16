@@ -33,9 +33,9 @@ import net.minecraft.entity.CreatureAttribute;
 import net.minecraft.block.BlockState;
 
 import net.mcreator.fnafmod.procedures.GoldenFreddyOnEntityTickUpdateProcedure;
-import net.mcreator.fnafmod.procedures.FreddyFazbearThisEntityKillsAnotherOneProcedure;
 import net.mcreator.fnafmod.procedures.FreddyFazbearOnEntityTickUpdateProcedure;
-import net.mcreator.fnafmod.itemgroup.FNAFItemsItemGroup;
+import net.mcreator.fnafmod.procedures.BonnieBunnyThisEntityKillsAnotherOneProcedure;
+import net.mcreator.fnafmod.itemgroup.FNAFMobsItemGroup;
 import net.mcreator.fnafmod.entity.renderer.BonnieBunnyRenderer;
 import net.mcreator.fnafmod.FnafModModElements;
 
@@ -58,7 +58,7 @@ public class BonnieBunnyEntity extends FnafModModElements.ModElement {
 	@Override
 	public void initElements() {
 		elements.entities.add(() -> entity);
-		elements.items.add(() -> new SpawnEggItem(entity, -10998651, -4780787, new Item.Properties().group(FNAFItemsItemGroup.tab))
+		elements.items.add(() -> new SpawnEggItem(entity, -10998651, -4780787, new Item.Properties().group(FNAFMobsItemGroup.tab))
 				.setRegistryName("bonnie_bunny_spawn_egg"));
 	}
 
@@ -208,7 +208,7 @@ public class BonnieBunnyEntity extends FnafModModElements.ModElement {
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
-				FreddyFazbearThisEntityKillsAnotherOneProcedure.executeProcedure($_dependencies);
+				BonnieBunnyThisEntityKillsAnotherOneProcedure.executeProcedure($_dependencies);
 			}
 		}
 

@@ -35,9 +35,9 @@ import net.minecraft.entity.CreatureAttribute;
 import net.minecraft.block.BlockState;
 
 import net.mcreator.fnafmod.procedures.GoldenFreddyOnEntityTickUpdateProcedure;
-import net.mcreator.fnafmod.procedures.FreddyFazbearThisEntityKillsAnotherOneProcedure;
 import net.mcreator.fnafmod.procedures.FreddyFazbearOnEntityTickUpdateProcedure;
-import net.mcreator.fnafmod.itemgroup.FNAFItemsItemGroup;
+import net.mcreator.fnafmod.procedures.ChicaChickenThisEntityKillsAnotherOneProcedure;
+import net.mcreator.fnafmod.itemgroup.FNAFMobsItemGroup;
 import net.mcreator.fnafmod.item.CupcakeItem;
 import net.mcreator.fnafmod.entity.renderer.ChicaChickenRenderer;
 import net.mcreator.fnafmod.FnafModModElements;
@@ -61,7 +61,7 @@ public class ChicaChickenEntity extends FnafModModElements.ModElement {
 	@Override
 	public void initElements() {
 		elements.entities.add(() -> entity);
-		elements.items.add(() -> new SpawnEggItem(entity, -7304690, -712248, new Item.Properties().group(FNAFItemsItemGroup.tab))
+		elements.items.add(() -> new SpawnEggItem(entity, -7304690, -712248, new Item.Properties().group(FNAFMobsItemGroup.tab))
 				.setRegistryName("chica_chicken_spawn_egg"));
 	}
 
@@ -212,7 +212,7 @@ public class ChicaChickenEntity extends FnafModModElements.ModElement {
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
-				FreddyFazbearThisEntityKillsAnotherOneProcedure.executeProcedure($_dependencies);
+				ChicaChickenThisEntityKillsAnotherOneProcedure.executeProcedure($_dependencies);
 			}
 		}
 

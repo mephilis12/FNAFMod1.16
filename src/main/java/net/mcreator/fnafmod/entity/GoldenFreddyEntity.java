@@ -43,7 +43,7 @@ import net.minecraft.block.BlockState;
 import net.mcreator.fnafmod.procedures.GoldenFreddyThisEntityKillsAnotherOneProcedure;
 import net.mcreator.fnafmod.procedures.GoldenFreddyOnEntityTickUpdateProcedure;
 import net.mcreator.fnafmod.procedures.FreddyFazbearOnEntityTickUpdateProcedure;
-import net.mcreator.fnafmod.itemgroup.FNAFItemsItemGroup;
+import net.mcreator.fnafmod.itemgroup.FNAFMobsItemGroup;
 import net.mcreator.fnafmod.item.MicrophoneItem;
 import net.mcreator.fnafmod.entity.renderer.GoldenFreddyRenderer;
 import net.mcreator.fnafmod.FnafModModElements;
@@ -67,7 +67,7 @@ public class GoldenFreddyEntity extends FnafModModElements.ModElement {
 	@Override
 	public void initElements() {
 		elements.entities.add(() -> entity);
-		elements.items.add(() -> new SpawnEggItem(entity, -4810998, -16777216, new Item.Properties().group(FNAFItemsItemGroup.tab))
+		elements.items.add(() -> new SpawnEggItem(entity, -4810998, -16777216, new Item.Properties().group(FNAFMobsItemGroup.tab))
 				.setRegistryName("golden_freddy_spawn_egg"));
 	}
 

@@ -41,7 +41,7 @@
     "creativeTab": {
       "value": "CUSTOM:FNAFBlocks"
     },
-    "destroyTool": "Not specified",
+    "destroyTool": "pickaxe",
     "customDrop": {
       "value": ""
     },

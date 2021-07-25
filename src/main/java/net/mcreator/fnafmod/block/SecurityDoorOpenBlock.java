@@ -3,6 +3,7 @@ package net.mcreator.fnafmod.block;
 
 import net.minecraftforge.registries.ObjectHolder;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
+import net.minecraftforge.common.ToolType;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
@@ -27,6 +28,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.Minecraft;
+import net.minecraft.block.material.PushReaction;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.HorizontalBlock;
@@ -65,8 +67,8 @@ public class SecurityDoorOpenBlock extends FnafModModElements.ModElement {
 	public static class CustomBlock extends Block {
 		public static final DirectionProperty FACING = HorizontalBlock.HORIZONTAL_FACING;
 		public CustomBlock() {
-			super(Block.Properties.create(Material.IRON).sound(SoundType.METAL).hardnessAndResistance(1f, 10f).setLightLevel(s -> 0)
-					.doesNotBlockMovement().notSolid().setOpaque((bs, br, bp) -> false));
+			super(Block.Properties.create(Material.IRON).sound(SoundType.METAL).hardnessAndResistance(5f, 10f).setLightLevel(s -> 0).harvestLevel(2)
+					.harvestTool(ToolType.PICKAXE).setRequiresTool().doesNotBlockMovement().notSolid().setOpaque((bs, br, bp) -> false));
 			this.setDefaultState(this.stateContainer.getBaseState().with(FACING, Direction.NORTH));
 			setRegistryName("security_door_open");
 		}
@@ -109,6 +111,11 @@ public class SecurityDoorOpenBlock extends FnafModModElements.ModElement {
 		public BlockState getStateForPlacement(BlockItemUseContext context) {
 			;
 			return this.getDefaultState().with(FACING, context.getPlacementHorizontalFacing().getOpposite());
+		}
+
+		@Override
+		public PushReaction getPushReaction(BlockState state) {
+			return PushReaction.BLOCK;
 		}
 
 		@Override

@@ -25,7 +25,7 @@ public class CupcakeItem extends FnafModModElements.ModElement {
 	}
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
-			super(new Item.Properties().group(FNAFItemsItemGroup.tab).maxStackSize(64).rarity(Rarity.COMMON));
+			super(new Item.Properties().group(FNAFItemsItemGroup.tab).maxStackSize(1).rarity(Rarity.COMMON));
 			setRegistryName("cupcake");
 		}
 

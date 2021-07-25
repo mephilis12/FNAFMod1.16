@@ -1069,6 +1069,446 @@
       "ids": {},
       "registry_name": "freddy_frame_overlay_5",
       "path": "~/Overlays"
+    },
+    {
+      "name": "FNAFMobs",
+      "type": "tab",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fnaf_mobs",
+      "path": "~/Mobs"
+    },
+    {
+      "name": "TileBlackWhiteRecipe",
+      "type": "recipe",
+      "sortid": 91,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tile_black_white_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Blueblacktilerecipe",
+      "type": "recipe",
+      "sortid": 92,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blueblacktilerecipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Redblacktilerecipe",
+      "type": "recipe",
+      "sortid": 93,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "redblacktilerecipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Blueredtilerecipe",
+      "type": "recipe",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blueredtilerecipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Walltilerecipe",
+      "type": "recipe",
+      "sortid": 95,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "walltilerecipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Blackwallrecipe",
+      "type": "recipe",
+      "sortid": 96,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blackwallrecipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Whitewallrecipe",
+      "type": "recipe",
+      "sortid": 97,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "whitewallrecipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "CircuitBoard",
+      "type": "item",
+      "sortid": 98,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "circuit_board",
+      "path": "~/Items"
+    },
+    {
+      "name": "BonnieFrameOverlay1",
+      "type": "overlay",
+      "sortid": 99,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bonnie_frame_overlay_1",
+      "path": "~/Overlays"
+    },
+    {
+      "name": "BonnieFrameOverlay1DisplayOverlayIngame",
+      "type": "procedure",
+      "sortid": 100,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bonnie_frame_overlay_1_display_overlay_ingame",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "BonnieFrameOverlay2",
+      "type": "overlay",
+      "sortid": 101,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bonnie_frame_overlay_2",
+      "path": "~/Overlays"
+    },
+    {
+      "name": "BonnieFrameOverlay2DisplayOverlayIngame",
+      "type": "procedure",
+      "sortid": 102,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bonnie_frame_overlay_2_display_overlay_ingame",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "BonnieFrameOverlay3",
+      "type": "overlay",
+      "sortid": 103,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bonnie_frame_overlay_3",
+      "path": "~/Overlays"
+    },
+    {
+      "name": "BonnieFrameOverlay3DisplayOverlayIngame",
+      "type": "procedure",
+      "sortid": 104,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bonnie_frame_overlay_3_display_overlay_ingame",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "BonnieFrameOverlay4",
+      "type": "overlay",
+      "sortid": 105,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bonnie_frame_overlay_4",
+      "path": "~/Overlays"
+    },
+    {
+      "name": "BonnieFrameOverlay4DisplayOverlayIngame",
+      "type": "procedure",
+      "sortid": 106,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bonnie_frame_overlay_4_display_overlay_ingame",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "BonnieFrameOverlay5",
+      "type": "overlay",
+      "sortid": 107,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bonnie_frame_overlay_5",
+      "path": "~/Overlays"
+    },
+    {
+      "name": "BonnieFrameOverlay5DisplayOverlayIngame",
+      "type": "procedure",
+      "sortid": 108,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bonnie_frame_overlay_5_display_overlay_ingame",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "BonnieBunnyThisEntityKillsAnotherOne",
+      "type": "procedure",
+      "sortid": 109,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bonnie_bunny_this_entity_kills_another_one",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "ChicaFrameOverlay1",
+      "type": "overlay",
+      "sortid": 110,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chica_frame_overlay_1",
+      "path": "~/Overlays"
+    },
+    {
+      "name": "ChicaFrameOverlay1DisplayOverlayIngame",
+      "type": "procedure",
+      "sortid": 111,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chica_frame_overlay_1_display_overlay_ingame",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "ChicaFrameOverlay2",
+      "type": "overlay",
+      "sortid": 112,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chica_frame_overlay_2",
+      "path": "~/Overlays"
+    },
+    {
+      "name": "ChicaFrameOverlay2DisplayOverlayIngame",
+      "type": "procedure",
+      "sortid": 113,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chica_frame_overlay_2_display_overlay_ingame",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "ChicaFrameOverlay3",
+      "type": "overlay",
+      "sortid": 114,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chica_frame_overlay_3",
+      "path": "~/Overlays"
+    },
+    {
+      "name": "ChicaFrameOverlay3DisplayOverlayIngame",
+      "type": "procedure",
+      "sortid": 115,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chica_frame_overlay_3_display_overlay_ingame",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "ChicaFrameOverlay4",
+      "type": "overlay",
+      "sortid": 116,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chica_frame_overlay_4",
+      "path": "~/Overlays"
+    },
+    {
+      "name": "ChicaFrameOverlay4DisplayOverlayIngame",
+      "type": "procedure",
+      "sortid": 117,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chica_frame_overlay_4_display_overlay_ingame",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "ChicaFrameOverlay5",
+      "type": "overlay",
+      "sortid": 118,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chica_frame_overlay_5",
+      "path": "~/Overlays"
+    },
+    {
+      "name": "ChicaFrameOverlay5DisplayOverlayIngame",
+      "type": "procedure",
+      "sortid": 119,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chica_frame_overlay_5_display_overlay_ingame",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "ChicaChickenThisEntityKillsAnotherOne",
+      "type": "procedure",
+      "sortid": 120,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chica_chicken_this_entity_kills_another_one",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
     }
   ],
   "variable_elements": [
@@ -1149,6 +1589,78 @@
       "type": "logic",
       "scope": "world",
       "value": "false"
+    },
+    {
+      "name": "ChicaFrame1",
+      "type": "logic",
+      "scope": "world",
+      "value": "false"
+    },
+    {
+      "name": "ChicaFrame2",
+      "type": "logic",
+      "scope": "world",
+      "value": "false"
+    },
+    {
+      "name": "ChicaFrame3",
+      "type": "logic",
+      "scope": "world",
+      "value": "false"
+    },
+    {
+      "name": "ChicaFrame4",
+      "type": "logic",
+      "scope": "world",
+      "value": "false"
+    },
+    {
+      "name": "ChicaFrame5",
+      "type": "logic",
+      "scope": "world",
+      "value": "false"
+    },
+    {
+      "name": "chicakill",
+      "type": "logic",
+      "scope": "world",
+      "value": "false"
+    },
+    {
+      "name": "BonnieFrame1",
+      "type": "logic",
+      "scope": "world",
+      "value": "false"
+    },
+    {
+      "name": "BonnieFrame2",
+      "type": "logic",
+      "scope": "world",
+      "value": "false"
+    },
+    {
+      "name": "BonnieFrame3",
+      "type": "logic",
+      "scope": "world",
+      "value": "false"
+    },
+    {
+      "name": "BonnieFrame4",
+      "type": "logic",
+      "scope": "world",
+      "value": "false"
+    },
+    {
+      "name": "BonnieFrame5",
+      "type": "logic",
+      "scope": "world",
+      "value": "false"
+    },
+    {
+      "name": "bonniekill",
+      "type": "logic",
+      "scope": "world",
+      "value": "false"
     }
   ],
   "sound_elements": [
@@ -1190,6 +1702,7 @@
       "item.fnaf_mod.cupcake": "Cupcake",
       "item.fnaf_mod.foxy_pirate_spawn_egg": "Foxy the Pirate Spawn Egg",
       "block.fnaf_mod.door_button_off": "Door Button Off",
+      "item.fnaf_mod.circuit_board": "Circuit Board",
       "subtitles.door_close": "Door Close",
       "itemGroup.tabfnaf_blocks": "FNAF Blocks",
       "block.fnaf_mod.office_door": "Office Door",
@@ -1199,6 +1712,7 @@
       "item.fnaf_mod.chica_chicken_spawn_egg": "Chica the Chicken Spawn Egg",
       "block.fnaf_mod.black_wall": "Black Wall",
       "block.fnaf_mod.chair": "Chair",
+      "itemGroup.tabfnaf_mobs": "FNAF Mobs",
       "entity.fnaf_mod.foxy_pirate": "Foxy the Pirate",
       "block.fnaf_mod.wall_tile": "Wall Tile",
       "block.fnaf_mod.backstage_door": "Backstage Door",
@@ -1254,6 +1768,14 @@
       },
       {
         "name": "Overlays",
+        "children": []
+      },
+      {
+        "name": "Recipes",
+        "children": []
+      },
+      {
+        "name": "Structures",
         "children": []
       }
     ]

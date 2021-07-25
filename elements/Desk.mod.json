@@ -27,14 +27,14 @@
         "my": 0.0,
         "mz": 0.0,
         "Mx": 30.0,
-        "My": 33.0,
+        "My": 16.0,
         "Mz": 16.0,
         "subtract": false
       }
     ],
     "name": "Desk",
     "specialInfo": [],
-    "hardness": 1.0,
+    "hardness": 2.0,
     "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,

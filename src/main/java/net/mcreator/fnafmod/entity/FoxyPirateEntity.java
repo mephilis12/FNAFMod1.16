@@ -35,7 +35,7 @@ import net.minecraft.block.BlockState;
 import net.mcreator.fnafmod.procedures.GoldenFreddyOnEntityTickUpdateProcedure;
 import net.mcreator.fnafmod.procedures.FreddyFazbearOnEntityTickUpdateProcedure;
 import net.mcreator.fnafmod.procedures.FoxyPirateThisEntityKillsAnotherOneProcedure;
-import net.mcreator.fnafmod.itemgroup.FNAFItemsItemGroup;
+import net.mcreator.fnafmod.itemgroup.FNAFMobsItemGroup;
 import net.mcreator.fnafmod.entity.renderer.FoxyPirateRenderer;
 import net.mcreator.fnafmod.FnafModModElements;
 
@@ -58,7 +58,7 @@ public class FoxyPirateEntity extends FnafModModElements.ModElement {
 	@Override
 	public void initElements() {
 		elements.entities.add(() -> entity);
-		elements.items.add(() -> new SpawnEggItem(entity, -3855830, -11652589, new Item.Properties().group(FNAFItemsItemGroup.tab))
+		elements.items.add(() -> new SpawnEggItem(entity, -3855830, -11652589, new Item.Properties().group(FNAFMobsItemGroup.tab))
 				.setRegistryName("foxy_pirate_spawn_egg"));
 	}
 

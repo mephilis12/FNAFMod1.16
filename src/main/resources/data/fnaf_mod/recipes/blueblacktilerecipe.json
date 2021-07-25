@@ -1,0 +1,22 @@
+{
+  "group": "fnaf_mod",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:blue_concrete"
+    },
+    {
+      "item": "minecraft:black_concrete"
+    },
+    {
+      "item": "minecraft:black_concrete"
+    },
+    {
+      "item": "minecraft:blue_concrete"
+    }
+  ],
+  "result": {
+    "item": "fnaf_mod:blue_black_tile",
+    "count": 4
+  }
+}

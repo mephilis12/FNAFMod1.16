@@ -34,14 +34,14 @@
     ],
     "name": "Office Door",
     "specialInfo": [],
-    "hardness": 1.0,
+    "hardness": 5.0,
     "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
       "value": "No creative tab entry"
     },
-    "destroyTool": "Not specified",
+    "destroyTool": "pickaxe",
     "customDrop": {
       "value": "CUSTOM:SecurityDoorOpen"
     },
@@ -59,7 +59,7 @@
     "isReplaceable": false,
     "colorOnMap": "DEFAULT",
     "creativePickItem": {
-      "value": ""
+      "value": "CUSTOM:SecurityDoorOpen"
     },
     "offsetType": "NONE",
     "aiPathNodeType": "DEFAULT",
@@ -69,14 +69,14 @@
     "slipperiness": 0.6,
     "speedFactor": 1.0,
     "jumpFactor": 1.0,
-    "reactionToPushing": "NORMAL",
+    "reactionToPushing": "BLOCK",
     "isNotColidable": false,
     "soundOnStep": {
       "value": "METAL"
     },
     "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": 1,
+    "breakHarvestLevel": 2,
     "spawnParticles": false,
     "particleToSpawn": {
       "value": "EXPLOSION_NORMAL"

@@ -3,6 +3,7 @@ package net.mcreator.fnafmod.block;
 
 import net.minecraftforge.registries.ObjectHolder;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
+import net.minecraftforge.common.ToolType;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
@@ -58,8 +59,8 @@ public class ChairBlock extends FnafModModElements.ModElement {
 	public static class CustomBlock extends Block {
 		public static final DirectionProperty FACING = HorizontalBlock.HORIZONTAL_FACING;
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ROCK).sound(SoundType.WOOD).hardnessAndResistance(1f, 10f).setLightLevel(s -> 0).notSolid()
-					.setOpaque((bs, br, bp) -> false));
+			super(Block.Properties.create(Material.ROCK).sound(SoundType.WOOD).hardnessAndResistance(1.2f, 10f).setLightLevel(s -> 0).harvestLevel(0)
+					.harvestTool(ToolType.AXE).setRequiresTool().notSolid().setOpaque((bs, br, bp) -> false));
 			this.setDefaultState(this.stateContainer.getBaseState().with(FACING, Direction.NORTH));
 			setRegistryName("chair");
 		}
@@ -75,13 +76,13 @@ public class ChairBlock extends FnafModModElements.ModElement {
 			switch ((Direction) state.get(FACING)) {
 				case SOUTH :
 				default :
-					return VoxelShapes.or(makeCuboidShape(13, 0, 13, 4, 23, 4)).withOffset(offset.x, offset.y, offset.z);
+					return VoxelShapes.or(makeCuboidShape(13, 0, 13, 4, 14, 4)).withOffset(offset.x, offset.y, offset.z);
 				case NORTH :
-					return VoxelShapes.or(makeCuboidShape(3, 0, 3, 12, 23, 12)).withOffset(offset.x, offset.y, offset.z);
+					return VoxelShapes.or(makeCuboidShape(3, 0, 3, 12, 14, 12)).withOffset(offset.x, offset.y, offset.z);
 				case EAST :
-					return VoxelShapes.or(makeCuboidShape(13, 0, 3, 4, 23, 12)).withOffset(offset.x, offset.y, offset.z);
+					return VoxelShapes.or(makeCuboidShape(13, 0, 3, 4, 14, 12)).withOffset(offset.x, offset.y, offset.z);
 				case WEST :
-					return VoxelShapes.or(makeCuboidShape(3, 0, 13, 12, 23, 4)).withOffset(offset.x, offset.y, offset.z);
+					return VoxelShapes.or(makeCuboidShape(3, 0, 13, 12, 14, 4)).withOffset(offset.x, offset.y, offset.z);
 			}
 		}
 

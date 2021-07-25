@@ -93,7 +93,7 @@ public class DeskBlock extends FnafModModElements.ModElement {
 	public static class CustomBlock extends Block {
 		public static final DirectionProperty FACING = HorizontalBlock.HORIZONTAL_FACING;
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ROCK).sound(SoundType.METAL).hardnessAndResistance(1f, 10f).setLightLevel(s -> 0).notSolid()
+			super(Block.Properties.create(Material.ROCK).sound(SoundType.METAL).hardnessAndResistance(2f, 10f).setLightLevel(s -> 0).notSolid()
 					.setOpaque((bs, br, bp) -> false));
 			this.setDefaultState(this.stateContainer.getBaseState().with(FACING, Direction.NORTH));
 			setRegistryName("desk");
@@ -110,13 +110,13 @@ public class DeskBlock extends FnafModModElements.ModElement {
 			switch ((Direction) state.get(FACING)) {
 				case SOUTH :
 				default :
-					return VoxelShapes.or(makeCuboidShape(31, 0, 16, -14, 33, 0)).withOffset(offset.x, offset.y, offset.z);
+					return VoxelShapes.or(makeCuboidShape(31, 0, 16, -14, 16, 0)).withOffset(offset.x, offset.y, offset.z);
 				case NORTH :
-					return VoxelShapes.or(makeCuboidShape(-15, 0, 0, 30, 33, 16)).withOffset(offset.x, offset.y, offset.z);
+					return VoxelShapes.or(makeCuboidShape(-15, 0, 0, 30, 16, 16)).withOffset(offset.x, offset.y, offset.z);
 				case EAST :
-					return VoxelShapes.or(makeCuboidShape(16, 0, -15, 0, 33, 30)).withOffset(offset.x, offset.y, offset.z);
+					return VoxelShapes.or(makeCuboidShape(16, 0, -15, 0, 16, 30)).withOffset(offset.x, offset.y, offset.z);
 				case WEST :
-					return VoxelShapes.or(makeCuboidShape(0, 0, 31, 16, 33, -14)).withOffset(offset.x, offset.y, offset.z);
+					return VoxelShapes.or(makeCuboidShape(0, 0, 31, 16, 16, -14)).withOffset(offset.x, offset.y, offset.z);
 			}
 		}
 

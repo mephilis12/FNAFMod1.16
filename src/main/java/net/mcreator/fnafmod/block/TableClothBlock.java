@@ -18,6 +18,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.client.renderer.RenderType;
+import net.minecraft.block.material.PushReaction;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.BlockState;
@@ -64,6 +65,11 @@ public class TableClothBlock extends FnafModModElements.ModElement {
 		public VoxelShape getShape(BlockState state, IBlockReader world, BlockPos pos, ISelectionContext context) {
 			Vector3d offset = state.getOffset(world, pos);
 			return VoxelShapes.or(makeCuboidShape(0, 0, 0, 16, 1, 16)).withOffset(offset.x, offset.y, offset.z);
+		}
+
+		@Override
+		public PushReaction getPushReaction(BlockState state) {
+			return PushReaction.DESTROY;
 		}
 
 		@Override

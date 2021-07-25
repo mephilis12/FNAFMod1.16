@@ -3,6 +3,7 @@ package net.mcreator.fnafmod.block;
 
 import net.minecraftforge.registries.ObjectHolder;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
+import net.minecraftforge.common.ToolType;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
@@ -12,6 +13,7 @@ import net.minecraft.util.math.vector.Vector3d;
 import net.minecraft.util.math.shapes.VoxelShapes;
 import net.minecraft.util.math.shapes.VoxelShape;
 import net.minecraft.util.math.shapes.ISelectionContext;
+import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.Rotation;
 import net.minecraft.util.Mirror;
@@ -27,6 +29,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.Minecraft;
+import net.minecraft.block.material.PushReaction;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.HorizontalBlock;
@@ -64,8 +67,8 @@ public class OfficeDoorBlock extends FnafModModElements.ModElement {
 	public static class CustomBlock extends Block {
 		public static final DirectionProperty FACING = HorizontalBlock.HORIZONTAL_FACING;
 		public CustomBlock() {
-			super(Block.Properties.create(Material.IRON).sound(SoundType.METAL).hardnessAndResistance(1f, 10f).setLightLevel(s -> 0).notSolid()
-					.setOpaque((bs, br, bp) -> false));
+			super(Block.Properties.create(Material.IRON).sound(SoundType.METAL).hardnessAndResistance(5f, 10f).setLightLevel(s -> 0).harvestLevel(2)
+					.harvestTool(ToolType.PICKAXE).setRequiresTool().notSolid().setOpaque((bs, br, bp) -> false));
 			this.setDefaultState(this.stateContainer.getBaseState().with(FACING, Direction.NORTH));
 			setRegistryName("office_door");
 		}
@@ -108,6 +111,16 @@ public class OfficeDoorBlock extends FnafModModElements.ModElement {
 		public BlockState getStateForPlacement(BlockItemUseContext context) {
 			;
 			return this.getDefaultState().with(FACING, context.getPlacementHorizontalFacing().getOpposite());
+		}
+
+		@Override
+		public ItemStack getPickBlock(BlockState state, RayTraceResult target, IBlockReader world, BlockPos pos, PlayerEntity player) {
+			return new ItemStack(SecurityDoorOpenBlock.block, (int) (1));
+		}
+
+		@Override
+		public PushReaction getPushReaction(BlockState state) {
+			return PushReaction.BLOCK;
 		}
 
 		@Override

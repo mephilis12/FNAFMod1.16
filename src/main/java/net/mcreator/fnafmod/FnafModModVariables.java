@@ -60,6 +60,18 @@ public class FnafModModVariables {
 		public boolean FoxyFrame4 = false;
 		public boolean FoxyFrame5 = false;
 		public boolean foxykill = false;
+		public boolean ChicaFrame1 = false;
+		public boolean ChicaFrame2 = false;
+		public boolean ChicaFrame3 = false;
+		public boolean ChicaFrame4 = false;
+		public boolean ChicaFrame5 = false;
+		public boolean chicakill = false;
+		public boolean BonnieFrame1 = false;
+		public boolean BonnieFrame2 = false;
+		public boolean BonnieFrame3 = false;
+		public boolean BonnieFrame4 = false;
+		public boolean BonnieFrame5 = false;
+		public boolean bonniekill = false;
 		public WorldVariables() {
 			super(DATA_NAME);
 		}
@@ -83,6 +95,18 @@ public class FnafModModVariables {
 			FoxyFrame4 = nbt.getBoolean("FoxyFrame4");
 			FoxyFrame5 = nbt.getBoolean("FoxyFrame5");
 			foxykill = nbt.getBoolean("foxykill");
+			ChicaFrame1 = nbt.getBoolean("ChicaFrame1");
+			ChicaFrame2 = nbt.getBoolean("ChicaFrame2");
+			ChicaFrame3 = nbt.getBoolean("ChicaFrame3");
+			ChicaFrame4 = nbt.getBoolean("ChicaFrame4");
+			ChicaFrame5 = nbt.getBoolean("ChicaFrame5");
+			chicakill = nbt.getBoolean("chicakill");
+			BonnieFrame1 = nbt.getBoolean("BonnieFrame1");
+			BonnieFrame2 = nbt.getBoolean("BonnieFrame2");
+			BonnieFrame3 = nbt.getBoolean("BonnieFrame3");
+			BonnieFrame4 = nbt.getBoolean("BonnieFrame4");
+			BonnieFrame5 = nbt.getBoolean("BonnieFrame5");
+			bonniekill = nbt.getBoolean("bonniekill");
 		}
 
 		@Override
@@ -100,6 +124,18 @@ public class FnafModModVariables {
 			nbt.putBoolean("FoxyFrame4", FoxyFrame4);
 			nbt.putBoolean("FoxyFrame5", FoxyFrame5);
 			nbt.putBoolean("foxykill", foxykill);
+			nbt.putBoolean("ChicaFrame1", ChicaFrame1);
+			nbt.putBoolean("ChicaFrame2", ChicaFrame2);
+			nbt.putBoolean("ChicaFrame3", ChicaFrame3);
+			nbt.putBoolean("ChicaFrame4", ChicaFrame4);
+			nbt.putBoolean("ChicaFrame5", ChicaFrame5);
+			nbt.putBoolean("chicakill", chicakill);
+			nbt.putBoolean("BonnieFrame1", BonnieFrame1);
+			nbt.putBoolean("BonnieFrame2", BonnieFrame2);
+			nbt.putBoolean("BonnieFrame3", BonnieFrame3);
+			nbt.putBoolean("BonnieFrame4", BonnieFrame4);
+			nbt.putBoolean("BonnieFrame5", BonnieFrame5);
+			nbt.putBoolean("bonniekill", bonniekill);
 			return nbt;
 		}
 

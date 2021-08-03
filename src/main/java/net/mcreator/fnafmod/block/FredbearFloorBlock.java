@@ -2,18 +2,12 @@
 package net.mcreator.fnafmod.block;
 
 import net.minecraftforge.registries.ObjectHolder;
-import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.common.ToolType;
 
-import net.minecraft.world.IBlockReader;
-import net.minecraft.util.math.BlockPos;
 import net.minecraft.loot.LootContext;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
-import net.minecraft.client.renderer.RenderTypeLookup;
-import net.minecraft.client.renderer.RenderType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.BlockState;
@@ -26,11 +20,11 @@ import java.util.List;
 import java.util.Collections;
 
 @FnafModModElements.ModElement.Tag
-public class StarsBlock extends FnafModModElements.ModElement {
-	@ObjectHolder("fnaf_mod:stars")
+public class FredbearFloorBlock extends FnafModModElements.ModElement {
+	@ObjectHolder("fnaf_mod:fredbear_floor")
 	public static final Block block = null;
-	public StarsBlock(FnafModModElements instance) {
-		super(instance, 22);
+	public FredbearFloorBlock(FnafModModElements instance) {
+		super(instance, 135);
 	}
 
 	@Override
@@ -38,22 +32,11 @@ public class StarsBlock extends FnafModModElements.ModElement {
 		elements.blocks.add(() -> new CustomBlock());
 		elements.items.add(() -> new BlockItem(block, new Item.Properties().group(FNAFBlocksItemGroup.tab)).setRegistryName(block.getRegistryName()));
 	}
-
-	@Override
-	@OnlyIn(Dist.CLIENT)
-	public void clientLoad(FMLClientSetupEvent event) {
-		RenderTypeLookup.setRenderLayer(block, RenderType.getCutout());
-	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ROCK).sound(SoundType.METAL).hardnessAndResistance(0.8f, 0.8f).setLightLevel(s -> 0)
-					.doesNotBlockMovement().notSolid().setOpaque((bs, br, bp) -> false));
-			setRegistryName("stars");
-		}
-
-		@Override
-		public boolean propagatesSkylightDown(BlockState state, IBlockReader reader, BlockPos pos) {
-			return true;
+			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(1f, 10f).setLightLevel(s -> 0).harvestLevel(1)
+					.harvestTool(ToolType.PICKAXE).setRequiresTool());
+			setRegistryName("fredbear_floor");
 		}
 
 		@Override

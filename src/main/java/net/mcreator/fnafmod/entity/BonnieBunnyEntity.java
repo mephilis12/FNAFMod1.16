@@ -15,6 +15,7 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.DamageSource;
 import net.minecraft.network.IPacket;
 import net.minecraft.item.SpawnEggItem;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.monster.MonsterEntity;
@@ -36,6 +37,7 @@ import net.mcreator.fnafmod.procedures.GoldenFreddyOnEntityTickUpdateProcedure;
 import net.mcreator.fnafmod.procedures.FreddyFazbearOnEntityTickUpdateProcedure;
 import net.mcreator.fnafmod.procedures.BonnieBunnyThisEntityKillsAnotherOneProcedure;
 import net.mcreator.fnafmod.itemgroup.FNAFMobsItemGroup;
+import net.mcreator.fnafmod.item.GuitarItem;
 import net.mcreator.fnafmod.entity.renderer.BonnieBunnyRenderer;
 import net.mcreator.fnafmod.FnafModModElements;
 
@@ -158,6 +160,11 @@ public class BonnieBunnyEntity extends FnafModModElements.ModElement {
 		@Override
 		public boolean canDespawn(double distanceToClosestPlayer) {
 			return false;
+		}
+
+		protected void dropSpecialItems(DamageSource source, int looting, boolean recentlyHitIn) {
+			super.dropSpecialItems(source, looting, recentlyHitIn);
+			this.entityDropItem(new ItemStack(GuitarItem.block, (int) (1)));
 		}
 
 		@Override

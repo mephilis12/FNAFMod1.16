@@ -23,11 +23,11 @@ public static class ModelSpring_Bonnie_Suit extends EntityModel<Entity> {
 
 		Helmet = new ModelRenderer(this);
 		Helmet.setRotationPoint(0.0F, 0.0F, 0.0F);
-		Helmet.setTextureOffset(0, 0).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 6.0F, 8.0F, 0.1F, false);
+		Helmet.setTextureOffset(0, 0).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 6.0F, 8.0F, 0.51F, false);
 		Helmet.setTextureOffset(40, 0).addBox(-4.0F, -2.0F, 1.0F, 8.0F, 1.0F, 3.0F, 0.1F, false);
 		Helmet.setTextureOffset(50, 11).addBox(-2.0F, -3.0F, -5.0F, 4.0F, 1.0F, 1.0F, 0.1F, false);
-		Helmet.setTextureOffset(58, 15).addBox(-1.0F, -3.5F, -5.5F, 2.0F, 1.0F, 1.0F, 0.1F, false);
-		Helmet.setTextureOffset(28, 73).addBox(-1.5F, -2.3912F, -4.8F, 3.0F, 1.0F, 1.0F, 0.1F, false);
+		Helmet.setTextureOffset(58, 15).addBox(-1.0F, -3.5F, -5.5F, 2.0F, 1.0F, 1.0F, 0.0F, false);
+		Helmet.setTextureOffset(38, 49).addBox(-1.5F, -2.3912F, -4.8F, 3.0F, 1.0F, 1.0F, 0.1F, false);
 
 		Jaw = new ModelRenderer(this);
 		Jaw.setRotationPoint(0.0F, -1.0F, 0.0F);
@@ -65,33 +65,33 @@ public static class ModelSpring_Bonnie_Suit extends EntityModel<Entity> {
 		Chestplate.setTextureOffset(63, 0).addBox(4.0F, -1.2F, -2.0F, 4.0F, 1.0F, 4.0F, 0.0F, false);
 		Chestplate.setTextureOffset(63, 5).addBox(-8.0F, -1.2F, -2.0F, 4.0F, 1.0F, 4.0F, 0.0F, false);
 		Chestplate.setTextureOffset(50, 48).addBox(-2.5F, 0.0F, -4.0F, 5.0F, 2.0F, 1.0F, 0.0F, false);
-		Chestplate.setTextureOffset(4, 14).addBox(-4.0F, -1.0F, -3.0F, 8.0F, 12.0F, 6.0F, 0.0F, false);
+		Chestplate.setTextureOffset(4, 14).addBox(-4.0F, -1.0F, -3.0F, 8.0F, 12.0F, 6.0F, 0.26F, false);
 
 		LArm = new ModelRenderer(this);
 		LArm.setRotationPoint(5.0F, 1.0F, 0.0F);
-		LArm.setTextureOffset(12, 31).addBox(-0.99F, -2.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.1F, false);
+		LArm.setTextureOffset(12, 31).addBox(-0.99F, -2.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.26F, false);
 
 		RArm = new ModelRenderer(this);
 		RArm.setRotationPoint(-5.0F, 1.0F, 0.0F);
-		RArm.setTextureOffset(12, 31).addBox(-3.01F, -2.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.1F, false);
+		RArm.setTextureOffset(12, 31).addBox(-3.01F, -2.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.26F, false);
 
 		LLeg = new ModelRenderer(this);
 		LLeg.setRotationPoint(2.0F, 12.0F, 0.0F);
-		LLeg.setTextureOffset(0, 46).addBox(-2.0F, -1.0F, -2.0F, 4.0F, 7.0F, 4.0F, 0.1F, false);
+		LLeg.setTextureOffset(0, 46).addBox(-2.0F, -1.0F, -2.0F, 4.0F, 7.0F, 4.0F, 0.26F, false);
 
 		RLeg = new ModelRenderer(this);
 		RLeg.setRotationPoint(-2.0F, 12.0F, 0.0F);
-		RLeg.setTextureOffset(0, 46).addBox(-2.0F, -1.0F, -2.0F, 4.0F, 7.0F, 4.0F, 0.1F, false);
+		RLeg.setTextureOffset(0, 46).addBox(-2.0F, -1.0F, -2.0F, 4.0F, 7.0F, 4.0F, 0.26F, false);
 
 		LBoot = new ModelRenderer(this);
 		LBoot.setRotationPoint(2.0F, 12.0F, 0.0F);
-		LBoot.setTextureOffset(0, 59).addBox(-2.0F, 6.0F, -2.0F, 4.0F, 6.0F, 4.0F, 0.1F, false);
-		LBoot.setTextureOffset(20, 47).addBox(-2.5F, 10.1F, -2.5F, 5.0F, 2.0F, 2.0F, 0.0F, false);
+		LBoot.setTextureOffset(0, 59).addBox(-2.0F, 6.0F, -2.0F, 4.0F, 6.0F, 4.0F, 0.26F, false);
+		LBoot.setTextureOffset(20, 47).addBox(-2.5F, 10.1F, -2.5F, 5.0F, 2.0F, 2.0F, 0.26F, false);
 
 		RBoot = new ModelRenderer(this);
 		RBoot.setRotationPoint(-2.0F, 12.0F, 0.0F);
-		RBoot.setTextureOffset(0, 59).addBox(-2.0F, 6.0F, -2.0F, 4.0F, 6.0F, 4.0F, 0.1F, false);
-		RBoot.setTextureOffset(20, 47).addBox(-2.5F, 10.1F, -2.5F, 5.0F, 2.0F, 2.0F, 0.0F, false);
+		RBoot.setTextureOffset(0, 59).addBox(-2.0F, 6.0F, -2.0F, 4.0F, 6.0F, 4.0F, 0.26F, false);
+		RBoot.setTextureOffset(20, 47).addBox(-2.5F, 10.1F, -2.5F, 5.0F, 2.0F, 2.0F, 0.26F, false);
 	}
 
 	@Override

@@ -2,14 +2,14 @@
   "_fv": 18,
   "_type": "structure",
   "definition": {
-    "structure": "world_generated_minecraft_structures_pizzeria_1_1",
+    "structure": "pizzeria_1",
     "randomlyRotateStructure": false,
-    "surfaceDetectionType": "First block",
-    "spawnProbability": 100,
+    "surfaceDetectionType": "First motion blocking block",
+    "spawnProbability": 500,
     "minCountPerChunk": 1,
     "maxCountPerChunk": 1,
     "spawnLocation": "Ground",
-    "spawnHeightOffset": -1,
+    "spawnHeightOffset": -2,
     "spawnXOffset": 0,
     "spawnZOffset": 0,
     "spawnWorldTypes": [
@@ -18,12 +18,12 @@
     "restrictionBlocks": [
       {
         "value": "Blocks.GRASS"
-      },
-      {
-        "value": "Blocks.DIRT#0"
       }
     ],
     "restrictionBiomes": [
+      {
+        "value": "mutated_plains"
+      },
       {
         "value": "plains"
       }

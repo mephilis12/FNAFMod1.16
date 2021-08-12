@@ -15,9 +15,7 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.DamageSource;
 import net.minecraft.network.IPacket;
 import net.minecraft.item.SpawnEggItem;
-import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
-import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.monster.MonsterEntity;
 import net.minecraft.entity.ai.goal.WaterAvoidingRandomWalkingGoal;
@@ -37,8 +35,8 @@ import net.minecraft.block.BlockState;
 import net.mcreator.fnafmod.procedures.GoldenFreddyOnEntityTickUpdateProcedure;
 import net.mcreator.fnafmod.procedures.FreddyFazbearOnEntityTickUpdateProcedure;
 import net.mcreator.fnafmod.procedures.ChicaChickenThisEntityKillsAnotherOneProcedure;
+import net.mcreator.fnafmod.procedures.ChicaChickenEntityDiesProcedure;
 import net.mcreator.fnafmod.itemgroup.FNAFMobsItemGroup;
-import net.mcreator.fnafmod.item.CupcakeItem;
 import net.mcreator.fnafmod.entity.renderer.ChicaChickenRenderer;
 import net.mcreator.fnafmod.FnafModModElements;
 
@@ -91,7 +89,6 @@ public class ChicaChickenEntity extends FnafModModElements.ModElement {
 			experienceValue = 0;
 			setNoAI(false);
 			enablePersistence();
-			this.setItemStackToSlot(EquipmentSlotType.OFFHAND, new ItemStack(CupcakeItem.block, (int) (1)));
 		}
 
 		@Override
@@ -197,6 +194,24 @@ public class ChicaChickenEntity extends FnafModModElements.ModElement {
 			if (source.getDamageType().equals("witherSkull"))
 				return false;
 			return super.attackEntityFrom(source, amount);
+		}
+
+		@Override
+		public void onDeath(DamageSource source) {
+			super.onDeath(source);
+			double x = this.getPosX();
+			double y = this.getPosY();
+			double z = this.getPosZ();
+			Entity sourceentity = source.getTrueSource();
+			Entity entity = this;
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				ChicaChickenEntityDiesProcedure.executeProcedure($_dependencies);
+			}
 		}
 
 		@Override

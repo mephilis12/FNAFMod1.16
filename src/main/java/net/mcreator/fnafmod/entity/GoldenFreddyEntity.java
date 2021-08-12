@@ -23,7 +23,6 @@ import net.minecraft.network.IPacket;
 import net.minecraft.item.SpawnEggItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
-import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.entity.projectile.ArrowEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.monster.MonsterEntity;
@@ -44,8 +43,8 @@ import net.mcreator.fnafmod.procedures.GoldenFreddyThisEntityKillsAnotherOneProc
 import net.mcreator.fnafmod.procedures.GoldenFreddyOnEntityTickUpdateProcedure;
 import net.mcreator.fnafmod.procedures.FreddyFazbearOnEntityTickUpdateProcedure;
 import net.mcreator.fnafmod.itemgroup.FNAFMobsItemGroup;
-import net.mcreator.fnafmod.item.MicrophoneItem;
 import net.mcreator.fnafmod.entity.renderer.GoldenFreddyRenderer;
+import net.mcreator.fnafmod.block.GoldenFreddyPlushieBlock;
 import net.mcreator.fnafmod.FnafModModElements;
 
 import java.util.Map;
@@ -98,7 +97,6 @@ public class GoldenFreddyEntity extends FnafModModElements.ModElement {
 			experienceValue = 0;
 			setNoAI(false);
 			enablePersistence();
-			this.setItemStackToSlot(EquipmentSlotType.MAINHAND, new ItemStack(MicrophoneItem.block, (int) (1)));
 			this.moveController = new MovementController(this) {
 				@Override
 				public void tick() {
@@ -153,6 +151,11 @@ public class GoldenFreddyEntity extends FnafModModElements.ModElement {
 		@Override
 		public boolean canDespawn(double distanceToClosestPlayer) {
 			return false;
+		}
+
+		protected void dropSpecialItems(DamageSource source, int looting, boolean recentlyHitIn) {
+			super.dropSpecialItems(source, looting, recentlyHitIn);
+			this.entityDropItem(new ItemStack(GoldenFreddyPlushieBlock.block, (int) (1)));
 		}
 
 		@Override

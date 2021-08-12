@@ -27,7 +27,7 @@
     "bossBarColor": "PINK",
     "bossBarType": "PROGRESS",
     "equipmentMainHand": {
-      "value": "CUSTOM:Microphone"
+      "value": ""
     },
     "equipmentOffHand": {
       "value": ""
@@ -77,7 +77,7 @@
     "immuneToWither": true,
     "immuneToDragonBreath": true,
     "mobDrop": {
-      "value": ""
+      "value": "CUSTOM:GoldenFreddyPlushie"
     },
     "livingSound": {
       "value": ""

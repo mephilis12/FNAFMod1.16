@@ -15,7 +15,6 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.DamageSource;
 import net.minecraft.network.IPacket;
 import net.minecraft.item.SpawnEggItem;
-import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.monster.MonsterEntity;
@@ -36,8 +35,8 @@ import net.minecraft.block.BlockState;
 import net.mcreator.fnafmod.procedures.GoldenFreddyOnEntityTickUpdateProcedure;
 import net.mcreator.fnafmod.procedures.FreddyFazbearOnEntityTickUpdateProcedure;
 import net.mcreator.fnafmod.procedures.BonnieBunnyThisEntityKillsAnotherOneProcedure;
+import net.mcreator.fnafmod.procedures.BonnieBunnyEntityDiesProcedure;
 import net.mcreator.fnafmod.itemgroup.FNAFMobsItemGroup;
-import net.mcreator.fnafmod.item.GuitarItem;
 import net.mcreator.fnafmod.entity.renderer.BonnieBunnyRenderer;
 import net.mcreator.fnafmod.FnafModModElements;
 
@@ -162,11 +161,6 @@ public class BonnieBunnyEntity extends FnafModModElements.ModElement {
 			return false;
 		}
 
-		protected void dropSpecialItems(DamageSource source, int looting, boolean recentlyHitIn) {
-			super.dropSpecialItems(source, looting, recentlyHitIn);
-			this.entityDropItem(new ItemStack(GuitarItem.block, (int) (1)));
-		}
-
 		@Override
 		public void playStepSound(BlockPos pos, BlockState blockIn) {
 			this.playSound((net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("fnaf_mod:animatronic_step")),
@@ -200,6 +194,24 @@ public class BonnieBunnyEntity extends FnafModModElements.ModElement {
 			if (source.getDamageType().equals("witherSkull"))
 				return false;
 			return super.attackEntityFrom(source, amount);
+		}
+
+		@Override
+		public void onDeath(DamageSource source) {
+			super.onDeath(source);
+			double x = this.getPosX();
+			double y = this.getPosY();
+			double z = this.getPosZ();
+			Entity sourceentity = source.getTrueSource();
+			Entity entity = this;
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				BonnieBunnyEntityDiesProcedure.executeProcedure($_dependencies);
+			}
 		}
 
 		@Override

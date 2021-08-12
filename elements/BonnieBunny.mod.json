@@ -77,7 +77,7 @@
     "immuneToWither": true,
     "immuneToDragonBreath": true,
     "mobDrop": {
-      "value": "CUSTOM:Guitar"
+      "value": ""
     },
     "livingSound": {
       "value": ""
@@ -98,6 +98,9 @@
     "particleSpawningShape": "Spread",
     "particleSpawningRadious": 0.5,
     "particleAmount": 4,
+    "whenMobDies": {
+      "name": "BonnieBunnyEntityDies"
+    },
     "whenThisMobKillsAnother": {
       "name": "BonnieBunnyThisEntityKillsAnotherOne"
     },

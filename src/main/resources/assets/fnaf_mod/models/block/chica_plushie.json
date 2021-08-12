@@ -1,0 +1,8 @@
+{
+  "parent": "fnaf_mod:custom/chicaplushie",
+  "textures": {
+    "all": "fnaf_mod:blocks/chicaplushie",
+    "particle": "fnaf_mod:blocks/chicaplushie",
+    "0": "fnaf_mod:blocks/chicaplushie"
+  }
+}

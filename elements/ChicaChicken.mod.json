@@ -30,7 +30,7 @@
       "value": ""
     },
     "equipmentOffHand": {
-      "value": "CUSTOM:Cupcake"
+      "value": ""
     },
     "equipmentHelmet": {
       "value": ""
@@ -98,6 +98,9 @@
     "particleSpawningShape": "Spread",
     "particleSpawningRadious": 0.5,
     "particleAmount": 4,
+    "whenMobDies": {
+      "name": "ChicaChickenEntityDies"
+    },
     "whenThisMobKillsAnother": {
       "name": "ChicaChickenThisEntityKillsAnotherOne"
     },

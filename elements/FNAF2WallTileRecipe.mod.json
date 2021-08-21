@@ -38,7 +38,7 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:WallTile"
+      "value": "CUSTOM:WhiteBlackWallTile"
     },
     "name": "fnaf_2_wall_tile_recipe",
     "namespace": "mod"

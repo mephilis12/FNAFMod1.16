@@ -2,7 +2,7 @@
   "_fv": 18,
   "_type": "mob",
   "definition": {
-    "mobName": "Freddy Fazbear",
+    "mobName": "Endoskeleton",
     "mobLabel": "",
     "mobModelName": "ModelEndo",
     "mobModelTexture": "endo.png",
@@ -27,7 +27,7 @@
     "bossBarColor": "PINK",
     "bossBarType": "PROGRESS",
     "equipmentMainHand": {
-      "value": "CUSTOM:Microphone"
+      "value": ""
     },
     "equipmentOffHand": {
       "value": ""
@@ -100,6 +100,9 @@
     "particleAmount": 4,
     "onMobTickUpdate": {
       "name": "GoldenFreddyOnEntityTickUpdate"
+    },
+    "onInitialSpawn": {
+      "name": "EndoSkeletonOnInitialEntitySpawn"
     },
     "hasAI": true,
     "aiBase": "(none)",

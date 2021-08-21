@@ -1,6 +1,6 @@
 {
-  "parent": "item/handheld",
+  "parent": "item/generated",
   "textures": {
-    "layer0": "fnaf_mod:blocks/stars"
+    "layer0": "fnaf_mod:items/stars_item"
   }
 }

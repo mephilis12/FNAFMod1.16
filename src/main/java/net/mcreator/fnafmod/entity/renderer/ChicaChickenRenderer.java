@@ -43,6 +43,7 @@ public class ChicaChickenRenderer {
 		private final ModelRenderer Head;
 		private final ModelRenderer Jaw;
 		private final ModelRenderer LeftArm;
+		private final ModelRenderer Cupcake;
 		private final ModelRenderer RightArm;
 		private final ModelRenderer LeftLeg;
 		private final ModelRenderer RightLeg;
@@ -87,6 +88,13 @@ public class ChicaChickenRenderer {
 			Body.addChild(LeftArm);
 			LeftArm.setTextureOffset(12, 30).addBox(-0.99F, -2.0F, -2.0F, 3.0F, 13.0F, 4.0F, 0.0F, false);
 			LeftArm.setTextureOffset(55, 76).addBox(-0.5F, -2.0F, -1.0F, 2.0F, 12.0F, 2.0F, 0.0F, false);
+			Cupcake = new ModelRenderer(this);
+			Cupcake.setRotationPoint(1.0F, 11.0F, -2.0F);
+			LeftArm.addChild(Cupcake);
+			setRotationAngle(Cupcake, 1.309F, 0.0F, 0.0F);
+			Cupcake.setTextureOffset(112, 106).addBox(-2.0F, -2.0F, -2.0F, 4.0F, 2.0F, 4.0F, 0.0F, false);
+			Cupcake.setTextureOffset(108, 97).addBox(-2.5F, -6.0F, -2.5F, 5.0F, 4.0F, 5.0F, 0.0F, false);
+			Cupcake.setTextureOffset(124, 123).addBox(-0.5F, -10.0F, -0.5F, 1.0F, 4.0F, 1.0F, 0.0F, false);
 			RightArm = new ModelRenderer(this);
 			RightArm.setRotationPoint(-5.0F, -11.0F, 0.0F);
 			Body.addChild(RightArm);

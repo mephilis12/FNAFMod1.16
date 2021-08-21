@@ -2577,6 +2577,834 @@
       "ids": {},
       "registry_name": "foxy_recipe",
       "path": "~/Recipes"
+    },
+    {
+      "name": "WitheredChica",
+      "type": "mob",
+      "sortid": 199,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "withered_chica",
+      "path": "~/Mobs"
+    },
+    {
+      "name": "WitheredBonnie",
+      "type": "mob",
+      "sortid": 200,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "withered_bonnie",
+      "path": "~/Mobs"
+    },
+    {
+      "name": "WitheredFreddy",
+      "type": "mob",
+      "sortid": 201,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "withered_freddy",
+      "path": "~/Mobs"
+    },
+    {
+      "name": "WitheredFoxy",
+      "type": "mob",
+      "sortid": 202,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "withered_foxy",
+      "path": "~/Mobs"
+    },
+    {
+      "name": "WitheredGoldenFreddy",
+      "type": "mob",
+      "sortid": 203,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "withered_golden_freddy",
+      "path": "~/Mobs"
+    },
+    {
+      "name": "ShadowFreddy",
+      "type": "mob",
+      "sortid": 204,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "shadow_freddy",
+      "path": "~/Mobs"
+    },
+    {
+      "name": "Mangle",
+      "type": "mob",
+      "sortid": 205,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mangle",
+      "path": "~/Mobs"
+    },
+    {
+      "name": "SecretSpringtrap",
+      "type": "mob",
+      "sortid": 206,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "secret_springtrap",
+      "path": "~/Mobs"
+    },
+    {
+      "name": "ToyFreddy",
+      "type": "mob",
+      "sortid": 207,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "toy_freddy",
+      "path": "~/Mobs"
+    },
+    {
+      "name": "ToyBonnie",
+      "type": "mob",
+      "sortid": 208,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "toy_bonnie",
+      "path": "~/Mobs"
+    },
+    {
+      "name": "ToyChica",
+      "type": "mob",
+      "sortid": 209,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "toy_chica",
+      "path": "~/Mobs"
+    },
+    {
+      "name": "BB",
+      "type": "mob",
+      "sortid": 210,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bb",
+      "path": "~/Mobs"
+    },
+    {
+      "name": "Puppet",
+      "type": "mob",
+      "sortid": 211,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "puppet",
+      "path": "~/Mobs"
+    },
+    {
+      "name": "Facing",
+      "type": "procedure",
+      "sortid": 212,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "facing",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "FreddyFazbearOnInitialEntitySpawn",
+      "type": "procedure",
+      "sortid": 213,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "freddy_fazbear_on_initial_entity_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "GoldenFreddyOnInitialEntitySpawn",
+      "type": "procedure",
+      "sortid": 214,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "golden_freddy_on_initial_entity_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "BonnieBunnyOnInitialEntitySpawn",
+      "type": "procedure",
+      "sortid": 215,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bonnie_bunny_on_initial_entity_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "ChicaChickenOnInitialEntitySpawn",
+      "type": "procedure",
+      "sortid": 216,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chica_chicken_on_initial_entity_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "FoxyPirateOnInitialEntitySpawn",
+      "type": "procedure",
+      "sortid": 217,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "foxy_pirate_on_initial_entity_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "SittingSpringBonnieOnInitialEntitySpawn",
+      "type": "procedure",
+      "sortid": 218,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sitting_spring_bonnie_on_initial_entity_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "SittingFredbearOnInitialEntitySpawn",
+      "type": "procedure",
+      "sortid": 219,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sitting_fredbear_on_initial_entity_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "PassiveFreddyOnInitialEntitySpawn",
+      "type": "procedure",
+      "sortid": 220,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "passive_freddy_on_initial_entity_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "PassiveFredbearOnInitialEntitySpawn",
+      "type": "procedure",
+      "sortid": 221,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "passive_fredbear_on_initial_entity_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "PassiveGoldieOnInitialEntitySpawn",
+      "type": "procedure",
+      "sortid": 222,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "passive_goldie_on_initial_entity_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "PassiveBonnieOnInitialEntitySpawn",
+      "type": "procedure",
+      "sortid": 223,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "passive_bonnie_on_initial_entity_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "PassiveSpringBonnieOnInitialEntitySpawn",
+      "type": "procedure",
+      "sortid": 224,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "passive_spring_bonnie_on_initial_entity_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "PassiveChicaOnInitialEntitySpawn",
+      "type": "procedure",
+      "sortid": 225,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "passive_chica_on_initial_entity_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "PassiveFoxyOnInitialEntitySpawn",
+      "type": "procedure",
+      "sortid": 226,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "passive_foxy_on_initial_entity_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "EndoSkeletonOnInitialEntitySpawn",
+      "type": "procedure",
+      "sortid": 227,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "endo_skeleton_on_initial_entity_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "WitheredChicaOnInitialEntitySpawn",
+      "type": "procedure",
+      "sortid": 228,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "withered_chica_on_initial_entity_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "ShadowBonnie",
+      "type": "mob",
+      "sortid": 229,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "shadow_bonnie",
+      "path": "~/Mobs"
+    },
+    {
+      "name": "WitheredBonnieOnInitialEntitySpawn",
+      "type": "procedure",
+      "sortid": 230,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "withered_bonnie_on_initial_entity_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "WitheredFreddyOnInitialEntitySpawn",
+      "type": "procedure",
+      "sortid": 231,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "withered_freddy_on_initial_entity_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "WitheredFoxyOnInitialEntitySpawn",
+      "type": "procedure",
+      "sortid": 232,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "withered_foxy_on_initial_entity_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "Endo02",
+      "type": "mob",
+      "sortid": 233,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "endo_02",
+      "path": "~/Mobs"
+    },
+    {
+      "name": "WitheredGoldenFreddyOnInitialEntitySpawn",
+      "type": "procedure",
+      "sortid": 234,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "withered_golden_freddy_on_initial_entity_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "ShadowFreddyOnInitialEntitySpawn",
+      "type": "procedure",
+      "sortid": 235,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "shadow_freddy_on_initial_entity_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "MangleOnInitialEntitySpawn",
+      "type": "procedure",
+      "sortid": 236,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mangle_on_initial_entity_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "ToyFreddyOnInitialEntitySpawn",
+      "type": "procedure",
+      "sortid": 237,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "toy_freddy_on_initial_entity_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "ToyBonnieOnInitialEntitySpawn",
+      "type": "procedure",
+      "sortid": 238,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "toy_bonnie_on_initial_entity_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "ToyChicaOnInitialEntitySpawn",
+      "type": "procedure",
+      "sortid": 239,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "toy_chica_on_initial_entity_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "BBOnInitialEntitySpawn",
+      "type": "procedure",
+      "sortid": 240,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bb_on_initial_entity_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "PuppetOnInitialEntitySpawn",
+      "type": "procedure",
+      "sortid": 241,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "puppet_on_initial_entity_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "ShadowBonnieOnInitialEntitySpawn",
+      "type": "procedure",
+      "sortid": 242,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "shadow_bonnie_on_initial_entity_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "Endo02OnInitialEntitySpawn",
+      "type": "procedure",
+      "sortid": 243,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "endo_02_on_initial_entity_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "TimeZo",
+      "type": "procedure",
+      "sortid": 245,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "time_zo",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
     }
   ],
   "variable_elements": [
@@ -2729,6 +3557,18 @@
       "type": "logic",
       "scope": "world",
       "value": "false"
+    },
+    {
+      "name": "PlayerFacing",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
+    },
+    {
+      "name": "Daytime",
+      "type": "logic",
+      "scope": "world",
+      "value": "false"
     }
   ],
   "sound_elements": [
@@ -2767,18 +3607,28 @@
   ],
   "language_map": {
     "en_us": {
+      "entity.fnaf_mod.withered_chica": "Chica the Chicken",
+      "entity.fnaf_mod.endo_02": "Endo-02",
+      "entity.fnaf_mod.shadow_freddy": "Shadow Freddy",
+      "item.fnaf_mod.withered_bonnie_spawn_egg": "Withered Bonnie Spawn Egg",
+      "entity.fnaf_mod.secret_springtrap": "Freddy Fazbear",
+      "entity.fnaf_mod.toy_bonnie": "Toy Bonnie",
       "block.fnaf_mod.white_black_wall_tile": "FNAF 2 Wall Tiles",
-      "item.fnaf_mod.passive_chica_spawn_egg": "Chica the Chicken Spawn Egg",
       "item.fnaf_mod.spring_lock_suit_leggings": "Spring Lock Suit Legs",
+      "item.fnaf_mod.passive_chica_spawn_egg": "Chica the Chicken Spawn Egg",
       "entity.fnaf_mod.sitting_fredbear": "Fredbear",
+      "item.fnaf_mod.puppet_spawn_egg": "Puppet Spawn Egg",
       "entity.fnaf_mod.foxy_pirate": "Foxy the Pirate",
-      "item.fnaf_mod.freddy": "Freddy",
-      "block.fnaf_mod.wall_tile": "Wall Tile",
       "block.fnaf_mod.backstage_door": "Backstage Door",
+      "block.fnaf_mod.wall_tile": "Wall Tile",
+      "item.fnaf_mod.freddy": "Freddy",
       "entity.fnaf_mod.chica_chicken": "Chica the Chicken",
+      "item.fnaf_mod.toy_chica_spawn_egg": "Toy Chica Spawn Egg",
       "block.fnaf_mod.light_button_off": "Light Button Off",
+      "entity.fnaf_mod.withered_foxy": "Withered Foxy",
       "item.fnaf_mod.passive_fredbear_spawn_egg": "Fredbear Spawn Egg",
       "item.fnaf_mod.passive_foxy_spawn_egg": "Foxy the Pirate Spawn Egg",
+      "entity.fnaf_mod.toy_chica": "Toy Chica",
       "item.fnaf_mod.freddy_fazbear_spawn_egg": "Freddy Fazbear Spawn Egg",
       "block.fnaf_mod.bonnie_head": "Bonnie Head",
       "block.fnaf_mod.white_red_wall_tile": "Fredbear\u0027s Wall Tiles",
@@ -2786,35 +3636,41 @@
       "entity.fnaf_mod.golden_freddy": "Golden Freddy",
       "item.fnaf_mod.spring_lock_suit_chestplate": "Spring Lock Suit Body",
       "block.fnaf_mod.desk": "Desk",
-      "block.fnaf_mod.white_wall": "White Wall",
       "entity.fnaf_mod.passive_spring_bonnie": "Spring Bonnie",
+      "block.fnaf_mod.white_wall": "White Wall",
       "item.fnaf_mod.freddy_fabric": "Brown Fabric",
       "item.fnaf_mod.cupcake": "Cupcake",
       "block.fnaf_mod.door_button_off": "Door Button Off",
-      "block.fnaf_mod.foxy_plushie": "Foxy Plushie",
       "itemGroup.tabfnaf_blocks": "FNAF Blocks",
+      "block.fnaf_mod.foxy_plushie": "Foxy Plushie",
       "entity.fnaf_mod.bonnie_bunny": "Bonnie the Bunny",
       "item.fnaf_mod.bonnie": "Bonnie",
       "item.fnaf_mod.spring_bonnie_creature_spawn_egg": "Spring Bonnie Creature Spawn Egg",
       "block.fnaf_mod.chica_plushie": "Chica Plushie",
-      "entity.fnaf_mod.endo_skeleton": "Freddy Fazbear",
+      "entity.fnaf_mod.withered_bonnie": "Withered Bonnie",
+      "entity.fnaf_mod.endo_skeleton": "Endoskeleton",
       "item.fnaf_mod.spring_lock_suit_helmet": "Spring Bonnie Head",
       "item.fnaf_mod.golden_freddy_spawn_egg": "Golden Freddy Spawn Egg",
+      "entity.fnaf_mod.mangle": "Mangle",
       "item.fnaf_mod.endo": "Endo",
+      "item.fnaf_mod.toy_freddy_spawn_egg": "Toy Freddy  Spawn Egg",
       "entity.fnaf_mod.sitting_spring_bonnie": "Spring Bonnie",
       "block.fnaf_mod.red_blue_tile": "Red Blue Tile",
       "block.fnaf_mod.stars": "Stars",
       "block.fnaf_mod.light_button_on": "Light Button On",
       "block.fnaf_mod.table_cloth": "Table Cloth",
       "block.fnaf_mod.red_black_tile": "Red Black Tile",
+      "item.fnaf_mod.toy_bonnie_spawn_egg": "Toy Bonnie Spawn Egg",
       "block.fnaf_mod.security_door_open": "Office Door",
       "entity.fnaf_mod.passive_bonnie": "Bonnie the Bunny",
       "item.fnaf_mod.sitting_spring_bonnie_spawn_egg": "Spring Bonnie Spawn Egg",
       "entity.fnaf_mod.passive_fredbear": "Fredbear",
       "item.fnaf_mod.fredbear_item": "Fredbear",
+      "entity.fnaf_mod.puppet": "Puppet",
       "item.fnaf_mod.bonnie_bunny_spawn_egg": "Bonnie the Bunny Spawn Egg",
-      "item.fnaf_mod.endo_skeleton_spawn_egg": "Freddy Fazbear Spawn Egg",
+      "item.fnaf_mod.endo_skeleton_spawn_egg": "Endoskeleton Spawn Egg",
       "entity.fnaf_mod.fredbear_creature": "Fredbear  Creature",
+      "item.fnaf_mod.withered_foxy_spawn_egg": "Withered Foxy Spawn Egg",
       "item.fnaf_mod.spring_lock_suit_boots": "Spring Lock Suit Boots",
       "item.fnaf_mod.passive_spring_bonnie_spawn_egg": "Spring Bonnie Spawn Egg",
       "subtitles.door_close": "Door Close",
@@ -2823,8 +3679,10 @@
       "item.fnaf_mod.yellowbear": "Yellowbear",
       "subtitles.fnaf1_scream": "Jumpscare Sound",
       "item.fnaf_mod.chica_fabric": "Yellow Fabric",
+      "item.fnaf_mod.secret_springtrap_spawn_egg": "Freddy Fazbear Spawn Egg",
       "block.fnaf_mod.bonnie_plushie": "Bonnie Plushie",
       "block.fnaf_mod.door_button_on": "Door Button On",
+      "item.fnaf_mod.withered_freddy_spawn_egg": "Withered Freddy Spawn Egg",
       "entity.fnaf_mod.passive_chica": "Chica the Chicken",
       "itemGroup.tabfnaf_items": "FNAF Items",
       "block.fnaf_mod.foxy_head": "Foxy Head",
@@ -2834,11 +3692,17 @@
       "block.fnaf_mod.fnaf_3_floor": "FNAF 3 Floor Tiles",
       "item.fnaf_mod.fredbear_creature_spawn_egg": "Fredbear  Creature Spawn Egg",
       "item.fnaf_mod.sitting_fredbear_spawn_egg": "Fredbear Spawn Egg",
+      "item.fnaf_mod.withered_chica_spawn_egg": "Chica the Chicken Spawn Egg",
+      "item.fnaf_mod.shadow_freddy_spawn_egg": "Shadow Freddy Spawn Egg",
       "block.fnaf_mod.pizza_box_closed": "Pizza Box Closed",
       "entity.fnaf_mod.freddy_fazbear": "Freddy Fazbear",
       "block.fnaf_mod.golden_freddy_plushie": "Golden Freddy Plushie",
+      "entity.fnaf_mod.bb": "Balloon Boy",
+      "entity.fnaf_mod.shadow_bonnie": "Shadow Bonnie",
+      "entity.fnaf_mod.toy_freddy": "Toy Freddy ",
       "subtitles.animatronic_step": "Footstep",
       "item.fnaf_mod.bonnie_fabric": "Purple Fabric",
+      "item.fnaf_mod.mangle_spawn_egg": "Mangle Spawn Egg",
       "item.fnaf_mod.passive_bonnie_spawn_egg": "Bonnie the Bunny Spawn Egg",
       "item.fnaf_mod.chica": "Chica",
       "item.fnaf_mod.foxy_pirate_spawn_egg": "Foxy the Pirate Spawn Egg",
@@ -2847,19 +3711,25 @@
       "item.fnaf_mod.spring_bonnie": "Spring Bonnie",
       "block.fnaf_mod.fnaf_3_wall_tile": "FNAF 3 Wall Tile",
       "block.fnaf_mod.office_door": "Office Door",
+      "item.fnaf_mod.endo_02_spawn_egg": "Endo-02 Spawn Egg",
       "entity.fnaf_mod.passive_goldie": "YellowBear",
       "item.fnaf_mod.microphone": "Microphone",
+      "entity.fnaf_mod.withered_golden_freddy": "Withered Golden Freddy",
       "item.fnaf_mod.foxy_fabric": "Red Fabric",
       "item.fnaf_mod.chica_chicken_spawn_egg": "Chica the Chicken Spawn Egg",
+      "entity.fnaf_mod.withered_freddy": "Withered Freddy",
       "block.fnaf_mod.black_wall": "Black Wall",
       "block.fnaf_mod.chair": "Chair",
       "itemGroup.tabfnaf_mobs": "FNAF Mobs",
       "block.fnaf_mod.fredbear_plushie": "Fredbear Plushie",
       "item.fnaf_mod.passive_goldie_spawn_egg": "YellowBear Spawn Egg",
+      "item.fnaf_mod.shadow_bonnie_spawn_egg": "Shadow Bonnie Spawn Egg",
+      "item.fnaf_mod.withered_golden_freddy_spawn_egg": "Withered Golden Freddy Spawn Egg",
       "block.fnaf_mod.purple_curtain": "Purple Curtain",
       "subtitles.golden_freddy_scram": "Jumpscare",
       "item.fnaf_mod.foxy": "Foxy",
       "block.fnaf_mod.freddy_head": "Freddy Head",
+      "item.fnaf_mod.bb_spawn_egg": "Balloon Boy Spawn Egg",
       "block.fnaf_mod.endo_block": "Endo Block",
       "entity.fnaf_mod.passive_foxy": "Foxy the Pirate",
       "block.fnaf_mod.pizza_box_open": "Pizza Box Open",

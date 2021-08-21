@@ -72,6 +72,8 @@ public class FnafModModVariables {
 		public boolean BonnieFrame4 = false;
 		public boolean BonnieFrame5 = false;
 		public boolean bonniekill = false;
+		public double PlayerFacing = 0;
+		public boolean Daytime = false;
 		public WorldVariables() {
 			super(DATA_NAME);
 		}
@@ -107,6 +109,8 @@ public class FnafModModVariables {
 			BonnieFrame4 = nbt.getBoolean("BonnieFrame4");
 			BonnieFrame5 = nbt.getBoolean("BonnieFrame5");
 			bonniekill = nbt.getBoolean("bonniekill");
+			PlayerFacing = nbt.getDouble("PlayerFacing");
+			Daytime = nbt.getBoolean("Daytime");
 		}
 
 		@Override
@@ -136,6 +140,8 @@ public class FnafModModVariables {
 			nbt.putBoolean("BonnieFrame4", BonnieFrame4);
 			nbt.putBoolean("BonnieFrame5", BonnieFrame5);
 			nbt.putBoolean("bonniekill", bonniekill);
+			nbt.putDouble("PlayerFacing", PlayerFacing);
+			nbt.putBoolean("Daytime", Daytime);
 			return nbt;
 		}
 

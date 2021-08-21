@@ -38,7 +38,7 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:WallTile"
+      "value": "CUSTOM:WhiteRedWallTile"
     },
     "name": "fredbear_wall_tile_recipe",
     "namespace": "mod"

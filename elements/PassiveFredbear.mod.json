@@ -4,7 +4,7 @@
   "definition": {
     "mobName": "Fredbear",
     "mobLabel": "",
-    "mobModelName": "ModelFredbear",
+    "mobModelName": "ModelFreddy",
     "mobModelTexture": "fredbeartexture.png",
     "mobModelGlowTexture": "",
     "modelWidth": 0.6,
@@ -100,6 +100,9 @@
     "particleAmount": 4,
     "onMobTickUpdate": {
       "name": "GoldenFreddyOnEntityTickUpdate"
+    },
+    "onInitialSpawn": {
+      "name": "PassiveFredbearOnInitialEntitySpawn"
     },
     "hasAI": true,
     "aiBase": "(none)",

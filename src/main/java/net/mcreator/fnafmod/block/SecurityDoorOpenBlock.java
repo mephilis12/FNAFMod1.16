@@ -7,6 +7,7 @@ import net.minecraftforge.common.ToolType;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
+import net.minecraft.world.server.ServerWorld;
 import net.minecraft.world.World;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.util.math.vector.Vector3d;
@@ -24,10 +25,8 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItemUseContext;
 import net.minecraft.item.BlockItem;
-import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.Minecraft;
 import net.minecraft.block.material.PushReaction;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
@@ -126,11 +125,18 @@ public class SecurityDoorOpenBlock extends FnafModModElements.ModElement {
 			return Collections.singletonList(new ItemStack(this, 1));
 		}
 
-		@OnlyIn(Dist.CLIENT)
 		@Override
-		public void animateTick(BlockState state, World world, BlockPos pos, Random random) {
-			super.animateTick(state, world, pos, random);
-			PlayerEntity entity = Minecraft.getInstance().player;
+		public void onBlockAdded(BlockState state, World world, BlockPos pos, BlockState oldState, boolean moving) {
+			super.onBlockAdded(state, world, pos, oldState, moving);
+			int x = pos.getX();
+			int y = pos.getY();
+			int z = pos.getZ();
+			world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, 1);
+		}
+
+		@Override
+		public void tick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
+			super.tick(state, world, pos, random);
 			int x = pos.getX();
 			int y = pos.getY();
 			int z = pos.getZ();
@@ -142,6 +148,7 @@ public class SecurityDoorOpenBlock extends FnafModModElements.ModElement {
 				$_dependencies.put("world", world);
 				OfficeDoorOpenClientDisplayRandomTickProcedure.executeProcedure($_dependencies);
 			}
+			world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, 1);
 		}
 	}
 }

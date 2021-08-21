@@ -54,7 +54,7 @@
     "material": {
       "value": "IRON"
     },
-    "tickRate": 10,
+    "tickRate": 1,
     "tickRandomly": false,
     "isReplaceable": false,
     "colorOnMap": "DEFAULT",
@@ -101,7 +101,7 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onRandomUpdateEvent": {
+    "onTickUpdate": {
       "name": "OfficeDoorOpenClientDisplayRandomTick"
     },
     "spawnWorldTypes": [],

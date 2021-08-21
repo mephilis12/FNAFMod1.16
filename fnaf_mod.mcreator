@@ -3405,6 +3405,33 @@
         ]
       },
       "path": "~/Code Stuff"
+    },
+    {
+      "name": "ToyFoxy",
+      "type": "mob",
+      "sortid": 246,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "toy_foxy",
+      "path": "~/Mobs"
+    },
+    {
+      "name": "ToyFoxyEntityDies",
+      "type": "procedure",
+      "sortid": 247,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "toy_foxy_entity_dies",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -3686,6 +3713,7 @@
       "entity.fnaf_mod.passive_chica": "Chica the Chicken",
       "itemGroup.tabfnaf_items": "FNAF Items",
       "block.fnaf_mod.foxy_head": "Foxy Head",
+      "entity.fnaf_mod.toy_foxy": "Funtime Foxy",
       "entity.fnaf_mod.spring_bonnie_creature": "Spring Bonnie Creature",
       "block.fnaf_mod.black_white_tile": "Black White Tile",
       "block.fnaf_mod.freddy_plushie": "Freddy Plushie",
@@ -3699,6 +3727,7 @@
       "block.fnaf_mod.golden_freddy_plushie": "Golden Freddy Plushie",
       "entity.fnaf_mod.bb": "Balloon Boy",
       "entity.fnaf_mod.shadow_bonnie": "Shadow Bonnie",
+      "item.fnaf_mod.toy_foxy_spawn_egg": "Funtime Foxy Spawn Egg",
       "entity.fnaf_mod.toy_freddy": "Toy Freddy ",
       "subtitles.animatronic_step": "Footstep",
       "item.fnaf_mod.bonnie_fabric": "Purple Fabric",

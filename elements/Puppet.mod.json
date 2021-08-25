@@ -98,6 +98,9 @@
     "particleSpawningShape": "Spread",
     "particleSpawningRadious": 0.5,
     "particleAmount": 4,
+    "whenMobDies": {
+      "name": "PuppetEntityDies"
+    },
     "whenThisMobKillsAnother": {
       "name": "GoldenFreddyThisEntityKillsAnotherOne"
     },
@@ -118,8 +121,8 @@
       "value": ""
     },
     "rangedItemType": "Default item",
-    "spawnThisMob": true,
-    "doesDespawnWhenIdle": true,
+    "spawnThisMob": false,
+    "doesDespawnWhenIdle": false,
     "spawningProbability": 20,
     "mobSpawningType": "monster",
     "minNumberOfMobsPerGroup": 4,

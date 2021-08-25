@@ -38,10 +38,10 @@ import net.minecraft.entity.CreatureAttribute;
 import net.minecraft.block.BlockState;
 
 import net.mcreator.fnafmod.procedures.WitheredFoxyOnInitialEntitySpawnProcedure;
+import net.mcreator.fnafmod.procedures.WitheredFoxyEntityDiesProcedure;
 import net.mcreator.fnafmod.procedures.GoldenFreddyOnEntityTickUpdateProcedure;
 import net.mcreator.fnafmod.procedures.FreddyFazbearOnEntityTickUpdateProcedure;
 import net.mcreator.fnafmod.procedures.FoxyPirateThisEntityKillsAnotherOneProcedure;
-import net.mcreator.fnafmod.procedures.FoxyPirateEntityDiesProcedure;
 import net.mcreator.fnafmod.itemgroup.FNAFMobsItemGroup;
 import net.mcreator.fnafmod.entity.renderer.WitheredFoxyRenderer;
 import net.mcreator.fnafmod.FnafModModElements;
@@ -218,7 +218,7 @@ public class WitheredFoxyEntity extends FnafModModElements.ModElement {
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
-				FoxyPirateEntityDiesProcedure.executeProcedure($_dependencies);
+				WitheredFoxyEntityDiesProcedure.executeProcedure($_dependencies);
 			}
 		}
 

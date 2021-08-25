@@ -1,6 +1,7 @@
 {
-  "parent": "item/generated",
+  "parent": "fnaf_mod:custom/bonnies_guitar",
   "textures": {
-    "layer0": "fnaf_mod:items/unknown"
+    "0": "fnaf_mod:blocks/guitar",
+    "particle": "fnaf_mod:items/guitar"
   }
 }

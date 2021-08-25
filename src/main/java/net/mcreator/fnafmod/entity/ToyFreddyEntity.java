@@ -38,10 +38,10 @@ import net.minecraft.entity.CreatureAttribute;
 import net.minecraft.block.BlockState;
 
 import net.mcreator.fnafmod.procedures.ToyFreddyOnInitialEntitySpawnProcedure;
+import net.mcreator.fnafmod.procedures.ToyFreddyEntityDiesProcedure;
 import net.mcreator.fnafmod.procedures.GoldenFreddyOnEntityTickUpdateProcedure;
 import net.mcreator.fnafmod.procedures.FreddyFazbearThisEntityKillsAnotherOneProcedure;
 import net.mcreator.fnafmod.procedures.FreddyFazbearOnEntityTickUpdateProcedure;
-import net.mcreator.fnafmod.procedures.FreddyFazbearEntityDiesProcedure;
 import net.mcreator.fnafmod.itemgroup.FNAFMobsItemGroup;
 import net.mcreator.fnafmod.entity.renderer.ToyFreddyRenderer;
 import net.mcreator.fnafmod.FnafModModElements;
@@ -218,7 +218,7 @@ public class ToyFreddyEntity extends FnafModModElements.ModElement {
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
-				FreddyFazbearEntityDiesProcedure.executeProcedure($_dependencies);
+				ToyFreddyEntityDiesProcedure.executeProcedure($_dependencies);
 			}
 		}
 

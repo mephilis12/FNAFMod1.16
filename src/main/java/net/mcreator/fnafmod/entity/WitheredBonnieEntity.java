@@ -38,10 +38,10 @@ import net.minecraft.entity.CreatureAttribute;
 import net.minecraft.block.BlockState;
 
 import net.mcreator.fnafmod.procedures.WitheredBonnieOnInitialEntitySpawnProcedure;
+import net.mcreator.fnafmod.procedures.WitheredBonnieEntityDiesProcedure;
 import net.mcreator.fnafmod.procedures.GoldenFreddyOnEntityTickUpdateProcedure;
 import net.mcreator.fnafmod.procedures.FreddyFazbearOnEntityTickUpdateProcedure;
 import net.mcreator.fnafmod.procedures.BonnieBunnyThisEntityKillsAnotherOneProcedure;
-import net.mcreator.fnafmod.procedures.BonnieBunnyEntityDiesProcedure;
 import net.mcreator.fnafmod.itemgroup.FNAFMobsItemGroup;
 import net.mcreator.fnafmod.entity.renderer.WitheredBonnieRenderer;
 import net.mcreator.fnafmod.FnafModModElements;
@@ -218,7 +218,7 @@ public class WitheredBonnieEntity extends FnafModModElements.ModElement {
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
-				BonnieBunnyEntityDiesProcedure.executeProcedure($_dependencies);
+				WitheredBonnieEntityDiesProcedure.executeProcedure($_dependencies);
 			}
 		}
 

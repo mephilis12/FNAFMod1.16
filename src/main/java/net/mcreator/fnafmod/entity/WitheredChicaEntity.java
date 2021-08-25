@@ -38,10 +38,10 @@ import net.minecraft.entity.CreatureAttribute;
 import net.minecraft.block.BlockState;
 
 import net.mcreator.fnafmod.procedures.WitheredChicaOnInitialEntitySpawnProcedure;
+import net.mcreator.fnafmod.procedures.WitheredChicaEntityDiesProcedure;
 import net.mcreator.fnafmod.procedures.GoldenFreddyOnEntityTickUpdateProcedure;
 import net.mcreator.fnafmod.procedures.FreddyFazbearOnEntityTickUpdateProcedure;
 import net.mcreator.fnafmod.procedures.ChicaChickenThisEntityKillsAnotherOneProcedure;
-import net.mcreator.fnafmod.procedures.ChicaChickenEntityDiesProcedure;
 import net.mcreator.fnafmod.itemgroup.FNAFMobsItemGroup;
 import net.mcreator.fnafmod.entity.renderer.WitheredChicaRenderer;
 import net.mcreator.fnafmod.FnafModModElements;
@@ -218,7 +218,7 @@ public class WitheredChicaEntity extends FnafModModElements.ModElement {
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
-				ChicaChickenEntityDiesProcedure.executeProcedure($_dependencies);
+				WitheredChicaEntityDiesProcedure.executeProcedure($_dependencies);
 			}
 		}
 

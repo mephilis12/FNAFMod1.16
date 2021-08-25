@@ -20,6 +20,7 @@ import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.item.SpawnEggItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
+import net.minecraft.entity.monster.MonsterEntity;
 import net.minecraft.entity.ai.goal.WaterAvoidingRandomWalkingGoal;
 import net.minecraft.entity.ai.goal.RandomWalkingGoal;
 import net.minecraft.entity.ai.goal.NearestAttackableTargetGoal;
@@ -145,7 +146,7 @@ public class PassiveFreddyEntity extends FnafModModElements.ModElement {
 					return super.shouldExecute() && FreddyFazbearOnEntityTickUpdateProcedure.executeProcedure(ImmutableMap.of("world", world));
 				}
 			});
-			this.targetSelector.addGoal(5, new NearestAttackableTargetGoal(this, FreddyFazbearEntity.CustomEntity.class, true, true) {
+			this.targetSelector.addGoal(5, new NearestAttackableTargetGoal(this, MonsterEntity.class, true, true) {
 				@Override
 				public boolean shouldExecute() {
 					double x = CustomEntity.this.getPosX();

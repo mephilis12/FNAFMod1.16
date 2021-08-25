@@ -38,9 +38,10 @@ import net.minecraft.entity.CreatureAttribute;
 import net.minecraft.block.BlockState;
 
 import net.mcreator.fnafmod.procedures.ToyChicaOnInitialEntitySpawnProcedure;
+import net.mcreator.fnafmod.procedures.ToyChicaOnEntityTickUpdateProcedure;
+import net.mcreator.fnafmod.procedures.ToyChicaEntityDiesProcedure;
 import net.mcreator.fnafmod.procedures.FreddyFazbearOnEntityTickUpdateProcedure;
 import net.mcreator.fnafmod.procedures.ChicaChickenThisEntityKillsAnotherOneProcedure;
-import net.mcreator.fnafmod.procedures.ChicaChickenEntityDiesProcedure;
 import net.mcreator.fnafmod.itemgroup.FNAFMobsItemGroup;
 import net.mcreator.fnafmod.entity.renderer.ToyChicaRenderer;
 import net.mcreator.fnafmod.FnafModModElements;
@@ -217,7 +218,7 @@ public class ToyChicaEntity extends FnafModModElements.ModElement {
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
-				ChicaChickenEntityDiesProcedure.executeProcedure($_dependencies);
+				ToyChicaEntityDiesProcedure.executeProcedure($_dependencies);
 			}
 		}
 
@@ -252,6 +253,21 @@ public class ToyChicaEntity extends FnafModModElements.ModElement {
 				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
 				ChicaChickenThisEntityKillsAnotherOneProcedure.executeProcedure($_dependencies);
+			}
+		}
+
+		@Override
+		public void baseTick() {
+			super.baseTick();
+			double x = this.getPosX();
+			double y = this.getPosY();
+			double z = this.getPosZ();
+			Entity entity = this;
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				$_dependencies.put("world", world);
+				ToyChicaOnEntityTickUpdateProcedure.executeProcedure($_dependencies);
 			}
 		}
 	}

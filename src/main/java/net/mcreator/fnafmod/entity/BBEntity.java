@@ -7,12 +7,8 @@ import net.minecraftforge.fml.network.FMLPlayMessages;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.world.BiomeLoadingEvent;
 import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
-import net.minecraftforge.common.MinecraftForge;
 
-import net.minecraft.world.gen.Heightmap;
-import net.minecraft.world.biome.MobSpawnInfo;
 import net.minecraft.world.World;
 import net.minecraft.world.IServerWorld;
 import net.minecraft.world.DifficultyInstance;
@@ -35,13 +31,13 @@ import net.minecraft.entity.SpawnReason;
 import net.minecraft.entity.MobEntity;
 import net.minecraft.entity.ILivingEntityData;
 import net.minecraft.entity.EntityType;
-import net.minecraft.entity.EntitySpawnPlacementRegistry;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.CreatureAttribute;
 
 import net.mcreator.fnafmod.procedures.FreddyFazbearOnEntityTickUpdateProcedure;
 import net.mcreator.fnafmod.procedures.BBOnInitialEntitySpawnProcedure;
+import net.mcreator.fnafmod.procedures.BBEntityDiesProcedure;
 import net.mcreator.fnafmod.itemgroup.FNAFMobsItemGroup;
 import net.mcreator.fnafmod.entity.renderer.BBRenderer;
 import net.mcreator.fnafmod.FnafModModElements;
@@ -62,7 +58,6 @@ public class BBEntity extends FnafModModElements.ModElement {
 		super(instance, 210);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new BBRenderer.ModelRegisterHandler());
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EntityAttributesRegisterHandler());
-		MinecraftForge.EVENT_BUS.register(this);
 	}
 
 	@Override
@@ -72,15 +67,8 @@ public class BBEntity extends FnafModModElements.ModElement {
 				.setRegistryName("bb_spawn_egg"));
 	}
 
-	@SubscribeEvent
-	public void addFeatureToBiomes(BiomeLoadingEvent event) {
-		event.getSpawns().getSpawner(EntityClassification.MONSTER).add(new MobSpawnInfo.Spawners(entity, 20, 4, 4));
-	}
-
 	@Override
 	public void init(FMLCommonSetupEvent event) {
-		EntitySpawnPlacementRegistry.register(entity, EntitySpawnPlacementRegistry.PlacementType.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES,
-				MonsterEntity::canMonsterSpawn);
 	}
 	private static class EntityAttributesRegisterHandler {
 		@SubscribeEvent
@@ -103,6 +91,7 @@ public class BBEntity extends FnafModModElements.ModElement {
 			super(type, world);
 			experienceValue = 0;
 			setNoAI(false);
+			enablePersistence();
 		}
 
 		@Override
@@ -171,6 +160,11 @@ public class BBEntity extends FnafModModElements.ModElement {
 		}
 
 		@Override
+		public boolean canDespawn(double distanceToClosestPlayer) {
+			return false;
+		}
+
+		@Override
 		public net.minecraft.util.SoundEvent getHurtSound(DamageSource ds) {
 			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.wool.hit"));
 		}
@@ -178,6 +172,24 @@ public class BBEntity extends FnafModModElements.ModElement {
 		@Override
 		public net.minecraft.util.SoundEvent getDeathSound() {
 			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.anvil.break"));
+		}
+
+		@Override
+		public void onDeath(DamageSource source) {
+			super.onDeath(source);
+			double x = this.getPosX();
+			double y = this.getPosY();
+			double z = this.getPosZ();
+			Entity sourceentity = source.getTrueSource();
+			Entity entity = this;
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				BBEntityDiesProcedure.executeProcedure($_dependencies);
+			}
 		}
 
 		@Override

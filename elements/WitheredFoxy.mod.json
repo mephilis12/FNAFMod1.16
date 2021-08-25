@@ -99,7 +99,7 @@
     "particleSpawningRadious": 0.5,
     "particleAmount": 4,
     "whenMobDies": {
-      "name": "FoxyPirateEntityDies"
+      "name": "WitheredFoxyEntityDies"
     },
     "whenThisMobKillsAnother": {
       "name": "FoxyPirateThisEntityKillsAnotherOne"

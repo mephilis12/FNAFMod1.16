@@ -1,0 +1,7 @@
+{
+  "parent": "fnaf_mod:custom/toy_cupcake",
+  "textures": {
+    "1": "fnaf_mod:blocks/toy_cupcake",
+    "particle": "fnaf_mod:items/toy_cupcake"
+  }
+}

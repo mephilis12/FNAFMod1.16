@@ -2,7 +2,6 @@ package net.mcreator.fnafmod.procedures;
 
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.entity.living.LivingDeathEvent;
 import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.common.MinecraftForge;
 
@@ -11,20 +10,17 @@ import net.minecraft.world.IWorld;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.util.ResourceLocation;
-import net.minecraft.entity.Entity;
 
 import net.mcreator.fnafmod.FnafModModVariables;
 import net.mcreator.fnafmod.FnafModModElements;
 import net.mcreator.fnafmod.FnafModMod;
 
 import java.util.Map;
-import java.util.HashMap;
 
 @FnafModModElements.ModElement.Tag
 public class FreddyFazbearThisEntityKillsAnotherOneProcedure extends FnafModModElements.ModElement {
 	public FreddyFazbearThisEntityKillsAnotherOneProcedure(FnafModModElements instance) {
 		super(instance, 44);
-		MinecraftForge.EVENT_BUS.register(this);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
@@ -563,26 +559,5 @@ public class FreddyFazbearThisEntityKillsAnotherOneProcedure extends FnafModModE
 				MinecraftForge.EVENT_BUS.unregister(this);
 			}
 		}.start(world, (int) 1);
-	}
-
-	@SubscribeEvent
-	public void onEntityDeath(LivingDeathEvent event) {
-		if (event != null && event.getEntity() != null) {
-			Entity entity = event.getEntity();
-			Entity sourceentity = event.getSource().getTrueSource();
-			double i = entity.getPosX();
-			double j = entity.getPosY();
-			double k = entity.getPosZ();
-			World world = entity.world;
-			Map<String, Object> dependencies = new HashMap<>();
-			dependencies.put("x", i);
-			dependencies.put("y", j);
-			dependencies.put("z", k);
-			dependencies.put("world", world);
-			dependencies.put("entity", entity);
-			dependencies.put("sourceentity", sourceentity);
-			dependencies.put("event", event);
-			this.executeProcedure(dependencies);
-		}
 	}
 }

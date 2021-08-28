@@ -1,6 +1,6 @@
 package net.mcreator.fnafmod.procedures;
 
-import net.minecraft.world.IWorld;
+import net.minecraft.entity.Entity;
 
 import net.mcreator.fnafmod.FnafModModVariables;
 import net.mcreator.fnafmod.FnafModModElements;
@@ -15,13 +15,14 @@ public class ChicaFrameOverlay5DisplayOverlayIngameProcedure extends FnafModModE
 	}
 
 	public static boolean executeProcedure(Map<String, Object> dependencies) {
-		if (dependencies.get("world") == null) {
-			if (!dependencies.containsKey("world"))
-				FnafModMod.LOGGER.warn("Failed to load dependency world for procedure ChicaFrameOverlay5DisplayOverlayIngame!");
+		if (dependencies.get("entity") == null) {
+			if (!dependencies.containsKey("entity"))
+				FnafModMod.LOGGER.warn("Failed to load dependency entity for procedure ChicaFrameOverlay5DisplayOverlayIngame!");
 			return false;
 		}
-		IWorld world = (IWorld) dependencies.get("world");
-		if ((FnafModModVariables.WorldVariables.get(world).ChicaFrame5)) {
+		Entity entity = (Entity) dependencies.get("entity");
+		if (((entity.getCapability(FnafModModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+				.orElse(new FnafModModVariables.PlayerVariables())).ChicaFrame5)) {
 			return (true);
 		}
 		return (false);

@@ -101,6 +101,9 @@
     "whenMobDies": {
       "name": "BBEntityDies"
     },
+    "onMobTickUpdate": {
+      "name": "GoldenFreddyThisEntityKillsAnotherOne"
+    },
     "onInitialSpawn": {
       "name": "BBOnInitialEntitySpawn"
     },

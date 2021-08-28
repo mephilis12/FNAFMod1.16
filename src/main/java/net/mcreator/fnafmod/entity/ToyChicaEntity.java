@@ -233,7 +233,6 @@ public class ToyChicaEntity extends FnafModModElements.ModElement {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
-				$_dependencies.put("world", world);
 				ToyChicaOnInitialEntitySpawnProcedure.executeProcedure($_dependencies);
 			}
 			return retval;
@@ -248,6 +247,7 @@ public class ToyChicaEntity extends FnafModModElements.ModElement {
 			Entity sourceentity = this;
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
 				$_dependencies.put("x", x);
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);
@@ -266,6 +266,9 @@ public class ToyChicaEntity extends FnafModModElements.ModElement {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
 				ToyChicaOnEntityTickUpdateProcedure.executeProcedure($_dependencies);
 			}

@@ -219,7 +219,6 @@ public class PassiveSpringBonnieEntity extends FnafModModElements.ModElement {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
-				$_dependencies.put("world", world);
 				PassiveSpringBonnieOnInitialEntitySpawnProcedure.executeProcedure($_dependencies);
 			}
 			return retval;
@@ -234,6 +233,7 @@ public class PassiveSpringBonnieEntity extends FnafModModElements.ModElement {
 			Entity entity = this;
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
 				$_dependencies.put("world", world);
 				GoldenFreddyOnEntityTickUpdateProcedure.executeProcedure($_dependencies);
 			}

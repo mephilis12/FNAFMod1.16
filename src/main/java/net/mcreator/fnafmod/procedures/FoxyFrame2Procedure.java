@@ -1,6 +1,6 @@
 package net.mcreator.fnafmod.procedures;
 
-import net.minecraft.world.IWorld;
+import net.minecraft.entity.Entity;
 
 import net.mcreator.fnafmod.FnafModModVariables;
 import net.mcreator.fnafmod.FnafModModElements;
@@ -15,13 +15,14 @@ public class FoxyFrame2Procedure extends FnafModModElements.ModElement {
 	}
 
 	public static boolean executeProcedure(Map<String, Object> dependencies) {
-		if (dependencies.get("world") == null) {
-			if (!dependencies.containsKey("world"))
-				FnafModMod.LOGGER.warn("Failed to load dependency world for procedure FoxyFrame2!");
+		if (dependencies.get("entity") == null) {
+			if (!dependencies.containsKey("entity"))
+				FnafModMod.LOGGER.warn("Failed to load dependency entity for procedure FoxyFrame2!");
 			return false;
 		}
-		IWorld world = (IWorld) dependencies.get("world");
-		if ((FnafModModVariables.WorldVariables.get(world).FoxyFrame2)) {
+		Entity entity = (Entity) dependencies.get("entity");
+		if (((entity.getCapability(FnafModModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+				.orElse(new FnafModModVariables.PlayerVariables())).FoxyFrame2)) {
 			return (true);
 		}
 		return (false);

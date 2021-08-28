@@ -35,6 +35,7 @@ import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.CreatureAttribute;
 
+import net.mcreator.fnafmod.procedures.GoldenFreddyThisEntityKillsAnotherOneProcedure;
 import net.mcreator.fnafmod.procedures.FreddyFazbearOnEntityTickUpdateProcedure;
 import net.mcreator.fnafmod.procedures.BBOnInitialEntitySpawnProcedure;
 import net.mcreator.fnafmod.procedures.BBEntityDiesProcedure;
@@ -203,10 +204,26 @@ public class BBEntity extends FnafModModElements.ModElement {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
-				$_dependencies.put("world", world);
 				BBOnInitialEntitySpawnProcedure.executeProcedure($_dependencies);
 			}
 			return retval;
+		}
+
+		@Override
+		public void baseTick() {
+			super.baseTick();
+			double x = this.getPosX();
+			double y = this.getPosY();
+			double z = this.getPosZ();
+			Entity entity = this;
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				GoldenFreddyThisEntityKillsAnotherOneProcedure.executeProcedure($_dependencies);
+			}
 		}
 	}
 }

@@ -233,7 +233,6 @@ public class ChicaChickenEntity extends FnafModModElements.ModElement {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
-				$_dependencies.put("world", world);
 				ChicaChickenOnInitialEntitySpawnProcedure.executeProcedure($_dependencies);
 			}
 			return retval;
@@ -248,6 +247,7 @@ public class ChicaChickenEntity extends FnafModModElements.ModElement {
 			Entity sourceentity = this;
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
 				$_dependencies.put("x", x);
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);
@@ -265,6 +265,7 @@ public class ChicaChickenEntity extends FnafModModElements.ModElement {
 			Entity entity = this;
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
 				$_dependencies.put("world", world);
 				GoldenFreddyOnEntityTickUpdateProcedure.executeProcedure($_dependencies);
 			}

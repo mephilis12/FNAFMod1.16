@@ -21,7 +21,7 @@
       "falpha": 0.0
     },
     "creativeTab": {
-      "value": "CUSTOM:FNAFBlocks"
+      "value": "No creative tab entry"
     },
     "isBoss": false,
     "bossBarColor": "PINK",
@@ -77,7 +77,7 @@
     "immuneToWither": false,
     "immuneToDragonBreath": false,
     "mobDrop": {
-      "value": ""
+      "value": "CUSTOM:ArcadeItem"
     },
     "livingSound": {
       "value": ""

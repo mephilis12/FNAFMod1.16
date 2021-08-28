@@ -2,13 +2,13 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [64, 64],
 	"textures": {
-		"0": "Desktop/arcade",
-		"particle": "Desktop/arcade"
+		"0": "Blocks/arcade",
+		"particle": "Blocks/arcade"
 	},
 	"elements": [
 		{
-			"from": [0.79727, 14.95948, 9],
-			"to": [14.79727, 26.95948, 9],
+			"from": [1, 14.95948, 9],
+			"to": [15, 26.95948, 9],
 			"rotation": {"angle": 22.5, "axis": "x", "origin": [-0.20273, 22.45948, 10]},
 			"faces": {
 				"north": {"uv": [0, 7.25, 3.5, 10.25], "texture": "#0"},

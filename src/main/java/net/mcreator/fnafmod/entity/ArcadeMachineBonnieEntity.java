@@ -23,6 +23,7 @@ import net.minecraft.pathfinding.SwimmerPathNavigator;
 import net.minecraft.network.IPacket;
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.item.SpawnEggItem;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.entity.monster.MonsterEntity;
 import net.minecraft.entity.ai.controller.MovementController;
@@ -37,7 +38,7 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.CreatureAttribute;
 
 import net.mcreator.fnafmod.procedures.ArcadeMachineBonnieOnInitialEntitySpawnProcedure;
-import net.mcreator.fnafmod.itemgroup.FNAFBlocksItemGroup;
+import net.mcreator.fnafmod.item.ArcadeItemItem;
 import net.mcreator.fnafmod.entity.renderer.ArcadeMachineBonnieRenderer;
 import net.mcreator.fnafmod.FnafModModElements;
 
@@ -60,7 +61,7 @@ public class ArcadeMachineBonnieEntity extends FnafModModElements.ModElement {
 	@Override
 	public void initElements() {
 		elements.entities.add(() -> entity);
-		elements.items.add(() -> new SpawnEggItem(entity, -2705362, -14981504, new Item.Properties().group(FNAFBlocksItemGroup.tab))
+		elements.items.add(() -> new SpawnEggItem(entity, -2705362, -14981504, new Item.Properties().group(null))
 				.setRegistryName("arcade_machine_bonnie_spawn_egg"));
 	}
 
@@ -130,6 +131,11 @@ public class ArcadeMachineBonnieEntity extends FnafModModElements.ModElement {
 			return false;
 		}
 
+		protected void dropSpecialItems(DamageSource source, int looting, boolean recentlyHitIn) {
+			super.dropSpecialItems(source, looting, recentlyHitIn);
+			this.entityDropItem(new ItemStack(ArcadeItemItem.block, (int) (1)));
+		}
+
 		@Override
 		public net.minecraft.util.SoundEvent getHurtSound(DamageSource ds) {
 			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation(""));
@@ -151,7 +157,6 @@ public class ArcadeMachineBonnieEntity extends FnafModModElements.ModElement {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
-				$_dependencies.put("world", world);
 				ArcadeMachineBonnieOnInitialEntitySpawnProcedure.executeProcedure($_dependencies);
 			}
 			return retval;

@@ -233,7 +233,6 @@ public class ShadowFreddyEntity extends FnafModModElements.ModElement {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
-				$_dependencies.put("world", world);
 				ShadowFreddyOnInitialEntitySpawnProcedure.executeProcedure($_dependencies);
 			}
 			return retval;
@@ -265,6 +264,7 @@ public class ShadowFreddyEntity extends FnafModModElements.ModElement {
 			Entity entity = this;
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
 				$_dependencies.put("world", world);
 				GoldenFreddyOnEntityTickUpdateProcedure.executeProcedure($_dependencies);
 			}

@@ -37,11 +37,11 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.CreatureAttribute;
 import net.minecraft.block.BlockState;
 
+import net.mcreator.fnafmod.procedures.ToyFoxyOnInitialEntitySpawnProcedure;
 import net.mcreator.fnafmod.procedures.ToyFoxyEntityDiesProcedure;
 import net.mcreator.fnafmod.procedures.GoldenFreddyOnEntityTickUpdateProcedure;
 import net.mcreator.fnafmod.procedures.FreddyFazbearOnEntityTickUpdateProcedure;
 import net.mcreator.fnafmod.procedures.FoxyPirateThisEntityKillsAnotherOneProcedure;
-import net.mcreator.fnafmod.procedures.FoxyPirateOnInitialEntitySpawnProcedure;
 import net.mcreator.fnafmod.itemgroup.FNAFMobsItemGroup;
 import net.mcreator.fnafmod.entity.renderer.ToyFoxyRenderer;
 import net.mcreator.fnafmod.FnafModModElements;
@@ -230,8 +230,7 @@ public class ToyFoxyEntity extends FnafModModElements.ModElement {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
-				$_dependencies.put("world", world);
-				FoxyPirateOnInitialEntitySpawnProcedure.executeProcedure($_dependencies);
+				ToyFoxyOnInitialEntitySpawnProcedure.executeProcedure($_dependencies);
 			}
 			return retval;
 		}
@@ -245,6 +244,7 @@ public class ToyFoxyEntity extends FnafModModElements.ModElement {
 			Entity sourceentity = this;
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
 				$_dependencies.put("x", x);
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);
@@ -262,6 +262,7 @@ public class ToyFoxyEntity extends FnafModModElements.ModElement {
 			Entity entity = this;
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
 				$_dependencies.put("world", world);
 				GoldenFreddyOnEntityTickUpdateProcedure.executeProcedure($_dependencies);
 			}

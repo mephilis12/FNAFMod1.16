@@ -594,6 +594,10 @@
       "metadata": {
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -691,8 +695,11 @@
       "ids": {},
       "registry_name": "golden_freddy_on_entity_tick_update",
       "metadata": {
-        "return_type": "LOGIC",
         "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
           {
             "name": "world",
             "type": "world"
@@ -761,6 +768,10 @@
       "metadata": {
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -792,8 +803,8 @@
         "return_type": "LOGIC",
         "dependencies": [
           {
-            "name": "world",
-            "type": "world"
+            "name": "entity",
+            "type": "entity"
           }
         ]
       },
@@ -811,8 +822,8 @@
         "return_type": "LOGIC",
         "dependencies": [
           {
-            "name": "world",
-            "type": "world"
+            "name": "entity",
+            "type": "entity"
           }
         ]
       },
@@ -830,8 +841,8 @@
         "return_type": "LOGIC",
         "dependencies": [
           {
-            "name": "world",
-            "type": "world"
+            "name": "entity",
+            "type": "entity"
           }
         ]
       },
@@ -849,8 +860,8 @@
         "return_type": "LOGIC",
         "dependencies": [
           {
-            "name": "world",
-            "type": "world"
+            "name": "entity",
+            "type": "entity"
           }
         ]
       },
@@ -868,8 +879,8 @@
         "return_type": "LOGIC",
         "dependencies": [
           {
-            "name": "world",
-            "type": "world"
+            "name": "entity",
+            "type": "entity"
           }
         ]
       },
@@ -947,8 +958,8 @@
         "return_type": "LOGIC",
         "dependencies": [
           {
-            "name": "world",
-            "type": "world"
+            "name": "entity",
+            "type": "entity"
           }
         ]
       },
@@ -966,8 +977,8 @@
         "return_type": "LOGIC",
         "dependencies": [
           {
-            "name": "world",
-            "type": "world"
+            "name": "entity",
+            "type": "entity"
           }
         ]
       },
@@ -985,8 +996,8 @@
         "return_type": "LOGIC",
         "dependencies": [
           {
-            "name": "world",
-            "type": "world"
+            "name": "entity",
+            "type": "entity"
           }
         ]
       },
@@ -1004,8 +1015,8 @@
         "return_type": "LOGIC",
         "dependencies": [
           {
-            "name": "world",
-            "type": "world"
+            "name": "entity",
+            "type": "entity"
           }
         ]
       },
@@ -1023,8 +1034,8 @@
         "return_type": "LOGIC",
         "dependencies": [
           {
-            "name": "world",
-            "type": "world"
+            "name": "entity",
+            "type": "entity"
           }
         ]
       },
@@ -1182,8 +1193,8 @@
         "return_type": "LOGIC",
         "dependencies": [
           {
-            "name": "world",
-            "type": "world"
+            "name": "entity",
+            "type": "entity"
           }
         ]
       },
@@ -1211,8 +1222,8 @@
         "return_type": "LOGIC",
         "dependencies": [
           {
-            "name": "world",
-            "type": "world"
+            "name": "entity",
+            "type": "entity"
           }
         ]
       },
@@ -1240,8 +1251,8 @@
         "return_type": "LOGIC",
         "dependencies": [
           {
-            "name": "world",
-            "type": "world"
+            "name": "entity",
+            "type": "entity"
           }
         ]
       },
@@ -1269,8 +1280,8 @@
         "return_type": "LOGIC",
         "dependencies": [
           {
-            "name": "world",
-            "type": "world"
+            "name": "entity",
+            "type": "entity"
           }
         ]
       },
@@ -1298,8 +1309,8 @@
         "return_type": "LOGIC",
         "dependencies": [
           {
-            "name": "world",
-            "type": "world"
+            "name": "entity",
+            "type": "entity"
           }
         ]
       },
@@ -1315,6 +1326,10 @@
       "registry_name": "bonnie_bunny_this_entity_kills_another_one",
       "metadata": {
         "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
           {
             "name": "x",
             "type": "number"
@@ -1357,8 +1372,8 @@
         "return_type": "LOGIC",
         "dependencies": [
           {
-            "name": "world",
-            "type": "world"
+            "name": "entity",
+            "type": "entity"
           }
         ]
       },
@@ -1386,8 +1401,8 @@
         "return_type": "LOGIC",
         "dependencies": [
           {
-            "name": "world",
-            "type": "world"
+            "name": "entity",
+            "type": "entity"
           }
         ]
       },
@@ -1415,8 +1430,8 @@
         "return_type": "LOGIC",
         "dependencies": [
           {
-            "name": "world",
-            "type": "world"
+            "name": "entity",
+            "type": "entity"
           }
         ]
       },
@@ -1444,8 +1459,8 @@
         "return_type": "LOGIC",
         "dependencies": [
           {
-            "name": "world",
-            "type": "world"
+            "name": "entity",
+            "type": "entity"
           }
         ]
       },
@@ -1473,8 +1488,8 @@
         "return_type": "LOGIC",
         "dependencies": [
           {
-            "name": "world",
-            "type": "world"
+            "name": "entity",
+            "type": "entity"
           }
         ]
       },
@@ -1490,6 +1505,10 @@
       "registry_name": "chica_chicken_this_entity_kills_another_one",
       "metadata": {
         "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
           {
             "name": "x",
             "type": "number"
@@ -2721,10 +2740,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -2743,10 +2758,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -2765,10 +2776,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -2787,10 +2794,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -2809,10 +2812,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -2831,10 +2830,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -2853,10 +2848,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -2875,10 +2866,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -2897,10 +2884,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -2919,10 +2902,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -2941,10 +2920,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -2963,10 +2938,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -2985,10 +2956,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -3007,10 +2974,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -3029,10 +2992,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -3051,10 +3010,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -3073,10 +3028,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -3105,10 +3056,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -3127,10 +3074,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -3149,10 +3092,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -3181,10 +3120,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -3203,10 +3138,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -3225,10 +3156,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -3247,10 +3174,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -3269,10 +3192,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -3291,10 +3210,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -3313,10 +3228,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -3335,10 +3246,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -3357,10 +3264,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -3379,10 +3282,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -3807,36 +3706,6 @@
       "path": "~/Code Stuff"
     },
     {
-      "name": "ShadowBonnieEntityDies",
-      "type": "procedure",
-      "sortid": 267,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "shadow_bonnie_entity_dies",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Code Stuff"
-    },
-    {
       "name": "FreddyMask",
       "type": "armor",
       "sortid": 268,
@@ -3875,10 +3744,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -3937,11 +3802,24 @@
             "type": "entity"
           },
           {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
             "name": "world",
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Code Stuff"
     },
     {
       "name": "ToyChicaOnEntityTickUpdate",
@@ -3958,11 +3836,24 @@
             "type": "entity"
           },
           {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
             "name": "world",
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Code Stuff"
     },
     {
       "name": "Mask",
@@ -3990,7 +3881,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Code Stuff"
     },
     {
       "name": "FreddyMaskHelmetTickEvent",
@@ -4007,6 +3899,645 @@
             "type": "entity"
           }
         ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "Shelf",
+      "type": "block",
+      "sortid": 279,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "shelf",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "ArcadeItem",
+      "type": "item",
+      "sortid": 280,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "arcade_item",
+      "path": "~/Items"
+    },
+    {
+      "name": "ArcadeItemRightClickedOnBlock",
+      "type": "procedure",
+      "sortid": 281,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "arcade_item_right_clicked_on_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "MangleSitting",
+      "type": "mob",
+      "sortid": 282,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mangle_sitting",
+      "path": "~/Mobs"
+    },
+    {
+      "name": "MangleSittingOnInitialEntitySpawn",
+      "type": "procedure",
+      "sortid": 283,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mangle_sitting_on_initial_entity_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "MangleSittingOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 284,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mangle_sitting_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "MangleOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 285,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mangle_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "Dedwitheredfreddy",
+      "type": "mob",
+      "sortid": 286,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dedwitheredfreddy",
+      "path": "~/Mobs"
+    },
+    {
+      "name": "DedwitheredfreddyOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 287,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dedwitheredfreddy_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "WitheredFreddyOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 288,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "withered_freddy_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "SittingWitheredBonnie",
+      "type": "mob",
+      "sortid": 289,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sitting_withered_bonnie",
+      "path": "~/Mobs"
+    },
+    {
+      "name": "SittingWitheredBonnieOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 290,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sitting_withered_bonnie_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "WitheredBonnieOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 291,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "withered_bonnie_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "SittingWitheredChica",
+      "type": "mob",
+      "sortid": 292,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sitting_withered_chica",
+      "path": "~/Mobs"
+    },
+    {
+      "name": "SittingWitheredChicaOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 293,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sitting_withered_chica_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "WitheredChicaOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 294,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "withered_chica_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "Celebrate",
+      "type": "painting",
+      "sortid": 295,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "celebrate"
+    },
+    {
+      "name": "Attack",
+      "type": "procedure",
+      "sortid": 296,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "attack",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "NightimeToyChicaOnInitialEntitySpawn",
+      "type": "procedure",
+      "sortid": 297,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "nightime_toy_chica_on_initial_entity_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "PurpleGuy",
+      "type": "mob",
+      "sortid": 298,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "purple_guy",
+      "path": "~/Mobs"
+    },
+    {
+      "name": "PurpleGuyOnInitialEntitySpawn",
+      "type": "procedure",
+      "sortid": 299,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "purple_guy_on_initial_entity_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "PurpleGuyThisEntityKillsAnotherOne",
+      "type": "procedure",
+      "sortid": 300,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "purple_guy_this_entity_kills_another_one",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "SittingWitheredBonnieOnInitialEntitySpawn",
+      "type": "procedure",
+      "sortid": 301,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sitting_withered_bonnie_on_initial_entity_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "DedwitheredfreddyOnInitialEntitySpawn",
+      "type": "procedure",
+      "sortid": 302,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dedwitheredfreddy_on_initial_entity_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "SittingWitheredChicaOnInitialEntitySpawn",
+      "type": "procedure",
+      "sortid": 303,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sitting_withered_chica_on_initial_entity_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "ToyFoxyOnInitialEntitySpawn",
+      "type": "procedure",
+      "sortid": 304,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "toy_foxy_on_initial_entity_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "FlashLight",
+      "type": "item",
+      "sortid": 305,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "flash_light",
+      "path": "~/Items"
+    },
+    {
+      "name": "FlashLightRightClickedInAir",
+      "type": "procedure",
+      "sortid": 306,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "flash_light_right_clicked_in_air",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "FlashLightOn",
+      "type": "item",
+      "sortid": 307,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "flash_light_on",
+      "path": "~/Items"
+    },
+    {
+      "name": "FlashLightOnRightClickedInAir",
+      "type": "procedure",
+      "sortid": 308,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "flash_light_on_right_clicked_in_air",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "FlashLightOnItemInHandTick",
+      "type": "procedure",
+      "sortid": 309,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "flash_light_on_item_in_hand_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "FnafDrop",
+      "type": "gamerule",
+      "sortid": 310,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fnafDrop",
+      "metadata": {
+        "type": "boolean"
       }
     }
   ],
@@ -4020,31 +4551,31 @@
     {
       "name": "FreddyFrame1",
       "type": "logic",
-      "scope": "world",
+      "scope": "player_lifetime",
       "value": "false"
     },
     {
       "name": "FreddyFrame2",
       "type": "logic",
-      "scope": "world",
+      "scope": "player_lifetime",
       "value": "false"
     },
     {
       "name": "FreddyFrame3",
       "type": "logic",
-      "scope": "world",
+      "scope": "player_lifetime",
       "value": "false"
     },
     {
       "name": "FreddyFrame4",
       "type": "logic",
-      "scope": "world",
+      "scope": "player_lifetime",
       "value": "false"
     },
     {
       "name": "FreddyFrame5",
       "type": "logic",
-      "scope": "world",
+      "scope": "player_lifetime",
       "value": "false"
     },
     {
@@ -4056,31 +4587,31 @@
     {
       "name": "FoxyFrame1",
       "type": "logic",
-      "scope": "world",
+      "scope": "player_lifetime",
       "value": "false"
     },
     {
       "name": "FoxyFrame2",
       "type": "logic",
-      "scope": "world",
+      "scope": "player_lifetime",
       "value": "false"
     },
     {
       "name": "FoxyFrame3",
       "type": "logic",
-      "scope": "world",
+      "scope": "player_lifetime",
       "value": "false"
     },
     {
       "name": "FoxyFrame4",
       "type": "logic",
-      "scope": "world",
+      "scope": "player_lifetime",
       "value": "false"
     },
     {
       "name": "FoxyFrame5",
       "type": "logic",
-      "scope": "world",
+      "scope": "player_lifetime",
       "value": "false"
     },
     {
@@ -4092,31 +4623,31 @@
     {
       "name": "ChicaFrame1",
       "type": "logic",
-      "scope": "world",
+      "scope": "player_lifetime",
       "value": "false"
     },
     {
       "name": "ChicaFrame2",
       "type": "logic",
-      "scope": "world",
+      "scope": "player_lifetime",
       "value": "false"
     },
     {
       "name": "ChicaFrame3",
       "type": "logic",
-      "scope": "world",
+      "scope": "player_lifetime",
       "value": "false"
     },
     {
       "name": "ChicaFrame4",
       "type": "logic",
-      "scope": "world",
+      "scope": "player_lifetime",
       "value": "false"
     },
     {
       "name": "ChicaFrame5",
       "type": "logic",
-      "scope": "world",
+      "scope": "player_lifetime",
       "value": "false"
     },
     {
@@ -4128,31 +4659,31 @@
     {
       "name": "BonnieFrame1",
       "type": "logic",
-      "scope": "world",
+      "scope": "player_lifetime",
       "value": "false"
     },
     {
       "name": "BonnieFrame2",
       "type": "logic",
-      "scope": "world",
+      "scope": "player_lifetime",
       "value": "false"
     },
     {
       "name": "BonnieFrame3",
       "type": "logic",
-      "scope": "world",
+      "scope": "player_lifetime",
       "value": "false"
     },
     {
       "name": "BonnieFrame4",
       "type": "logic",
-      "scope": "world",
+      "scope": "player_lifetime",
       "value": "false"
     },
     {
       "name": "BonnieFrame5",
       "type": "logic",
-      "scope": "world",
+      "scope": "player_lifetime",
       "value": "false"
     },
     {
@@ -4164,7 +4695,7 @@
     {
       "name": "PlayerFacing",
       "type": "number",
-      "scope": "world",
+      "scope": "player_persistent",
       "value": "0"
     },
     {
@@ -4216,23 +4747,24 @@
   ],
   "language_map": {
     "en_us": {
-      "entity.fnaf_mod.withered_chica": "Chica the Chicken",
+      "entity.fnaf_mod.withered_chica": "Withered Chica",
       "entity.fnaf_mod.endo_02": "Endo-02",
       "item.fnaf_mod.red_plastic": "Red Plastic",
       "entity.fnaf_mod.shadow_freddy": "Shadow Freddy",
-      "entity.fnaf_mod.secret_springtrap": "Freddy Fazbear",
       "item.fnaf_mod.withered_bonnie_spawn_egg": "Withered Bonnie Spawn Egg",
+      "entity.fnaf_mod.secret_springtrap": "Freddy Fazbear",
       "entity.fnaf_mod.toy_bonnie": "Toy Bonnie",
       "block.fnaf_mod.white_black_wall_tile": "FNAF 2 Wall Tiles",
       "item.fnaf_mod.spring_lock_suit_leggings": "Spring Lock Suit Legs",
       "item.fnaf_mod.passive_chica_spawn_egg": "Chica the Chicken Spawn Egg",
+      "item.fnaf_mod.flash_light_on": "FlashLight",
       "item.fnaf_mod.freddy_mask_helmet": "Freddy Mask",
       "entity.fnaf_mod.sitting_fredbear": "Fredbear",
       "item.fnaf_mod.puppet_spawn_egg": "Puppet Spawn Egg",
       "entity.fnaf_mod.foxy_pirate": "Foxy the Pirate",
-      "block.fnaf_mod.backstage_door": "Backstage Door",
-      "block.fnaf_mod.wall_tile": "Wall Tile",
       "item.fnaf_mod.freddy": "Freddy",
+      "block.fnaf_mod.wall_tile": "Wall Tile",
+      "block.fnaf_mod.backstage_door": "Backstage Door",
       "entity.fnaf_mod.chica_chicken": "Chica the Chicken",
       "item.fnaf_mod.toy_chica_spawn_egg": "Toy Chica Spawn Egg",
       "block.fnaf_mod.light_button_off": "Light Button Off",
@@ -4240,26 +4772,35 @@
       "entity.fnaf_mod.withered_foxy": "Withered Foxy",
       "entity.fnaf_mod.arcade_machine_bonnie": "Arcade Machine",
       "item.fnaf_mod.white_plastic": "White Plastic",
+      "item.fnaf_mod.dedwitheredfreddy_spawn_egg": "Withered Freddy Spawn Egg",
       "item.fnaf_mod.passive_fredbear_spawn_egg": "Fredbear Spawn Egg",
       "item.fnaf_mod.passive_foxy_spawn_egg": "Foxy the Pirate Spawn Egg",
       "entity.fnaf_mod.toy_chica": "Toy Chica",
+      "item.fnaf_mod.sitting_withered_bonnie_spawn_egg": "Withered Freddy Spawn Egg",
       "item.fnaf_mod.freddy_fazbear_spawn_egg": "Freddy Fazbear Spawn Egg",
+      "entity.fnaf_mod.dedwitheredfreddy": "Withered Freddy",
       "block.fnaf_mod.bonnie_head": "Bonnie Head",
+      "item.fnaf_mod.flash_light": "FlashLight",
       "item.fnaf_mod.toy_cupcake": "Cupcake",
       "block.fnaf_mod.white_red_wall_tile": "Fredbear\u0027s Wall Tiles",
       "block.fnaf_mod.chica_head": "Chica Head",
       "entity.fnaf_mod.golden_freddy": "Golden Freddy",
+      "entity.fnaf_mod.mangle_sitting": "Mangle",
       "item.fnaf_mod.spring_lock_suit_chestplate": "Spring Lock Suit Body",
       "block.fnaf_mod.desk": "Desk",
       "entity.fnaf_mod.passive_spring_bonnie": "Spring Bonnie",
       "block.fnaf_mod.white_wall": "White Wall",
+      "gamerule.fnafDrop.description": "Enables Drops from FNAF Mobs",
       "item.fnaf_mod.freddy_fabric": "Brown Fabric",
       "item.fnaf_mod.freddy_mask_chestplate": "Freddy Mask Body",
       "item.fnaf_mod.cupcake": "Cupcake",
       "block.fnaf_mod.door_button_off": "Door Button Off",
+      "entity.fnaf_mod.sitting_withered_chica": "Withered Freddy",
+      "item.fnaf_mod.arcade_item": "Arcade Machine Bonnie",
       "itemGroup.tabfnaf_blocks": "FNAF Blocks",
       "block.fnaf_mod.foxy_plushie": "Foxy Plushie",
       "entity.fnaf_mod.bonnie_bunny": "Bonnie the Bunny",
+      "item.fnaf_mod.mangle_sitting_spawn_egg": "Mangle Spawn Egg",
       "item.fnaf_mod.bonnie": "Bonnie",
       "item.fnaf_mod.spring_bonnie_creature_spawn_egg": "Spring Bonnie Creature Spawn Egg",
       "block.fnaf_mod.chica_plushie": "Chica Plushie",
@@ -4300,6 +4841,7 @@
       "item.fnaf_mod.light_blue_plastic": "Light Blue Plastic",
       "item.fnaf_mod.yellowbear": "Yellowbear",
       "subtitles.fnaf1_scream": "Jumpscare Sound",
+      "entity.fnaf_mod.purple_guy": "Purple Guy",
       "item.fnaf_mod.chica_fabric": "Yellow Fabric",
       "item.fnaf_mod.secret_springtrap_spawn_egg": "Freddy Fazbear Spawn Egg",
       "block.fnaf_mod.bonnie_plushie": "Bonnie Plushie",
@@ -4312,11 +4854,13 @@
       "entity.fnaf_mod.spring_bonnie_creature": "Spring Bonnie Creature",
       "block.fnaf_mod.black_white_tile": "Black White Tile",
       "block.fnaf_mod.freddy_plushie": "Freddy Plushie",
+      "block.fnaf_mod.shelf": "Chair",
       "block.fnaf_mod.fnaf_3_floor": "FNAF 3 Floor Tiles",
       "item.fnaf_mod.fredbear_creature_spawn_egg": "Fredbear  Creature Spawn Egg",
       "item.fnaf_mod.sitting_fredbear_spawn_egg": "Fredbear Spawn Egg",
-      "item.fnaf_mod.withered_chica_spawn_egg": "Chica the Chicken Spawn Egg",
+      "item.fnaf_mod.withered_chica_spawn_egg": "Withered Chica Spawn Egg",
       "item.fnaf_mod.shadow_freddy_spawn_egg": "Shadow Freddy Spawn Egg",
+      "entity.fnaf_mod.sitting_withered_bonnie": "Withered Freddy",
       "block.fnaf_mod.pizza_box_closed": "Pizza Box Closed",
       "entity.fnaf_mod.freddy_fazbear": "Freddy Fazbear",
       "block.fnaf_mod.golden_freddy_plushie": "Golden Freddy Plushie",
@@ -4330,6 +4874,7 @@
       "item.fnaf_mod.mangle_spawn_egg": "Mangle Spawn Egg",
       "item.fnaf_mod.passive_bonnie_spawn_egg": "Bonnie the Bunny Spawn Egg",
       "entity.fnaf_mod.nightime_toy_chica": "Nightime Toy Chica",
+      "gamerule.fnafDrop": "FNAF Drops",
       "item.fnaf_mod.chica": "Chica",
       "item.fnaf_mod.foxy_pirate_spawn_egg": "Foxy the Pirate Spawn Egg",
       "item.fnaf_mod.circuit_board": "Circuit Board",
@@ -4341,6 +4886,7 @@
       "entity.fnaf_mod.passive_goldie": "YellowBear",
       "item.fnaf_mod.microphone": "Microphone",
       "entity.fnaf_mod.withered_golden_freddy": "Withered Golden Freddy",
+      "item.fnaf_mod.purple_guy_spawn_egg": "Purple Guy Spawn Egg",
       "item.fnaf_mod.foxy_fabric": "Red Fabric",
       "item.fnaf_mod.chica_chicken_spawn_egg": "Chica the Chicken Spawn Egg",
       "entity.fnaf_mod.withered_freddy": "Withered Freddy",
@@ -4365,7 +4911,8 @@
       "block.fnaf_mod.fnaf_3_wall": "FNAF 3 Wall",
       "item.fnaf_mod.guitar": "Guitar",
       "entity.fnaf_mod.passive_freddy": "Freddy Fazbear",
-      "block.fnaf_mod.blue_black_tile": "Blue Black Tile"
+      "block.fnaf_mod.blue_black_tile": "Blue Black Tile",
+      "item.fnaf_mod.sitting_withered_chica_spawn_egg": "Withered Freddy Spawn Egg"
     }
   },
   "foldersRoot": {

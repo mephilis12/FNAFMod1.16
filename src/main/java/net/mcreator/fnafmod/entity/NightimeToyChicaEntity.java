@@ -37,12 +37,11 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.CreatureAttribute;
 import net.minecraft.block.BlockState;
 
-import net.mcreator.fnafmod.procedures.ToyChicaOnInitialEntitySpawnProcedure;
 import net.mcreator.fnafmod.procedures.ToyChicaEntityDiesProcedure;
+import net.mcreator.fnafmod.procedures.NightimeToyChicaOnInitialEntitySpawnProcedure;
 import net.mcreator.fnafmod.procedures.NightimeToyChicaOnEntityTickUpdateProcedure;
 import net.mcreator.fnafmod.procedures.FreddyFazbearOnEntityTickUpdateProcedure;
 import net.mcreator.fnafmod.procedures.ChicaChickenThisEntityKillsAnotherOneProcedure;
-import net.mcreator.fnafmod.itemgroup.FNAFMobsItemGroup;
 import net.mcreator.fnafmod.entity.renderer.NightimeToyChicaRenderer;
 import net.mcreator.fnafmod.FnafModModElements;
 
@@ -67,8 +66,8 @@ public class NightimeToyChicaEntity extends FnafModModElements.ModElement {
 	@Override
 	public void initElements() {
 		elements.entities.add(() -> entity);
-		elements.items.add(() -> new SpawnEggItem(entity, -1055193, -38689, new Item.Properties().group(FNAFMobsItemGroup.tab))
-				.setRegistryName("nightime_toy_chica_spawn_egg"));
+		elements.items.add(
+				() -> new SpawnEggItem(entity, -1055193, -38689, new Item.Properties().group(null)).setRegistryName("nightime_toy_chica_spawn_egg"));
 	}
 
 	@Override
@@ -233,8 +232,7 @@ public class NightimeToyChicaEntity extends FnafModModElements.ModElement {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
-				$_dependencies.put("world", world);
-				ToyChicaOnInitialEntitySpawnProcedure.executeProcedure($_dependencies);
+				NightimeToyChicaOnInitialEntitySpawnProcedure.executeProcedure($_dependencies);
 			}
 			return retval;
 		}
@@ -248,6 +246,7 @@ public class NightimeToyChicaEntity extends FnafModModElements.ModElement {
 			Entity sourceentity = this;
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
 				$_dependencies.put("x", x);
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);
@@ -266,6 +265,9 @@ public class NightimeToyChicaEntity extends FnafModModElements.ModElement {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
 				NightimeToyChicaOnEntityTickUpdateProcedure.executeProcedure($_dependencies);
 			}

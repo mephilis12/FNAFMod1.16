@@ -42,6 +42,7 @@ import net.mcreator.fnafmod.procedures.ToyFreddyEntityDiesProcedure;
 import net.mcreator.fnafmod.procedures.GoldenFreddyOnEntityTickUpdateProcedure;
 import net.mcreator.fnafmod.procedures.FreddyFazbearThisEntityKillsAnotherOneProcedure;
 import net.mcreator.fnafmod.procedures.FreddyFazbearOnEntityTickUpdateProcedure;
+import net.mcreator.fnafmod.procedures.AttackProcedure;
 import net.mcreator.fnafmod.itemgroup.FNAFMobsItemGroup;
 import net.mcreator.fnafmod.entity.renderer.ToyFreddyRenderer;
 import net.mcreator.fnafmod.FnafModModElements;
@@ -144,7 +145,7 @@ public class ToyFreddyEntity extends FnafModModElements.ModElement {
 					double y = CustomEntity.this.getPosY();
 					double z = CustomEntity.this.getPosZ();
 					Entity entity = CustomEntity.this;
-					return super.shouldExecute() && FreddyFazbearOnEntityTickUpdateProcedure.executeProcedure(ImmutableMap.of("world", world));
+					return super.shouldExecute() && AttackProcedure.executeProcedure(ImmutableMap.of("entity", entity, "world", world));
 				}
 			});
 			this.targetSelector.addGoal(5, new NearestAttackableTargetGoal(this, PlayerEntity.class, true, true) {
@@ -154,7 +155,7 @@ public class ToyFreddyEntity extends FnafModModElements.ModElement {
 					double y = CustomEntity.this.getPosY();
 					double z = CustomEntity.this.getPosZ();
 					Entity entity = CustomEntity.this;
-					return super.shouldExecute() && FreddyFazbearOnEntityTickUpdateProcedure.executeProcedure(ImmutableMap.of("world", world));
+					return super.shouldExecute() && AttackProcedure.executeProcedure(ImmutableMap.of("entity", entity, "world", world));
 				}
 			});
 		}
@@ -233,7 +234,6 @@ public class ToyFreddyEntity extends FnafModModElements.ModElement {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
-				$_dependencies.put("world", world);
 				ToyFreddyOnInitialEntitySpawnProcedure.executeProcedure($_dependencies);
 			}
 			return retval;
@@ -248,6 +248,7 @@ public class ToyFreddyEntity extends FnafModModElements.ModElement {
 			Entity sourceentity = this;
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
 				$_dependencies.put("x", x);
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);
@@ -265,6 +266,7 @@ public class ToyFreddyEntity extends FnafModModElements.ModElement {
 			Entity entity = this;
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
 				$_dependencies.put("world", world);
 				GoldenFreddyOnEntityTickUpdateProcedure.executeProcedure($_dependencies);
 			}

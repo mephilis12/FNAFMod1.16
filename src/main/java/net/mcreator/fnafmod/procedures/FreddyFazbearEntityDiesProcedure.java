@@ -5,6 +5,7 @@ import net.minecraft.world.IWorld;
 import net.minecraft.item.ItemStack;
 import net.minecraft.entity.item.ItemEntity;
 
+import net.mcreator.fnafmod.world.FnafDropGameRule;
 import net.mcreator.fnafmod.item.MicrophoneItem;
 import net.mcreator.fnafmod.item.FreddyFabricItem;
 import net.mcreator.fnafmod.item.CircuitBoardItem;
@@ -44,41 +45,43 @@ public class FreddyFazbearEntityDiesProcedure extends FnafModModElements.ModElem
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-		if (world instanceof World && !world.isRemote()) {
-			ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(FreddyFabricItem.block, (int) (1)));
-			entityToSpawn.setPickupDelay((int) 10);
-			entityToSpawn.setNoDespawn();
-			world.addEntity(entityToSpawn);
-		}
-		if (world instanceof World && !world.isRemote()) {
-			ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(FreddyFabricItem.block, (int) (1)));
-			entityToSpawn.setPickupDelay((int) 10);
-			entityToSpawn.setNoDespawn();
-			world.addEntity(entityToSpawn);
-		}
-		if (world instanceof World && !world.isRemote()) {
-			ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(FreddyFabricItem.block, (int) (1)));
-			entityToSpawn.setPickupDelay((int) 10);
-			entityToSpawn.setNoDespawn();
-			world.addEntity(entityToSpawn);
-		}
-		if (world instanceof World && !world.isRemote()) {
-			ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(CircuitBoardItem.block, (int) (1)));
-			entityToSpawn.setPickupDelay((int) 10);
-			entityToSpawn.setNoDespawn();
-			world.addEntity(entityToSpawn);
-		}
-		if (world instanceof World && !world.isRemote()) {
-			ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(CircuitBoardItem.block, (int) (1)));
-			entityToSpawn.setPickupDelay((int) 10);
-			entityToSpawn.setNoDespawn();
-			world.addEntity(entityToSpawn);
-		}
-		if (world instanceof World && !world.isRemote()) {
-			ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(MicrophoneItem.block, (int) (1)));
-			entityToSpawn.setPickupDelay((int) 10);
-			entityToSpawn.setNoDespawn();
-			world.addEntity(entityToSpawn);
+		if (((world.getWorldInfo().getGameRulesInstance().getBoolean(FnafDropGameRule.gamerule)) == (true))) {
+			if (world instanceof World && !world.isRemote()) {
+				ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(FreddyFabricItem.block, (int) (1)));
+				entityToSpawn.setPickupDelay((int) 10);
+				entityToSpawn.setNoDespawn();
+				world.addEntity(entityToSpawn);
+			}
+			if (world instanceof World && !world.isRemote()) {
+				ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(FreddyFabricItem.block, (int) (1)));
+				entityToSpawn.setPickupDelay((int) 10);
+				entityToSpawn.setNoDespawn();
+				world.addEntity(entityToSpawn);
+			}
+			if (world instanceof World && !world.isRemote()) {
+				ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(FreddyFabricItem.block, (int) (1)));
+				entityToSpawn.setPickupDelay((int) 10);
+				entityToSpawn.setNoDespawn();
+				world.addEntity(entityToSpawn);
+			}
+			if (world instanceof World && !world.isRemote()) {
+				ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(CircuitBoardItem.block, (int) (1)));
+				entityToSpawn.setPickupDelay((int) 10);
+				entityToSpawn.setNoDespawn();
+				world.addEntity(entityToSpawn);
+			}
+			if (world instanceof World && !world.isRemote()) {
+				ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(CircuitBoardItem.block, (int) (1)));
+				entityToSpawn.setPickupDelay((int) 10);
+				entityToSpawn.setNoDespawn();
+				world.addEntity(entityToSpawn);
+			}
+			if (world instanceof World && !world.isRemote()) {
+				ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(MicrophoneItem.block, (int) (1)));
+				entityToSpawn.setPickupDelay((int) 10);
+				entityToSpawn.setNoDespawn();
+				world.addEntity(entityToSpawn);
+			}
 		}
 	}
 }

@@ -46,7 +46,6 @@ import net.minecraft.block.BlockState;
 
 import net.mcreator.fnafmod.procedures.GoldenFreddyThisEntityKillsAnotherOneProcedure;
 import net.mcreator.fnafmod.procedures.GoldenFreddyOnInitialEntitySpawnProcedure;
-import net.mcreator.fnafmod.procedures.GoldenFreddyOnEntityTickUpdateProcedure;
 import net.mcreator.fnafmod.procedures.FreddyFazbearOnEntityTickUpdateProcedure;
 import net.mcreator.fnafmod.itemgroup.FNAFMobsItemGroup;
 import net.mcreator.fnafmod.entity.renderer.GoldenFreddyRenderer;
@@ -214,7 +213,6 @@ public class GoldenFreddyEntity extends FnafModModElements.ModElement {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
-				$_dependencies.put("world", world);
 				GoldenFreddyOnInitialEntitySpawnProcedure.executeProcedure($_dependencies);
 			}
 			return retval;
@@ -247,7 +245,7 @@ public class GoldenFreddyEntity extends FnafModModElements.ModElement {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("world", world);
-				GoldenFreddyOnEntityTickUpdateProcedure.executeProcedure($_dependencies);
+				FreddyFazbearOnEntityTickUpdateProcedure.executeProcedure($_dependencies);
 			}
 		}
 

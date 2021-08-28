@@ -49,7 +49,7 @@ public class FoxyFrameOverlay3Overlay extends FnafModModElements.ModElement {
 					GlStateManager.SourceFactor.ONE, GlStateManager.DestFactor.ZERO);
 			RenderSystem.color4f(1.0F, 1.0F, 1.0F, 1.0F);
 			RenderSystem.disableAlphaTest();
-			if (FoxyFrame3Procedure.executeProcedure(ImmutableMap.of("world", world))) {
+			if (FoxyFrame3Procedure.executeProcedure(ImmutableMap.of("entity", entity))) {
 				Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("fnaf_mod:textures/foxy3.png"));
 				Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), 0, 0, 0, 0, event.getWindow().getScaledWidth(),
 						event.getWindow().getScaledHeight(), event.getWindow().getScaledWidth(), event.getWindow().getScaledHeight());

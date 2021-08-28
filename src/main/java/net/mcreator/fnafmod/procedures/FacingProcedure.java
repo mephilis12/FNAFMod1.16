@@ -5,7 +5,6 @@ import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.common.MinecraftForge;
 
 import net.minecraft.world.World;
-import net.minecraft.world.IWorld;
 import net.minecraft.util.Direction;
 import net.minecraft.entity.Entity;
 
@@ -29,25 +28,39 @@ public class FacingProcedure extends FnafModModElements.ModElement {
 				FnafModMod.LOGGER.warn("Failed to load dependency entity for procedure Facing!");
 			return;
 		}
-		if (dependencies.get("world") == null) {
-			if (!dependencies.containsKey("world"))
-				FnafModMod.LOGGER.warn("Failed to load dependency world for procedure Facing!");
-			return;
-		}
 		Entity entity = (Entity) dependencies.get("entity");
-		IWorld world = (IWorld) dependencies.get("world");
 		if (((entity.getHorizontalFacing()) == Direction.NORTH)) {
-			FnafModModVariables.WorldVariables.get(world).PlayerFacing = (double) 1;
-			FnafModModVariables.WorldVariables.get(world).syncData(world);
+			{
+				double _setval = (double) 1;
+				entity.getCapability(FnafModModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.PlayerFacing = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
 		} else if (((entity.getHorizontalFacing()) == Direction.WEST)) {
-			FnafModModVariables.WorldVariables.get(world).PlayerFacing = (double) 2;
-			FnafModModVariables.WorldVariables.get(world).syncData(world);
+			{
+				double _setval = (double) 2;
+				entity.getCapability(FnafModModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.PlayerFacing = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
 		} else if (((entity.getHorizontalFacing()) == Direction.SOUTH)) {
-			FnafModModVariables.WorldVariables.get(world).PlayerFacing = (double) 3;
-			FnafModModVariables.WorldVariables.get(world).syncData(world);
+			{
+				double _setval = (double) 3;
+				entity.getCapability(FnafModModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.PlayerFacing = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
 		} else if (((entity.getHorizontalFacing()) == Direction.EAST)) {
-			FnafModModVariables.WorldVariables.get(world).PlayerFacing = (double) 4;
-			FnafModModVariables.WorldVariables.get(world).syncData(world);
+			{
+				double _setval = (double) 4;
+				entity.getCapability(FnafModModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.PlayerFacing = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
 		}
 	}
 

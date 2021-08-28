@@ -105,7 +105,7 @@
       "name": "FreddyFazbearThisEntityKillsAnotherOne"
     },
     "onMobTickUpdate": {
-      "name": "GoldenFreddyOnEntityTickUpdate"
+      "name": "WitheredFreddyOnEntityTickUpdate"
     },
     "onInitialSpawn": {
       "name": "WitheredFreddyOnInitialEntitySpawn"

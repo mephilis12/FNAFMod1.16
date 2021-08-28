@@ -38,8 +38,8 @@ import net.minecraft.entity.CreatureAttribute;
 import net.minecraft.block.BlockState;
 
 import net.mcreator.fnafmod.procedures.WitheredBonnieOnInitialEntitySpawnProcedure;
+import net.mcreator.fnafmod.procedures.WitheredBonnieOnEntityTickUpdateProcedure;
 import net.mcreator.fnafmod.procedures.WitheredBonnieEntityDiesProcedure;
-import net.mcreator.fnafmod.procedures.GoldenFreddyOnEntityTickUpdateProcedure;
 import net.mcreator.fnafmod.procedures.FreddyFazbearOnEntityTickUpdateProcedure;
 import net.mcreator.fnafmod.procedures.BonnieBunnyThisEntityKillsAnotherOneProcedure;
 import net.mcreator.fnafmod.itemgroup.FNAFMobsItemGroup;
@@ -233,7 +233,6 @@ public class WitheredBonnieEntity extends FnafModModElements.ModElement {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
-				$_dependencies.put("world", world);
 				WitheredBonnieOnInitialEntitySpawnProcedure.executeProcedure($_dependencies);
 			}
 			return retval;
@@ -248,6 +247,7 @@ public class WitheredBonnieEntity extends FnafModModElements.ModElement {
 			Entity sourceentity = this;
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
 				$_dependencies.put("x", x);
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);
@@ -265,8 +265,12 @@ public class WitheredBonnieEntity extends FnafModModElements.ModElement {
 			Entity entity = this;
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
-				GoldenFreddyOnEntityTickUpdateProcedure.executeProcedure($_dependencies);
+				WitheredBonnieOnEntityTickUpdateProcedure.executeProcedure($_dependencies);
 			}
 		}
 	}

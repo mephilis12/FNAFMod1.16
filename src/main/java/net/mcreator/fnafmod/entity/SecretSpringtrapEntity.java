@@ -33,7 +33,6 @@ import net.minecraft.entity.CreatureAttribute;
 import net.minecraft.block.BlockState;
 
 import net.mcreator.fnafmod.procedures.GoldenFreddyThisEntityKillsAnotherOneProcedure;
-import net.mcreator.fnafmod.procedures.GoldenFreddyOnEntityTickUpdateProcedure;
 import net.mcreator.fnafmod.procedures.FreddyFazbearOnEntityTickUpdateProcedure;
 import net.mcreator.fnafmod.entity.renderer.SecretSpringtrapRenderer;
 import net.mcreator.fnafmod.FnafModModElements;
@@ -208,20 +207,6 @@ public class SecretSpringtrapEntity extends FnafModModElements.ModElement {
 				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
 				GoldenFreddyThisEntityKillsAnotherOneProcedure.executeProcedure($_dependencies);
-			}
-		}
-
-		@Override
-		public void baseTick() {
-			super.baseTick();
-			double x = this.getPosX();
-			double y = this.getPosY();
-			double z = this.getPosZ();
-			Entity entity = this;
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("world", world);
-				GoldenFreddyOnEntityTickUpdateProcedure.executeProcedure($_dependencies);
 			}
 		}
 	}

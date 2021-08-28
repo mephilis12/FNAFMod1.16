@@ -4,9 +4,9 @@
   "definition": {
     "priority": "LOWEST",
     "components": [],
-    "baseTexture": "goldy_jumpscare.png",
+    "baseTexture": "thatsthepointofthemask.png",
     "displayCondition": {
-      "name": "GoldenFreddyJumpscareDisplayOverlayIngame"
+      "name": "MaskDisplayOverlayIngame"
     }
   }
 }

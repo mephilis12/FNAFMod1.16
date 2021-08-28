@@ -60,7 +60,7 @@ public static class ModelWitheredFoxy extends EntityModel<Entity> {
 		Head.addChild(Jaw);
 		Jaw.setTextureOffset(16, 82).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 1.0F, 2.0F, -0.1F, false);
 		Jaw.setTextureOffset(96, 16).addBox(-3.5F, -0.5F, -4.0F, 7.0F, 2.0F, 9.0F, -0.1F, false);
-		Jaw.setTextureOffset(96, 18).addBox(-2.0F, -0.5F, -8.5F, 4.0F, 2.0F, 5.0F, -0.1F, false);
+		Jaw.setTextureOffset(95, 36).addBox(-2.0F, -0.5F, -8.5F, 4.0F, 2.0F, 5.0F, -0.1F, false);
 		Jaw.setTextureOffset(97, 27).addBox(-3.0F, -1.0F, -3.8F, 6.0F, 1.0F, 5.0F, -0.1F, false);
 		Jaw.setTextureOffset(28, 73).addBox(-1.5F, -0.3912F, -1.9F, 3.0F, 1.0F, 1.0F, -0.1F, false);
 		Jaw.setTextureOffset(86, 75).addBox(-1.5F, -1.0F, -7.4F, 3.0F, 1.0F, 4.0F, -0.1F, false);

@@ -105,7 +105,7 @@
       "name": "FoxyPirateThisEntityKillsAnotherOne"
     },
     "onMobTickUpdate": {
-      "name": "GoldenFreddyOnEntityTickUpdate"
+      "name": "MangleOnEntityTickUpdate"
     },
     "onInitialSpawn": {
       "name": "MangleOnInitialEntitySpawn"

@@ -13,7 +13,7 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.client.Minecraft;
 
-import net.mcreator.fnafmod.procedures.GoldenFreddyJumpscareDisplayOverlayIngameProcedure;
+import net.mcreator.fnafmod.procedures.MaskDisplayOverlayIngameProcedure;
 import net.mcreator.fnafmod.FnafModModElements;
 
 import com.mojang.blaze3d.systems.RenderSystem;
@@ -49,8 +49,8 @@ public class MaskOverlay extends FnafModModElements.ModElement {
 					GlStateManager.SourceFactor.ONE, GlStateManager.DestFactor.ZERO);
 			RenderSystem.color4f(1.0F, 1.0F, 1.0F, 1.0F);
 			RenderSystem.disableAlphaTest();
-			if (GoldenFreddyJumpscareDisplayOverlayIngameProcedure.executeProcedure(ImmutableMap.of("world", world))) {
-				Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("fnaf_mod:textures/goldy_jumpscare.png"));
+			if (MaskDisplayOverlayIngameProcedure.executeProcedure(ImmutableMap.of("entity", entity))) {
+				Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("fnaf_mod:textures/thatsthepointofthemask.png"));
 				Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), 0, 0, 0, 0, event.getWindow().getScaledWidth(),
 						event.getWindow().getScaledHeight(), event.getWindow().getScaledWidth(), event.getWindow().getScaledHeight());
 			}

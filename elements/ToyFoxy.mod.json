@@ -108,7 +108,7 @@
       "name": "GoldenFreddyOnEntityTickUpdate"
     },
     "onInitialSpawn": {
-      "name": "FoxyPirateOnInitialEntitySpawn"
+      "name": "ToyFoxyOnInitialEntitySpawn"
     },
     "hasAI": true,
     "aiBase": "(none)",

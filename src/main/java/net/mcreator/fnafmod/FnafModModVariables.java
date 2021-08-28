@@ -70,31 +70,10 @@ public class FnafModModVariables {
 	public static class WorldVariables extends WorldSavedData {
 		public static final String DATA_NAME = "fnaf_mod_worldvars";
 		public boolean goldenkill = false;
-		public boolean FreddyFrame1 = false;
-		public boolean FreddyFrame2 = false;
-		public boolean FreddyFrame3 = false;
-		public boolean FreddyFrame4 = false;
-		public boolean FreddyFrame5 = false;
 		public boolean freddykill = false;
-		public boolean FoxyFrame1 = false;
-		public boolean FoxyFrame2 = false;
-		public boolean FoxyFrame3 = false;
-		public boolean FoxyFrame4 = false;
-		public boolean FoxyFrame5 = false;
 		public boolean foxykill = false;
-		public boolean ChicaFrame1 = false;
-		public boolean ChicaFrame2 = false;
-		public boolean ChicaFrame3 = false;
-		public boolean ChicaFrame4 = false;
-		public boolean ChicaFrame5 = false;
 		public boolean chicakill = false;
-		public boolean BonnieFrame1 = false;
-		public boolean BonnieFrame2 = false;
-		public boolean BonnieFrame3 = false;
-		public boolean BonnieFrame4 = false;
-		public boolean BonnieFrame5 = false;
 		public boolean bonniekill = false;
-		public double PlayerFacing = 0;
 		public boolean TimeDay = false;
 		public WorldVariables() {
 			super(DATA_NAME);
@@ -107,62 +86,20 @@ public class FnafModModVariables {
 		@Override
 		public void read(CompoundNBT nbt) {
 			goldenkill = nbt.getBoolean("goldenkill");
-			FreddyFrame1 = nbt.getBoolean("FreddyFrame1");
-			FreddyFrame2 = nbt.getBoolean("FreddyFrame2");
-			FreddyFrame3 = nbt.getBoolean("FreddyFrame3");
-			FreddyFrame4 = nbt.getBoolean("FreddyFrame4");
-			FreddyFrame5 = nbt.getBoolean("FreddyFrame5");
 			freddykill = nbt.getBoolean("freddykill");
-			FoxyFrame1 = nbt.getBoolean("FoxyFrame1");
-			FoxyFrame2 = nbt.getBoolean("FoxyFrame2");
-			FoxyFrame3 = nbt.getBoolean("FoxyFrame3");
-			FoxyFrame4 = nbt.getBoolean("FoxyFrame4");
-			FoxyFrame5 = nbt.getBoolean("FoxyFrame5");
 			foxykill = nbt.getBoolean("foxykill");
-			ChicaFrame1 = nbt.getBoolean("ChicaFrame1");
-			ChicaFrame2 = nbt.getBoolean("ChicaFrame2");
-			ChicaFrame3 = nbt.getBoolean("ChicaFrame3");
-			ChicaFrame4 = nbt.getBoolean("ChicaFrame4");
-			ChicaFrame5 = nbt.getBoolean("ChicaFrame5");
 			chicakill = nbt.getBoolean("chicakill");
-			BonnieFrame1 = nbt.getBoolean("BonnieFrame1");
-			BonnieFrame2 = nbt.getBoolean("BonnieFrame2");
-			BonnieFrame3 = nbt.getBoolean("BonnieFrame3");
-			BonnieFrame4 = nbt.getBoolean("BonnieFrame4");
-			BonnieFrame5 = nbt.getBoolean("BonnieFrame5");
 			bonniekill = nbt.getBoolean("bonniekill");
-			PlayerFacing = nbt.getDouble("PlayerFacing");
 			TimeDay = nbt.getBoolean("TimeDay");
 		}
 
 		@Override
 		public CompoundNBT write(CompoundNBT nbt) {
 			nbt.putBoolean("goldenkill", goldenkill);
-			nbt.putBoolean("FreddyFrame1", FreddyFrame1);
-			nbt.putBoolean("FreddyFrame2", FreddyFrame2);
-			nbt.putBoolean("FreddyFrame3", FreddyFrame3);
-			nbt.putBoolean("FreddyFrame4", FreddyFrame4);
-			nbt.putBoolean("FreddyFrame5", FreddyFrame5);
 			nbt.putBoolean("freddykill", freddykill);
-			nbt.putBoolean("FoxyFrame1", FoxyFrame1);
-			nbt.putBoolean("FoxyFrame2", FoxyFrame2);
-			nbt.putBoolean("FoxyFrame3", FoxyFrame3);
-			nbt.putBoolean("FoxyFrame4", FoxyFrame4);
-			nbt.putBoolean("FoxyFrame5", FoxyFrame5);
 			nbt.putBoolean("foxykill", foxykill);
-			nbt.putBoolean("ChicaFrame1", ChicaFrame1);
-			nbt.putBoolean("ChicaFrame2", ChicaFrame2);
-			nbt.putBoolean("ChicaFrame3", ChicaFrame3);
-			nbt.putBoolean("ChicaFrame4", ChicaFrame4);
-			nbt.putBoolean("ChicaFrame5", ChicaFrame5);
 			nbt.putBoolean("chicakill", chicakill);
-			nbt.putBoolean("BonnieFrame1", BonnieFrame1);
-			nbt.putBoolean("BonnieFrame2", BonnieFrame2);
-			nbt.putBoolean("BonnieFrame3", BonnieFrame3);
-			nbt.putBoolean("BonnieFrame4", BonnieFrame4);
-			nbt.putBoolean("BonnieFrame5", BonnieFrame5);
 			nbt.putBoolean("bonniekill", bonniekill);
-			nbt.putDouble("PlayerFacing", PlayerFacing);
 			nbt.putBoolean("TimeDay", TimeDay);
 			return nbt;
 		}
@@ -281,6 +218,27 @@ public class FnafModModVariables {
 		@Override
 		public INBT writeNBT(Capability<PlayerVariables> capability, PlayerVariables instance, Direction side) {
 			CompoundNBT nbt = new CompoundNBT();
+			nbt.putBoolean("FreddyFrame1", instance.FreddyFrame1);
+			nbt.putBoolean("FreddyFrame2", instance.FreddyFrame2);
+			nbt.putBoolean("FreddyFrame3", instance.FreddyFrame3);
+			nbt.putBoolean("FreddyFrame4", instance.FreddyFrame4);
+			nbt.putBoolean("FreddyFrame5", instance.FreddyFrame5);
+			nbt.putBoolean("FoxyFrame1", instance.FoxyFrame1);
+			nbt.putBoolean("FoxyFrame2", instance.FoxyFrame2);
+			nbt.putBoolean("FoxyFrame3", instance.FoxyFrame3);
+			nbt.putBoolean("FoxyFrame4", instance.FoxyFrame4);
+			nbt.putBoolean("FoxyFrame5", instance.FoxyFrame5);
+			nbt.putBoolean("ChicaFrame1", instance.ChicaFrame1);
+			nbt.putBoolean("ChicaFrame2", instance.ChicaFrame2);
+			nbt.putBoolean("ChicaFrame3", instance.ChicaFrame3);
+			nbt.putBoolean("ChicaFrame4", instance.ChicaFrame4);
+			nbt.putBoolean("ChicaFrame5", instance.ChicaFrame5);
+			nbt.putBoolean("BonnieFrame1", instance.BonnieFrame1);
+			nbt.putBoolean("BonnieFrame2", instance.BonnieFrame2);
+			nbt.putBoolean("BonnieFrame3", instance.BonnieFrame3);
+			nbt.putBoolean("BonnieFrame4", instance.BonnieFrame4);
+			nbt.putBoolean("BonnieFrame5", instance.BonnieFrame5);
+			nbt.putDouble("PlayerFacing", instance.PlayerFacing);
 			nbt.putBoolean("Mask", instance.Mask);
 			return nbt;
 		}
@@ -288,11 +246,53 @@ public class FnafModModVariables {
 		@Override
 		public void readNBT(Capability<PlayerVariables> capability, PlayerVariables instance, Direction side, INBT inbt) {
 			CompoundNBT nbt = (CompoundNBT) inbt;
+			instance.FreddyFrame1 = nbt.getBoolean("FreddyFrame1");
+			instance.FreddyFrame2 = nbt.getBoolean("FreddyFrame2");
+			instance.FreddyFrame3 = nbt.getBoolean("FreddyFrame3");
+			instance.FreddyFrame4 = nbt.getBoolean("FreddyFrame4");
+			instance.FreddyFrame5 = nbt.getBoolean("FreddyFrame5");
+			instance.FoxyFrame1 = nbt.getBoolean("FoxyFrame1");
+			instance.FoxyFrame2 = nbt.getBoolean("FoxyFrame2");
+			instance.FoxyFrame3 = nbt.getBoolean("FoxyFrame3");
+			instance.FoxyFrame4 = nbt.getBoolean("FoxyFrame4");
+			instance.FoxyFrame5 = nbt.getBoolean("FoxyFrame5");
+			instance.ChicaFrame1 = nbt.getBoolean("ChicaFrame1");
+			instance.ChicaFrame2 = nbt.getBoolean("ChicaFrame2");
+			instance.ChicaFrame3 = nbt.getBoolean("ChicaFrame3");
+			instance.ChicaFrame4 = nbt.getBoolean("ChicaFrame4");
+			instance.ChicaFrame5 = nbt.getBoolean("ChicaFrame5");
+			instance.BonnieFrame1 = nbt.getBoolean("BonnieFrame1");
+			instance.BonnieFrame2 = nbt.getBoolean("BonnieFrame2");
+			instance.BonnieFrame3 = nbt.getBoolean("BonnieFrame3");
+			instance.BonnieFrame4 = nbt.getBoolean("BonnieFrame4");
+			instance.BonnieFrame5 = nbt.getBoolean("BonnieFrame5");
+			instance.PlayerFacing = nbt.getDouble("PlayerFacing");
 			instance.Mask = nbt.getBoolean("Mask");
 		}
 	}
 
 	public static class PlayerVariables {
+		public boolean FreddyFrame1 = false;
+		public boolean FreddyFrame2 = false;
+		public boolean FreddyFrame3 = false;
+		public boolean FreddyFrame4 = false;
+		public boolean FreddyFrame5 = false;
+		public boolean FoxyFrame1 = false;
+		public boolean FoxyFrame2 = false;
+		public boolean FoxyFrame3 = false;
+		public boolean FoxyFrame4 = false;
+		public boolean FoxyFrame5 = false;
+		public boolean ChicaFrame1 = false;
+		public boolean ChicaFrame2 = false;
+		public boolean ChicaFrame3 = false;
+		public boolean ChicaFrame4 = false;
+		public boolean ChicaFrame5 = false;
+		public boolean BonnieFrame1 = false;
+		public boolean BonnieFrame2 = false;
+		public boolean BonnieFrame3 = false;
+		public boolean BonnieFrame4 = false;
+		public boolean BonnieFrame5 = false;
+		public double PlayerFacing = 0;
 		public boolean Mask = false;
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayerEntity)
@@ -326,8 +326,29 @@ public class FnafModModVariables {
 		PlayerVariables original = ((PlayerVariables) event.getOriginal().getCapability(PLAYER_VARIABLES_CAPABILITY, null)
 				.orElse(new PlayerVariables()));
 		PlayerVariables clone = ((PlayerVariables) event.getEntity().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
+		clone.PlayerFacing = original.PlayerFacing;
 		clone.Mask = original.Mask;
 		if (!event.isWasDeath()) {
+			clone.FreddyFrame1 = original.FreddyFrame1;
+			clone.FreddyFrame2 = original.FreddyFrame2;
+			clone.FreddyFrame3 = original.FreddyFrame3;
+			clone.FreddyFrame4 = original.FreddyFrame4;
+			clone.FreddyFrame5 = original.FreddyFrame5;
+			clone.FoxyFrame1 = original.FoxyFrame1;
+			clone.FoxyFrame2 = original.FoxyFrame2;
+			clone.FoxyFrame3 = original.FoxyFrame3;
+			clone.FoxyFrame4 = original.FoxyFrame4;
+			clone.FoxyFrame5 = original.FoxyFrame5;
+			clone.ChicaFrame1 = original.ChicaFrame1;
+			clone.ChicaFrame2 = original.ChicaFrame2;
+			clone.ChicaFrame3 = original.ChicaFrame3;
+			clone.ChicaFrame4 = original.ChicaFrame4;
+			clone.ChicaFrame5 = original.ChicaFrame5;
+			clone.BonnieFrame1 = original.BonnieFrame1;
+			clone.BonnieFrame2 = original.BonnieFrame2;
+			clone.BonnieFrame3 = original.BonnieFrame3;
+			clone.BonnieFrame4 = original.BonnieFrame4;
+			clone.BonnieFrame5 = original.BonnieFrame5;
 		}
 	}
 	public static class PlayerVariablesSyncMessage {
@@ -351,6 +372,27 @@ public class FnafModModVariables {
 				if (!context.getDirection().getReceptionSide().isServer()) {
 					PlayerVariables variables = ((PlayerVariables) Minecraft.getInstance().player.getCapability(PLAYER_VARIABLES_CAPABILITY, null)
 							.orElse(new PlayerVariables()));
+					variables.FreddyFrame1 = message.data.FreddyFrame1;
+					variables.FreddyFrame2 = message.data.FreddyFrame2;
+					variables.FreddyFrame3 = message.data.FreddyFrame3;
+					variables.FreddyFrame4 = message.data.FreddyFrame4;
+					variables.FreddyFrame5 = message.data.FreddyFrame5;
+					variables.FoxyFrame1 = message.data.FoxyFrame1;
+					variables.FoxyFrame2 = message.data.FoxyFrame2;
+					variables.FoxyFrame3 = message.data.FoxyFrame3;
+					variables.FoxyFrame4 = message.data.FoxyFrame4;
+					variables.FoxyFrame5 = message.data.FoxyFrame5;
+					variables.ChicaFrame1 = message.data.ChicaFrame1;
+					variables.ChicaFrame2 = message.data.ChicaFrame2;
+					variables.ChicaFrame3 = message.data.ChicaFrame3;
+					variables.ChicaFrame4 = message.data.ChicaFrame4;
+					variables.ChicaFrame5 = message.data.ChicaFrame5;
+					variables.BonnieFrame1 = message.data.BonnieFrame1;
+					variables.BonnieFrame2 = message.data.BonnieFrame2;
+					variables.BonnieFrame3 = message.data.BonnieFrame3;
+					variables.BonnieFrame4 = message.data.BonnieFrame4;
+					variables.BonnieFrame5 = message.data.BonnieFrame5;
+					variables.PlayerFacing = message.data.PlayerFacing;
 					variables.Mask = message.data.Mask;
 				}
 			});

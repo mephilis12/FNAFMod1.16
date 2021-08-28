@@ -2,7 +2,7 @@
   "_fv": 18,
   "_type": "mob",
   "definition": {
-    "mobName": "Chica the Chicken",
+    "mobName": "Withered Chica",
     "mobLabel": "",
     "mobModelName": "ModelWitheredChica",
     "mobModelTexture": "witheredchicawool.png",
@@ -105,7 +105,7 @@
       "name": "ChicaChickenThisEntityKillsAnotherOne"
     },
     "onMobTickUpdate": {
-      "name": "GoldenFreddyOnEntityTickUpdate"
+      "name": "WitheredChicaOnEntityTickUpdate"
     },
     "onInitialSpawn": {
       "name": "WitheredChicaOnInitialEntitySpawn"

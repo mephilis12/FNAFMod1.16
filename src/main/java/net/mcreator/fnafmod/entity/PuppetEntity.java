@@ -38,6 +38,7 @@ import net.minecraft.entity.CreatureAttribute;
 import net.mcreator.fnafmod.procedures.PuppetOnInitialEntitySpawnProcedure;
 import net.mcreator.fnafmod.procedures.PuppetEntityDiesProcedure;
 import net.mcreator.fnafmod.procedures.GoldenFreddyThisEntityKillsAnotherOneProcedure;
+import net.mcreator.fnafmod.procedures.GoldenFreddyOnEntityTickUpdateProcedure;
 import net.mcreator.fnafmod.procedures.FreddyFazbearOnEntityTickUpdateProcedure;
 import net.mcreator.fnafmod.itemgroup.FNAFMobsItemGroup;
 import net.mcreator.fnafmod.entity.renderer.PuppetRenderer;
@@ -204,7 +205,6 @@ public class PuppetEntity extends FnafModModElements.ModElement {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
-				$_dependencies.put("world", world);
 				PuppetOnInitialEntitySpawnProcedure.executeProcedure($_dependencies);
 			}
 			return retval;
@@ -236,8 +236,9 @@ public class PuppetEntity extends FnafModModElements.ModElement {
 			Entity entity = this;
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
 				$_dependencies.put("world", world);
-				FreddyFazbearOnEntityTickUpdateProcedure.executeProcedure($_dependencies);
+				GoldenFreddyOnEntityTickUpdateProcedure.executeProcedure($_dependencies);
 			}
 		}
 	}

@@ -21,7 +21,7 @@
       "falpha": 0.0
     },
     "creativeTab": {
-      "value": "CUSTOM:FNAFMobs"
+      "value": "No creative tab entry"
     },
     "isBoss": false,
     "bossBarColor": "PINK",
@@ -108,7 +108,7 @@
       "name": "NightimeToyChicaOnEntityTickUpdate"
     },
     "onInitialSpawn": {
-      "name": "ToyChicaOnInitialEntitySpawn"
+      "name": "NightimeToyChicaOnInitialEntitySpawn"
     },
     "hasAI": true,
     "aiBase": "(none)",

@@ -37,9 +37,8 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.CreatureAttribute;
 import net.minecraft.block.BlockState;
 
+import net.mcreator.fnafmod.procedures.ShadowFreddyEntityDiesProcedure;
 import net.mcreator.fnafmod.procedures.ShadowBonnieOnInitialEntitySpawnProcedure;
-import net.mcreator.fnafmod.procedures.ShadowBonnieEntityDiesProcedure;
-import net.mcreator.fnafmod.procedures.GoldenFreddyOnEntityTickUpdateProcedure;
 import net.mcreator.fnafmod.procedures.FreddyFazbearOnEntityTickUpdateProcedure;
 import net.mcreator.fnafmod.procedures.BonnieBunnyThisEntityKillsAnotherOneProcedure;
 import net.mcreator.fnafmod.itemgroup.FNAFMobsItemGroup;
@@ -78,7 +77,7 @@ public class ShadowBonnieEntity extends FnafModModElements.ModElement {
 		@SubscribeEvent
 		public void onEntityAttributeCreation(EntityAttributeCreationEvent event) {
 			AttributeModifierMap.MutableAttribute ammma = MobEntity.func_233666_p_();
-			ammma = ammma.createMutableAttribute(Attributes.MOVEMENT_SPEED, 0.25);
+			ammma = ammma.createMutableAttribute(Attributes.MOVEMENT_SPEED, 0);
 			ammma = ammma.createMutableAttribute(Attributes.MAX_HEALTH, 50);
 			ammma = ammma.createMutableAttribute(Attributes.ARMOR, 0);
 			ammma = ammma.createMutableAttribute(Attributes.ATTACK_DAMAGE, 20);
@@ -218,7 +217,7 @@ public class ShadowBonnieEntity extends FnafModModElements.ModElement {
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
-				ShadowBonnieEntityDiesProcedure.executeProcedure($_dependencies);
+				ShadowFreddyEntityDiesProcedure.executeProcedure($_dependencies);
 			}
 		}
 
@@ -233,7 +232,6 @@ public class ShadowBonnieEntity extends FnafModModElements.ModElement {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
-				$_dependencies.put("world", world);
 				ShadowBonnieOnInitialEntitySpawnProcedure.executeProcedure($_dependencies);
 			}
 			return retval;
@@ -248,6 +246,7 @@ public class ShadowBonnieEntity extends FnafModModElements.ModElement {
 			Entity sourceentity = this;
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
 				$_dependencies.put("x", x);
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);
@@ -266,7 +265,7 @@ public class ShadowBonnieEntity extends FnafModModElements.ModElement {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("world", world);
-				GoldenFreddyOnEntityTickUpdateProcedure.executeProcedure($_dependencies);
+				FreddyFazbearOnEntityTickUpdateProcedure.executeProcedure($_dependencies);
 			}
 		}
 	}

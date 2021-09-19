@@ -2,17 +2,11 @@ package net.mcreator.fnafmod.procedures;
 
 import net.minecraft.world.IWorld;
 
-import net.mcreator.fnafmod.FnafModModElements;
 import net.mcreator.fnafmod.FnafModMod;
 
 import java.util.Map;
 
-@FnafModModElements.ModElement.Tag
-public class FreddyFazbearOnEntityTickUpdateProcedure extends FnafModModElements.ModElement {
-	public FreddyFazbearOnEntityTickUpdateProcedure(FnafModModElements instance) {
-		super(instance, 33);
-	}
-
+public class FreddyFazbearOnEntityTickUpdateProcedure {
 	public static boolean executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("world") == null) {
 			if (!dependencies.containsKey("world"))

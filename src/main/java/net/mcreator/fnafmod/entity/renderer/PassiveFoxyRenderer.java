@@ -15,8 +15,6 @@ import net.minecraft.client.renderer.entity.MobRenderer;
 
 import net.mcreator.fnafmod.entity.PassiveFoxyEntity;
 
-import javax.sound.midi.Patch;
-
 import com.mojang.blaze3d.vertex.IVertexBuilder;
 import com.mojang.blaze3d.matrix.MatrixStack;
 

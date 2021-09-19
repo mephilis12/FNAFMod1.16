@@ -12,18 +12,12 @@ import net.minecraft.entity.Entity;
 
 import net.mcreator.fnafmod.entity.WitheredBonnieEntity;
 import net.mcreator.fnafmod.entity.SittingWitheredBonnieEntity;
-import net.mcreator.fnafmod.FnafModModElements;
 import net.mcreator.fnafmod.FnafModMod;
 
 import java.util.Map;
 import java.util.Collections;
 
-@FnafModModElements.ModElement.Tag
-public class WitheredBonnieOnEntityTickUpdateProcedure extends FnafModModElements.ModElement {
-	public WitheredBonnieOnEntityTickUpdateProcedure(FnafModModElements instance) {
-		super(instance, 291);
-	}
-
+public class WitheredBonnieOnEntityTickUpdateProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))

@@ -1,20 +1,20 @@
 {
-  "_fv": 18,
+  "_fv": 24,
   "_type": "block",
   "definition": {
-    "texture": "fnaf_3_tiles_2",
-    "textureTop": "fnaf_3_tiles_2",
-    "textureLeft": "fnaf_3_tiles_2",
-    "textureFront": "fnaf_3_tiles_2",
-    "textureRight": "fnaf_3_tiles_2",
-    "textureBack": "fnaf_3_tiles_2",
+    "texture": "rancid_floor",
+    "textureTop": "rancid_floor",
+    "textureLeft": "rancid_floor",
+    "textureFront": "rancid_floor",
+    "textureRight": "rancid_floor",
+    "textureBack": "rancid_floor",
     "renderType": 10,
     "customModelName": "Normal",
     "rotationMode": 0,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
     "itemTexture": "",
-    "particleTexture": "fnaf_3_tiles_2",
+    "particleTexture": "rancid_floor",
     "tintType": "No tint",
     "isItemTinted": false,
     "hasTransparency": false,
@@ -32,7 +32,7 @@
         "subtract": false
       }
     ],
-    "name": "FNAF 3 Floor Tiles",
+    "name": "Rancid Floor",
     "specialInfo": [],
     "hardness": 1.0,
     "resistance": 10.0,
@@ -49,14 +49,15 @@
     "useLootTableForDrops": false,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
-    "canProvidePower": false,
-    "lightOpacity": 255,
+    "canRedstoneConnect": false,
+    "lightOpacity": 15,
     "material": {
       "value": "ROCK"
     },
     "tickRate": 10,
     "tickRandomly": false,
     "isReplaceable": false,
+    "canProvidePower": false,
     "colorOnMap": "DEFAULT",
     "creativePickItem": {
       "value": ""
@@ -71,6 +72,7 @@
     "jumpFactor": 1.0,
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
+    "isCustomSoundType": false,
     "soundOnStep": {
       "value": "STONE"
     },

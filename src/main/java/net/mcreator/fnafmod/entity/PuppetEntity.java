@@ -205,6 +205,7 @@ public class PuppetEntity extends FnafModModElements.ModElement {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
+				$_dependencies.put("world", world);
 				PuppetOnInitialEntitySpawnProcedure.executeProcedure($_dependencies);
 			}
 			return retval;

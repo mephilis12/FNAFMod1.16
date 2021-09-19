@@ -9,17 +9,11 @@ import net.mcreator.fnafmod.world.FnafDropGameRule;
 import net.mcreator.fnafmod.item.WhitePlasticItem;
 import net.mcreator.fnafmod.item.ShadowRemnantItem;
 import net.mcreator.fnafmod.item.BlackPlasticItem;
-import net.mcreator.fnafmod.FnafModModElements;
 import net.mcreator.fnafmod.FnafModMod;
 
 import java.util.Map;
 
-@FnafModModElements.ModElement.Tag
-public class PuppetEntityDiesProcedure extends FnafModModElements.ModElement {
-	public PuppetEntityDiesProcedure(FnafModModElements instance) {
-		super(instance, 266);
-	}
-
+public class PuppetEntityDiesProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))
@@ -47,49 +41,49 @@ public class PuppetEntityDiesProcedure extends FnafModModElements.ModElement {
 		IWorld world = (IWorld) dependencies.get("world");
 		if (((world.getWorldInfo().getGameRulesInstance().getBoolean(FnafDropGameRule.gamerule)) == (true))) {
 			if (world instanceof World && !world.isRemote()) {
-				ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(WhitePlasticItem.block, (int) (1)));
+				ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(WhitePlasticItem.block));
 				entityToSpawn.setPickupDelay((int) 10);
 				entityToSpawn.setNoDespawn();
 				world.addEntity(entityToSpawn);
 			}
 			if (world instanceof World && !world.isRemote()) {
-				ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(BlackPlasticItem.block, (int) (1)));
+				ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(BlackPlasticItem.block));
 				entityToSpawn.setPickupDelay((int) 10);
 				entityToSpawn.setNoDespawn();
 				world.addEntity(entityToSpawn);
 			}
 			if (world instanceof World && !world.isRemote()) {
-				ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(BlackPlasticItem.block, (int) (1)));
+				ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(BlackPlasticItem.block));
 				entityToSpawn.setPickupDelay((int) 10);
 				entityToSpawn.setNoDespawn();
 				world.addEntity(entityToSpawn);
 			}
 			if (world instanceof World && !world.isRemote()) {
-				ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(WhitePlasticItem.block, (int) (1)));
+				ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(WhitePlasticItem.block));
 				entityToSpawn.setPickupDelay((int) 10);
 				entityToSpawn.setNoDespawn();
 				world.addEntity(entityToSpawn);
 			}
 			if (world instanceof World && !world.isRemote()) {
-				ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(BlackPlasticItem.block, (int) (1)));
+				ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(BlackPlasticItem.block));
 				entityToSpawn.setPickupDelay((int) 10);
 				entityToSpawn.setNoDespawn();
 				world.addEntity(entityToSpawn);
 			}
 			if (world instanceof World && !world.isRemote()) {
-				ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(BlackPlasticItem.block, (int) (1)));
+				ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(BlackPlasticItem.block));
 				entityToSpawn.setPickupDelay((int) 10);
 				entityToSpawn.setNoDespawn();
 				world.addEntity(entityToSpawn);
 			}
 			if (world instanceof World && !world.isRemote()) {
-				ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(ShadowRemnantItem.block, (int) (1)));
+				ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(ShadowRemnantItem.block));
 				entityToSpawn.setPickupDelay((int) 10);
 				entityToSpawn.setNoDespawn();
 				world.addEntity(entityToSpawn);
 			}
 			if (world instanceof World && !world.isRemote()) {
-				ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(ShadowRemnantItem.block, (int) (1)));
+				ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(ShadowRemnantItem.block));
 				entityToSpawn.setPickupDelay((int) 10);
 				entityToSpawn.setNoDespawn();
 				world.addEntity(entityToSpawn);

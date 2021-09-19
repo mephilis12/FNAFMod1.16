@@ -12,17 +12,11 @@ import net.minecraft.util.SoundCategory;
 import net.minecraft.util.ResourceLocation;
 
 import net.mcreator.fnafmod.FnafModModVariables;
-import net.mcreator.fnafmod.FnafModModElements;
 import net.mcreator.fnafmod.FnafModMod;
 
 import java.util.Map;
 
-@FnafModModElements.ModElement.Tag
-public class GoldenFreddyThisEntityKillsAnotherOneProcedure extends FnafModModElements.ModElement {
-	public GoldenFreddyThisEntityKillsAnotherOneProcedure(FnafModModElements instance) {
-		super(instance, 47);
-	}
-
+public class GoldenFreddyThisEntityKillsAnotherOneProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))

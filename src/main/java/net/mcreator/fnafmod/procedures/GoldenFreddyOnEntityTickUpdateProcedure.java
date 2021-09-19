@@ -5,18 +5,12 @@ import net.minecraft.world.IWorld;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.entity.Entity;
 
-import net.mcreator.fnafmod.FnafModModElements;
 import net.mcreator.fnafmod.FnafModMod;
 
 import java.util.Map;
 import java.util.Collections;
 
-@FnafModModElements.ModElement.Tag
-public class GoldenFreddyOnEntityTickUpdateProcedure extends FnafModModElements.ModElement {
-	public GoldenFreddyOnEntityTickUpdateProcedure(FnafModModElements instance) {
-		super(instance, 49);
-	}
-
+public class GoldenFreddyOnEntityTickUpdateProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))

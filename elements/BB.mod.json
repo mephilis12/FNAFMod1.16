@@ -1,6 +1,6 @@
 {
-  "_fv": 18,
-  "_type": "mob",
+  "_fv": 24,
+  "_type": "livingentity",
   "definition": {
     "mobName": "Balloon Boy",
     "mobLabel": "",
@@ -102,7 +102,7 @@
       "name": "BBEntityDies"
     },
     "onMobTickUpdate": {
-      "name": "GoldenFreddyThisEntityKillsAnotherOne"
+      "name": "GoldenFreddyOnEntityTickUpdate"
     },
     "onInitialSpawn": {
       "name": "BBOnInitialEntitySpawn"

@@ -1,13 +1,13 @@
 {
-  "_fv": 18,
+  "_fv": 24,
   "_type": "block",
   "definition": {
-    "texture": "fnaf_3_wall",
-    "textureTop": "fnaf_3_wall",
-    "textureLeft": "fnaf_3_wall_2",
-    "textureFront": "fnaf_3_wall_2",
-    "textureRight": "fnaf_3_wall_2",
-    "textureBack": "fnaf_3_wall_2",
+    "texture": "rancid_wall",
+    "textureTop": "rancid_wall",
+    "textureLeft": "rancid_wall_tile",
+    "textureFront": "rancid_wall_tile",
+    "textureRight": "rancid_wall_tile",
+    "textureBack": "rancid_wall_tile",
     "renderType": 10,
     "customModelName": "Normal",
     "rotationMode": 0,
@@ -32,7 +32,7 @@
         "subtract": false
       }
     ],
-    "name": "FNAF 3 Wall Tile",
+    "name": "Rancid Wall Tiles",
     "specialInfo": [],
     "hardness": 1.5,
     "resistance": 10.0,
@@ -49,14 +49,15 @@
     "useLootTableForDrops": false,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
-    "canProvidePower": false,
-    "lightOpacity": 255,
+    "canRedstoneConnect": false,
+    "lightOpacity": 15,
     "material": {
       "value": "ROCK"
     },
     "tickRate": 10,
     "tickRandomly": false,
     "isReplaceable": false,
+    "canProvidePower": false,
     "colorOnMap": "DEFAULT",
     "creativePickItem": {
       "value": ""
@@ -71,6 +72,7 @@
     "jumpFactor": 1.0,
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
+    "isCustomSoundType": false,
     "soundOnStep": {
       "value": "STONE"
     },

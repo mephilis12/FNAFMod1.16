@@ -1,13 +1,13 @@
 {
-  "_fv": 18,
+  "_fv": 24,
   "_type": "block",
   "definition": {
-    "texture": "black_wall",
-    "textureTop": "black_wall",
-    "textureLeft": "black_wall",
-    "textureFront": "black_wall",
-    "textureRight": "black_wall",
-    "textureBack": "black_wall",
+    "texture": "dark_wall",
+    "textureTop": "dark_wall",
+    "textureLeft": "dark_wall",
+    "textureFront": "dark_wall",
+    "textureRight": "dark_wall",
+    "textureBack": "dark_wall",
     "renderType": 10,
     "customModelName": "Normal",
     "rotationMode": 0,
@@ -49,14 +49,15 @@
     "useLootTableForDrops": false,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
-    "canProvidePower": false,
-    "lightOpacity": 255,
+    "canRedstoneConnect": false,
+    "lightOpacity": 15,
     "material": {
       "value": "ROCK"
     },
     "tickRate": 10,
     "tickRandomly": false,
     "isReplaceable": false,
+    "canProvidePower": false,
     "colorOnMap": "DEFAULT",
     "creativePickItem": {
       "value": ""
@@ -71,6 +72,7 @@
     "jumpFactor": 1.0,
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
+    "isCustomSoundType": false,
     "soundOnStep": {
       "value": "STONE"
     },

@@ -1,11 +1,10 @@
 
 package net.mcreator.fnafmod.world.structure;
 
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.world.BiomeLoadingEvent;
 import net.minecraftforge.event.RegistryEvent;
-import net.minecraftforge.common.MinecraftForge;
 
 import net.minecraft.world.gen.placement.Placement;
 import net.minecraft.world.gen.placement.IPlacementConfig;
@@ -31,22 +30,16 @@ import net.minecraft.util.Mirror;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 
-import net.mcreator.fnafmod.FnafModModElements;
-
 import java.util.Random;
 
-@FnafModModElements.ModElement.Tag
-public class Shack1Structure extends FnafModModElements.ModElement {
+@Mod.EventBusSubscriber
+public class Shack1Structure {
 	private static Feature<NoFeatureConfig> feature = null;
 	private static ConfiguredFeature<?, ?> configuredFeature = null;
-	public Shack1Structure(FnafModModElements instance) {
-		super(instance, 154);
-		MinecraftForge.EVENT_BUS.register(this);
-		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
-	}
+	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 	private static class FeatureRegisterHandler {
 		@SubscribeEvent
-		public void registerFeature(RegistryEvent.Register<Feature<?>> event) {
+		public static void registerFeature(RegistryEvent.Register<Feature<?>> event) {
 			feature = new Feature<NoFeatureConfig>(NoFeatureConfig.field_236558_a_) {
 				@Override
 				public boolean generate(ISeedReader world, ChunkGenerator generator, Random random, BlockPos pos, NoFeatureConfig config) {
@@ -67,7 +60,7 @@ public class Shack1Structure extends FnafModModElements.ModElement {
 							j -= 1;
 							BlockState blockAt = world.getBlockState(new BlockPos(i, j, k));
 							boolean blockCriteria = false;
-							if (blockAt.getBlock() == Blocks.GRASS_BLOCK.getDefaultState().getBlock())
+							if (blockAt.getBlock() == Blocks.GRASS_BLOCK)
 								blockCriteria = true;
 							if (!blockCriteria)
 								continue;
@@ -97,7 +90,7 @@ public class Shack1Structure extends FnafModModElements.ModElement {
 		}
 	}
 	@SubscribeEvent
-	public void addFeatureToBiomes(BiomeLoadingEvent event) {
+	public static void addFeatureToBiomes(BiomeLoadingEvent event) {
 		event.getGeneration().getFeatures(GenerationStage.Decoration.SURFACE_STRUCTURES).add(() -> configuredFeature);
 	}
 }

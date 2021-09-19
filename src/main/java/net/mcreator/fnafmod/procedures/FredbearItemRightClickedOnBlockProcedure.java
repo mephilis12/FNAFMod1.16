@@ -13,17 +13,11 @@ import net.minecraft.entity.Entity;
 
 import net.mcreator.fnafmod.item.FredbearItemItem;
 import net.mcreator.fnafmod.entity.PassiveFredbearEntity;
-import net.mcreator.fnafmod.FnafModModElements;
 import net.mcreator.fnafmod.FnafModMod;
 
 import java.util.Map;
 
-@FnafModModElements.ModElement.Tag
-public class FredbearItemRightClickedOnBlockProcedure extends FnafModModElements.ModElement {
-	public FredbearItemRightClickedOnBlockProcedure(FnafModModElements instance) {
-		super(instance, 181);
-	}
-
+public class FredbearItemRightClickedOnBlockProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
@@ -64,7 +58,7 @@ public class FredbearItemRightClickedOnBlockProcedure extends FnafModModElements
 			world.addEntity(entityToSpawn);
 		}
 		if (entity instanceof PlayerEntity) {
-			ItemStack _stktoremove = new ItemStack(FredbearItemItem.block, (int) (1));
+			ItemStack _stktoremove = new ItemStack(FredbearItemItem.block);
 			((PlayerEntity) entity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
 					((PlayerEntity) entity).container.func_234641_j_());
 		}

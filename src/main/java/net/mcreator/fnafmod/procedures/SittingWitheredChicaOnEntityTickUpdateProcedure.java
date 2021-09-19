@@ -11,17 +11,11 @@ import net.minecraft.entity.Entity;
 
 import net.mcreator.fnafmod.entity.WitheredChicaEntity;
 import net.mcreator.fnafmod.entity.SittingWitheredChicaEntity;
-import net.mcreator.fnafmod.FnafModModElements;
 import net.mcreator.fnafmod.FnafModMod;
 
 import java.util.Map;
 
-@FnafModModElements.ModElement.Tag
-public class SittingWitheredChicaOnEntityTickUpdateProcedure extends FnafModModElements.ModElement {
-	public SittingWitheredChicaOnEntityTickUpdateProcedure(FnafModModElements instance) {
-		super(instance, 293);
-	}
-
+public class SittingWitheredChicaOnEntityTickUpdateProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))

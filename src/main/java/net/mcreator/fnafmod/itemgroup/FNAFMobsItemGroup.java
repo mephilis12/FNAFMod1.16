@@ -22,7 +22,7 @@ public class FNAFMobsItemGroup extends FnafModModElements.ModElement {
 			@OnlyIn(Dist.CLIENT)
 			@Override
 			public ItemStack createIcon() {
-				return new ItemStack(RedBlackTileBlock.block, (int) (1));
+				return new ItemStack(RedBlackTileBlock.block);
 			}
 
 			@OnlyIn(Dist.CLIENT)

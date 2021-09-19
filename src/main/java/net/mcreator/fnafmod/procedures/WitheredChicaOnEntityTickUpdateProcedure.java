@@ -12,18 +12,12 @@ import net.minecraft.entity.Entity;
 
 import net.mcreator.fnafmod.entity.WitheredChicaEntity;
 import net.mcreator.fnafmod.entity.SittingWitheredChicaEntity;
-import net.mcreator.fnafmod.FnafModModElements;
 import net.mcreator.fnafmod.FnafModMod;
 
 import java.util.Map;
 import java.util.Collections;
 
-@FnafModModElements.ModElement.Tag
-public class WitheredChicaOnEntityTickUpdateProcedure extends FnafModModElements.ModElement {
-	public WitheredChicaOnEntityTickUpdateProcedure(FnafModModElements instance) {
-		super(instance, 294);
-	}
-
+public class WitheredChicaOnEntityTickUpdateProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))

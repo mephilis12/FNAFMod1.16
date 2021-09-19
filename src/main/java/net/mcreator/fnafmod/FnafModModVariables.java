@@ -74,6 +74,7 @@ public class FnafModModVariables {
 		public boolean foxykill = false;
 		public boolean chicakill = false;
 		public boolean bonniekill = false;
+		public double PlayerFacing = 0;
 		public boolean TimeDay = false;
 		public WorldVariables() {
 			super(DATA_NAME);
@@ -90,6 +91,7 @@ public class FnafModModVariables {
 			foxykill = nbt.getBoolean("foxykill");
 			chicakill = nbt.getBoolean("chicakill");
 			bonniekill = nbt.getBoolean("bonniekill");
+			PlayerFacing = nbt.getDouble("PlayerFacing");
 			TimeDay = nbt.getBoolean("TimeDay");
 		}
 
@@ -100,6 +102,7 @@ public class FnafModModVariables {
 			nbt.putBoolean("foxykill", foxykill);
 			nbt.putBoolean("chicakill", chicakill);
 			nbt.putBoolean("bonniekill", bonniekill);
+			nbt.putDouble("PlayerFacing", PlayerFacing);
 			nbt.putBoolean("TimeDay", TimeDay);
 			return nbt;
 		}
@@ -238,7 +241,6 @@ public class FnafModModVariables {
 			nbt.putBoolean("BonnieFrame3", instance.BonnieFrame3);
 			nbt.putBoolean("BonnieFrame4", instance.BonnieFrame4);
 			nbt.putBoolean("BonnieFrame5", instance.BonnieFrame5);
-			nbt.putDouble("PlayerFacing", instance.PlayerFacing);
 			nbt.putBoolean("Mask", instance.Mask);
 			return nbt;
 		}
@@ -266,7 +268,6 @@ public class FnafModModVariables {
 			instance.BonnieFrame3 = nbt.getBoolean("BonnieFrame3");
 			instance.BonnieFrame4 = nbt.getBoolean("BonnieFrame4");
 			instance.BonnieFrame5 = nbt.getBoolean("BonnieFrame5");
-			instance.PlayerFacing = nbt.getDouble("PlayerFacing");
 			instance.Mask = nbt.getBoolean("Mask");
 		}
 	}
@@ -292,7 +293,6 @@ public class FnafModModVariables {
 		public boolean BonnieFrame3 = false;
 		public boolean BonnieFrame4 = false;
 		public boolean BonnieFrame5 = false;
-		public double PlayerFacing = 0;
 		public boolean Mask = false;
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayerEntity)
@@ -326,7 +326,6 @@ public class FnafModModVariables {
 		PlayerVariables original = ((PlayerVariables) event.getOriginal().getCapability(PLAYER_VARIABLES_CAPABILITY, null)
 				.orElse(new PlayerVariables()));
 		PlayerVariables clone = ((PlayerVariables) event.getEntity().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
-		clone.PlayerFacing = original.PlayerFacing;
 		clone.Mask = original.Mask;
 		if (!event.isWasDeath()) {
 			clone.FreddyFrame1 = original.FreddyFrame1;
@@ -392,7 +391,6 @@ public class FnafModModVariables {
 					variables.BonnieFrame3 = message.data.BonnieFrame3;
 					variables.BonnieFrame4 = message.data.BonnieFrame4;
 					variables.BonnieFrame5 = message.data.BonnieFrame5;
-					variables.PlayerFacing = message.data.PlayerFacing;
 					variables.Mask = message.data.Mask;
 				}
 			});

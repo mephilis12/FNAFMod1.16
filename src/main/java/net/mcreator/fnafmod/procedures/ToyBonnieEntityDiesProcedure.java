@@ -9,17 +9,11 @@ import net.mcreator.fnafmod.world.FnafDropGameRule;
 import net.mcreator.fnafmod.item.LightBluePlasticItem;
 import net.mcreator.fnafmod.item.GuitarItem;
 import net.mcreator.fnafmod.item.CircuitBoardItem;
-import net.mcreator.fnafmod.FnafModModElements;
 import net.mcreator.fnafmod.FnafModMod;
 
 import java.util.Map;
 
-@FnafModModElements.ModElement.Tag
-public class ToyBonnieEntityDiesProcedure extends FnafModModElements.ModElement {
-	public ToyBonnieEntityDiesProcedure(FnafModModElements instance) {
-		super(instance, 264);
-	}
-
+public class ToyBonnieEntityDiesProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))
@@ -47,37 +41,37 @@ public class ToyBonnieEntityDiesProcedure extends FnafModModElements.ModElement 
 		IWorld world = (IWorld) dependencies.get("world");
 		if (((world.getWorldInfo().getGameRulesInstance().getBoolean(FnafDropGameRule.gamerule)) == (true))) {
 			if (world instanceof World && !world.isRemote()) {
-				ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(LightBluePlasticItem.block, (int) (1)));
+				ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(LightBluePlasticItem.block));
 				entityToSpawn.setPickupDelay((int) 10);
 				entityToSpawn.setNoDespawn();
 				world.addEntity(entityToSpawn);
 			}
 			if (world instanceof World && !world.isRemote()) {
-				ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(LightBluePlasticItem.block, (int) (1)));
+				ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(LightBluePlasticItem.block));
 				entityToSpawn.setPickupDelay((int) 10);
 				entityToSpawn.setNoDespawn();
 				world.addEntity(entityToSpawn);
 			}
 			if (world instanceof World && !world.isRemote()) {
-				ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(LightBluePlasticItem.block, (int) (1)));
+				ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(LightBluePlasticItem.block));
 				entityToSpawn.setPickupDelay((int) 10);
 				entityToSpawn.setNoDespawn();
 				world.addEntity(entityToSpawn);
 			}
 			if (world instanceof World && !world.isRemote()) {
-				ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(CircuitBoardItem.block, (int) (1)));
+				ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(CircuitBoardItem.block));
 				entityToSpawn.setPickupDelay((int) 10);
 				entityToSpawn.setNoDespawn();
 				world.addEntity(entityToSpawn);
 			}
 			if (world instanceof World && !world.isRemote()) {
-				ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(CircuitBoardItem.block, (int) (1)));
+				ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(CircuitBoardItem.block));
 				entityToSpawn.setPickupDelay((int) 10);
 				entityToSpawn.setNoDespawn();
 				world.addEntity(entityToSpawn);
 			}
 			if (world instanceof World && !world.isRemote()) {
-				ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(GuitarItem.block, (int) (1)));
+				ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(GuitarItem.block));
 				entityToSpawn.setPickupDelay((int) 10);
 				entityToSpawn.setNoDespawn();
 				world.addEntity(entityToSpawn);

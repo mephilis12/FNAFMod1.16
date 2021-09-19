@@ -12,17 +12,11 @@ import net.minecraft.block.BlockState;
 
 import net.mcreator.fnafmod.block.SecurityDoorOpenBlock;
 import net.mcreator.fnafmod.block.DoorButtonOffBlock;
-import net.mcreator.fnafmod.FnafModModElements;
 import net.mcreator.fnafmod.FnafModMod;
 
 import java.util.Map;
 
-@FnafModModElements.ModElement.Tag
-public class OfficeDoorClientDisplayRandomTickProcedure extends FnafModModElements.ModElement {
-	public OfficeDoorClientDisplayRandomTickProcedure(FnafModModElements instance) {
-		super(instance, 29);
-	}
-
+public class OfficeDoorClientDisplayRandomTickProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))
@@ -59,17 +53,17 @@ public class OfficeDoorClientDisplayRandomTickProcedure extends FnafModModElemen
 			for (int index1 = 0; index1 < (int) (3); index1++) {
 				sz = (double) (-1);
 				for (int index2 = 0; index2 < (int) (3); index2++) {
-					if (((world.getBlockState(new BlockPos((int) (x + (sx)), (int) (y + (sy)), (int) (z + (sz)))))
-							.getBlock() == DoorButtonOffBlock.block.getDefaultState().getBlock())) {
+					if (((world.getBlockState(new BlockPos((int) (x + sx), (int) (y + sy), (int) (z + sz))))
+							.getBlock() == DoorButtonOffBlock.block)) {
 						found = (boolean) (true);
 					}
-					sz = (double) ((sz) + 1);
+					sz = (double) (sz + 1);
 				}
-				sy = (double) ((sy) + 1);
+				sy = (double) (sy + 1);
 			}
-			sx = (double) ((sx) + 1);
+			sx = (double) (sx + 1);
 		}
-		if (((found) == (true))) {
+		if ((found == (true))) {
 			{
 				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
 				BlockState _bs = SecurityDoorOpenBlock.block.getDefaultState();

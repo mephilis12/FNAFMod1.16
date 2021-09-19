@@ -12,18 +12,12 @@ import net.minecraft.entity.Entity;
 
 import net.mcreator.fnafmod.entity.MangleSittingEntity;
 import net.mcreator.fnafmod.entity.MangleEntity;
-import net.mcreator.fnafmod.FnafModModElements;
 import net.mcreator.fnafmod.FnafModMod;
 
 import java.util.Map;
 import java.util.Collections;
 
-@FnafModModElements.ModElement.Tag
-public class MangleOnEntityTickUpdateProcedure extends FnafModModElements.ModElement {
-	public MangleOnEntityTickUpdateProcedure(FnafModModElements instance) {
-		super(instance, 285);
-	}
-
+public class MangleOnEntityTickUpdateProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))

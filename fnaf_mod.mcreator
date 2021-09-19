@@ -416,7 +416,7 @@
     },
     {
       "name": "FreddyFazbear",
-      "type": "mob",
+      "type": "livingentity",
       "sortid": 32,
       "compiles": true,
       "locked_code": false,
@@ -433,7 +433,7 @@
       "ids": {},
       "registry_name": "freddy_fazbear_on_entity_tick_update",
       "metadata": {
-        "return_type": "LOGIC",
+        "return_type": "logic",
         "dependencies": [
           {
             "name": "world",
@@ -629,7 +629,7 @@
     },
     {
       "name": "GoldenFreddy",
-      "type": "mob",
+      "type": "livingentity",
       "sortid": 46,
       "compiles": true,
       "locked_code": false,
@@ -676,7 +676,7 @@
       "ids": {},
       "registry_name": "golden_freddy_jumpscare_display_overlay_ingame",
       "metadata": {
-        "return_type": "LOGIC",
+        "return_type": "logic",
         "dependencies": [
           {
             "name": "world",
@@ -710,7 +710,7 @@
     },
     {
       "name": "BonnieBunny",
-      "type": "mob",
+      "type": "livingentity",
       "sortid": 63,
       "compiles": true,
       "locked_code": false,
@@ -720,7 +720,7 @@
     },
     {
       "name": "ChicaChicken",
-      "type": "mob",
+      "type": "livingentity",
       "sortid": 64,
       "compiles": true,
       "locked_code": false,
@@ -730,7 +730,7 @@
     },
     {
       "name": "FoxyPirate",
-      "type": "mob",
+      "type": "livingentity",
       "sortid": 65,
       "compiles": true,
       "locked_code": false,
@@ -747,7 +747,7 @@
       "ids": {},
       "registry_name": "foxy_jumpscare_display_overlay_ingame",
       "metadata": {
-        "return_type": "LOGIC",
+        "return_type": "logic",
         "dependencies": [
           {
             "name": "world",
@@ -800,7 +800,7 @@
       "ids": {},
       "registry_name": "foxy_frame_1",
       "metadata": {
-        "return_type": "LOGIC",
+        "return_type": "logic",
         "dependencies": [
           {
             "name": "entity",
@@ -819,7 +819,7 @@
       "ids": {},
       "registry_name": "foxy_frame_2",
       "metadata": {
-        "return_type": "LOGIC",
+        "return_type": "logic",
         "dependencies": [
           {
             "name": "entity",
@@ -838,7 +838,7 @@
       "ids": {},
       "registry_name": "foxy_frame_3",
       "metadata": {
-        "return_type": "LOGIC",
+        "return_type": "logic",
         "dependencies": [
           {
             "name": "entity",
@@ -857,7 +857,7 @@
       "ids": {},
       "registry_name": "foxy_frame_4",
       "metadata": {
-        "return_type": "LOGIC",
+        "return_type": "logic",
         "dependencies": [
           {
             "name": "entity",
@@ -876,7 +876,7 @@
       "ids": {},
       "registry_name": "foxy_frame_5",
       "metadata": {
-        "return_type": "LOGIC",
+        "return_type": "logic",
         "dependencies": [
           {
             "name": "entity",
@@ -955,7 +955,7 @@
       "ids": {},
       "registry_name": "freddy_frame_1",
       "metadata": {
-        "return_type": "LOGIC",
+        "return_type": "logic",
         "dependencies": [
           {
             "name": "entity",
@@ -974,7 +974,7 @@
       "ids": {},
       "registry_name": "freddy_frame_2",
       "metadata": {
-        "return_type": "LOGIC",
+        "return_type": "logic",
         "dependencies": [
           {
             "name": "entity",
@@ -993,7 +993,7 @@
       "ids": {},
       "registry_name": "freddy_frame_3",
       "metadata": {
-        "return_type": "LOGIC",
+        "return_type": "logic",
         "dependencies": [
           {
             "name": "entity",
@@ -1012,7 +1012,7 @@
       "ids": {},
       "registry_name": "freddy_frame_4",
       "metadata": {
-        "return_type": "LOGIC",
+        "return_type": "logic",
         "dependencies": [
           {
             "name": "entity",
@@ -1031,7 +1031,7 @@
       "ids": {},
       "registry_name": "freddy_frame_5",
       "metadata": {
-        "return_type": "LOGIC",
+        "return_type": "logic",
         "dependencies": [
           {
             "name": "entity",
@@ -1190,7 +1190,7 @@
       "ids": {},
       "registry_name": "bonnie_frame_overlay_1_display_overlay_ingame",
       "metadata": {
-        "return_type": "LOGIC",
+        "return_type": "logic",
         "dependencies": [
           {
             "name": "entity",
@@ -1219,7 +1219,7 @@
       "ids": {},
       "registry_name": "bonnie_frame_overlay_2_display_overlay_ingame",
       "metadata": {
-        "return_type": "LOGIC",
+        "return_type": "logic",
         "dependencies": [
           {
             "name": "entity",
@@ -1248,7 +1248,7 @@
       "ids": {},
       "registry_name": "bonnie_frame_overlay_3_display_overlay_ingame",
       "metadata": {
-        "return_type": "LOGIC",
+        "return_type": "logic",
         "dependencies": [
           {
             "name": "entity",
@@ -1277,7 +1277,7 @@
       "ids": {},
       "registry_name": "bonnie_frame_overlay_4_display_overlay_ingame",
       "metadata": {
-        "return_type": "LOGIC",
+        "return_type": "logic",
         "dependencies": [
           {
             "name": "entity",
@@ -1306,7 +1306,7 @@
       "ids": {},
       "registry_name": "bonnie_frame_overlay_5_display_overlay_ingame",
       "metadata": {
-        "return_type": "LOGIC",
+        "return_type": "logic",
         "dependencies": [
           {
             "name": "entity",
@@ -1369,7 +1369,7 @@
       "ids": {},
       "registry_name": "chica_frame_overlay_1_display_overlay_ingame",
       "metadata": {
-        "return_type": "LOGIC",
+        "return_type": "logic",
         "dependencies": [
           {
             "name": "entity",
@@ -1398,7 +1398,7 @@
       "ids": {},
       "registry_name": "chica_frame_overlay_2_display_overlay_ingame",
       "metadata": {
-        "return_type": "LOGIC",
+        "return_type": "logic",
         "dependencies": [
           {
             "name": "entity",
@@ -1427,7 +1427,7 @@
       "ids": {},
       "registry_name": "chica_frame_overlay_3_display_overlay_ingame",
       "metadata": {
-        "return_type": "LOGIC",
+        "return_type": "logic",
         "dependencies": [
           {
             "name": "entity",
@@ -1456,7 +1456,7 @@
       "ids": {},
       "registry_name": "chica_frame_overlay_4_display_overlay_ingame",
       "metadata": {
-        "return_type": "LOGIC",
+        "return_type": "logic",
         "dependencies": [
           {
             "name": "entity",
@@ -1485,7 +1485,7 @@
       "ids": {},
       "registry_name": "chica_frame_overlay_5_display_overlay_ingame",
       "metadata": {
-        "return_type": "LOGIC",
+        "return_type": "logic",
         "dependencies": [
           {
             "name": "entity",
@@ -1531,7 +1531,7 @@
     },
     {
       "name": "SpringBonnieCreature",
-      "type": "mob",
+      "type": "livingentity",
       "sortid": 123,
       "compiles": true,
       "locked_code": false,
@@ -1541,7 +1541,7 @@
     },
     {
       "name": "SittingSpringBonnie",
-      "type": "mob",
+      "type": "livingentity",
       "sortid": 124,
       "compiles": true,
       "locked_code": false,
@@ -1661,7 +1661,7 @@
     },
     {
       "name": "FredbearCreature",
-      "type": "mob",
+      "type": "livingentity",
       "sortid": 136,
       "compiles": true,
       "locked_code": false,
@@ -1671,7 +1671,7 @@
     },
     {
       "name": "SittingFredbear",
-      "type": "mob",
+      "type": "livingentity",
       "sortid": 137,
       "compiles": true,
       "locked_code": false,
@@ -1877,7 +1877,7 @@
     },
     {
       "name": "PassiveFreddy",
-      "type": "mob",
+      "type": "livingentity",
       "sortid": 157,
       "compiles": true,
       "locked_code": false,
@@ -1887,7 +1887,7 @@
     },
     {
       "name": "PassiveGoldie",
-      "type": "mob",
+      "type": "livingentity",
       "sortid": 158,
       "compiles": true,
       "locked_code": false,
@@ -1897,7 +1897,7 @@
     },
     {
       "name": "PassiveFredbear",
-      "type": "mob",
+      "type": "livingentity",
       "sortid": 159,
       "compiles": true,
       "locked_code": false,
@@ -1907,7 +1907,7 @@
     },
     {
       "name": "PassiveBonnie",
-      "type": "mob",
+      "type": "livingentity",
       "sortid": 160,
       "compiles": true,
       "locked_code": false,
@@ -1917,7 +1917,7 @@
     },
     {
       "name": "PassiveSpringBonnie",
-      "type": "mob",
+      "type": "livingentity",
       "sortid": 161,
       "compiles": true,
       "locked_code": false,
@@ -1927,7 +1927,7 @@
     },
     {
       "name": "PassiveChica",
-      "type": "mob",
+      "type": "livingentity",
       "sortid": 162,
       "compiles": true,
       "locked_code": false,
@@ -1937,7 +1937,7 @@
     },
     {
       "name": "PassiveFoxy",
-      "type": "mob",
+      "type": "livingentity",
       "sortid": 163,
       "compiles": true,
       "locked_code": false,
@@ -2193,7 +2193,7 @@
     },
     {
       "name": "EndoSkeleton",
-      "type": "mob",
+      "type": "livingentity",
       "sortid": 178,
       "compiles": true,
       "locked_code": false,
@@ -2599,7 +2599,7 @@
     },
     {
       "name": "WitheredChica",
-      "type": "mob",
+      "type": "livingentity",
       "sortid": 199,
       "compiles": true,
       "locked_code": false,
@@ -2609,7 +2609,7 @@
     },
     {
       "name": "WitheredBonnie",
-      "type": "mob",
+      "type": "livingentity",
       "sortid": 200,
       "compiles": true,
       "locked_code": false,
@@ -2619,7 +2619,7 @@
     },
     {
       "name": "WitheredFreddy",
-      "type": "mob",
+      "type": "livingentity",
       "sortid": 201,
       "compiles": true,
       "locked_code": false,
@@ -2629,7 +2629,7 @@
     },
     {
       "name": "WitheredFoxy",
-      "type": "mob",
+      "type": "livingentity",
       "sortid": 202,
       "compiles": true,
       "locked_code": false,
@@ -2639,7 +2639,7 @@
     },
     {
       "name": "WitheredGoldenFreddy",
-      "type": "mob",
+      "type": "livingentity",
       "sortid": 203,
       "compiles": true,
       "locked_code": false,
@@ -2649,7 +2649,7 @@
     },
     {
       "name": "ShadowFreddy",
-      "type": "mob",
+      "type": "livingentity",
       "sortid": 204,
       "compiles": true,
       "locked_code": false,
@@ -2659,7 +2659,7 @@
     },
     {
       "name": "Mangle",
-      "type": "mob",
+      "type": "livingentity",
       "sortid": 205,
       "compiles": true,
       "locked_code": false,
@@ -2669,7 +2669,7 @@
     },
     {
       "name": "SecretSpringtrap",
-      "type": "mob",
+      "type": "livingentity",
       "sortid": 206,
       "compiles": true,
       "locked_code": false,
@@ -2679,7 +2679,7 @@
     },
     {
       "name": "ToyFreddy",
-      "type": "mob",
+      "type": "livingentity",
       "sortid": 207,
       "compiles": true,
       "locked_code": false,
@@ -2689,7 +2689,7 @@
     },
     {
       "name": "ToyBonnie",
-      "type": "mob",
+      "type": "livingentity",
       "sortid": 208,
       "compiles": true,
       "locked_code": false,
@@ -2699,7 +2699,7 @@
     },
     {
       "name": "ToyChica",
-      "type": "mob",
+      "type": "livingentity",
       "sortid": 209,
       "compiles": true,
       "locked_code": false,
@@ -2709,7 +2709,7 @@
     },
     {
       "name": "BB",
-      "type": "mob",
+      "type": "livingentity",
       "sortid": 210,
       "compiles": true,
       "locked_code": false,
@@ -2719,7 +2719,7 @@
     },
     {
       "name": "Puppet",
-      "type": "mob",
+      "type": "livingentity",
       "sortid": 211,
       "compiles": true,
       "locked_code": false,
@@ -2740,6 +2740,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -2758,6 +2762,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -2776,6 +2784,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -2794,6 +2806,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -2812,6 +2828,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -2830,6 +2850,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -2848,6 +2872,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -2866,6 +2894,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -2884,6 +2916,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -2902,6 +2938,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -2920,6 +2960,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -2938,6 +2982,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -2956,6 +3004,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -2974,6 +3026,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -2992,6 +3048,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -3010,6 +3070,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -3028,6 +3092,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -3035,7 +3103,7 @@
     },
     {
       "name": "ShadowBonnie",
-      "type": "mob",
+      "type": "livingentity",
       "sortid": 229,
       "compiles": true,
       "locked_code": false,
@@ -3056,6 +3124,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -3074,6 +3146,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -3092,6 +3168,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -3099,7 +3179,7 @@
     },
     {
       "name": "Endo02",
-      "type": "mob",
+      "type": "livingentity",
       "sortid": 233,
       "compiles": true,
       "locked_code": false,
@@ -3120,6 +3200,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -3138,6 +3222,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -3156,6 +3244,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -3174,6 +3266,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -3192,6 +3288,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -3210,6 +3310,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -3228,6 +3332,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -3246,6 +3354,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -3264,6 +3376,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -3282,6 +3398,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -3289,7 +3409,7 @@
     },
     {
       "name": "ToyFoxy",
-      "type": "mob",
+      "type": "livingentity",
       "sortid": 246,
       "compiles": true,
       "locked_code": false,
@@ -3723,7 +3843,7 @@
     },
     {
       "name": "ArcadeMachineBonnie",
-      "type": "mob",
+      "type": "livingentity",
       "sortid": 269,
       "compiles": true,
       "locked_code": false,
@@ -3744,6 +3864,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -3761,7 +3885,7 @@
     },
     {
       "name": "NightimeToyChica",
-      "type": "mob",
+      "type": "livingentity",
       "sortid": 272,
       "compiles": true,
       "locked_code": false,
@@ -3874,7 +3998,7 @@
       "ids": {},
       "registry_name": "mask_display_overlay_ingame",
       "metadata": {
-        "return_type": "LOGIC",
+        "return_type": "logic",
         "dependencies": [
           {
             "name": "entity",
@@ -3958,7 +4082,7 @@
     },
     {
       "name": "MangleSitting",
-      "type": "mob",
+      "type": "livingentity",
       "sortid": 282,
       "compiles": true,
       "locked_code": false,
@@ -3979,6 +4103,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -4054,7 +4182,7 @@
     },
     {
       "name": "Dedwitheredfreddy",
-      "type": "mob",
+      "type": "livingentity",
       "sortid": 286,
       "compiles": true,
       "locked_code": false,
@@ -4132,7 +4260,7 @@
     },
     {
       "name": "SittingWitheredBonnie",
-      "type": "mob",
+      "type": "livingentity",
       "sortid": 289,
       "compiles": true,
       "locked_code": false,
@@ -4210,7 +4338,7 @@
     },
     {
       "name": "SittingWitheredChica",
-      "type": "mob",
+      "type": "livingentity",
       "sortid": 292,
       "compiles": true,
       "locked_code": false,
@@ -4293,7 +4421,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "celebrate"
+      "registry_name": "celebrate",
+      "path": "~/GUIs and Extras"
     },
     {
       "name": "Attack",
@@ -4304,7 +4433,7 @@
       "ids": {},
       "registry_name": "attack",
       "metadata": {
-        "return_type": "LOGIC",
+        "return_type": "logic",
         "dependencies": [
           {
             "name": "entity",
@@ -4331,6 +4460,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -4338,7 +4471,7 @@
     },
     {
       "name": "PurpleGuy",
-      "type": "mob",
+      "type": "livingentity",
       "sortid": 298,
       "compiles": true,
       "locked_code": false,
@@ -4359,6 +4492,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -4395,6 +4532,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -4413,6 +4554,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -4431,6 +4576,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -4449,6 +4598,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -4537,7 +4690,1164 @@
       "ids": {},
       "registry_name": "fnafDrop",
       "metadata": {
-        "type": "boolean"
+        "type": "logic"
+      },
+      "path": "~/GUIs and Extras"
+    },
+    {
+      "name": "Fnaf4Door",
+      "type": "block",
+      "sortid": 311,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fnaf_4_door",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "Fan",
+      "type": "block",
+      "sortid": 312,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fan",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "PurpleFan",
+      "type": "block",
+      "sortid": 313,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "purple_fan",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "LocketBottom",
+      "type": "block",
+      "sortid": 314,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "locket_bottom",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "LockerTop",
+      "type": "block",
+      "sortid": 315,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "locker_top",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "Locker",
+      "type": "gui",
+      "sortid": 316,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "locker",
+      "path": "~/GUIs and Extras"
+    },
+    {
+      "name": "LocketBottomBlockIsPlacedBy",
+      "type": "procedure",
+      "sortid": 317,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "locket_bottom_block_is_placed_by",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "LocketBottomBlockDestroyedByPlayer",
+      "type": "procedure",
+      "sortid": 318,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "locket_bottom_block_destroyed_by_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "LockerTopBlockDestroyedByPlayer",
+      "type": "procedure",
+      "sortid": 319,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "locker_top_block_destroyed_by_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "FNAF4WallBottomRotable",
+      "type": "block",
+      "sortid": 320,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fnaf_4_wall_bottom_rotable",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "FNAF4WallBottomRotable2",
+      "type": "block",
+      "sortid": 321,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fnaf_4_wall_bottom_rotable_2",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "WallChange1",
+      "type": "gui",
+      "sortid": 322,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "wall_change_1",
+      "path": "~/GUIs and Extras"
+    },
+    {
+      "name": "FNAF4WallBottomRotable3",
+      "type": "block",
+      "sortid": 323,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fnaf_4_wall_bottom_rotable_3",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "A",
+      "type": "procedure",
+      "sortid": 324,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "a",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUIs and Extras"
+    },
+    {
+      "name": "B",
+      "type": "procedure",
+      "sortid": 325,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "b",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUIs and Extras"
+    },
+    {
+      "name": "C",
+      "type": "procedure",
+      "sortid": 326,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "c",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUIs and Extras"
+    },
+    {
+      "name": "FNAF4WallBottomRotable4",
+      "type": "block",
+      "sortid": 327,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fnaf_4_wall_bottom_rotable_4",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "D",
+      "type": "procedure",
+      "sortid": 328,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "d",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUIs and Extras"
+    },
+    {
+      "name": "FNAFWallTopRotable",
+      "type": "block",
+      "sortid": 329,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fnaf_wall_top_rotable",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "FNAFWallTopRotable2",
+      "type": "block",
+      "sortid": 330,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fnaf_wall_top_rotable_2",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "WallChange2",
+      "type": "gui",
+      "sortid": 331,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "wall_change_2",
+      "path": "~/GUIs and Extras"
+    },
+    {
+      "name": "FNAFWallTopRotable3",
+      "type": "block",
+      "sortid": 332,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fnaf_wall_top_rotable_3",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "FNAFWallTopRotable4",
+      "type": "block",
+      "sortid": 333,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fnaf_wall_top_rotable_4",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "E",
+      "type": "procedure",
+      "sortid": 334,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "e",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUIs and Extras"
+    },
+    {
+      "name": "F",
+      "type": "procedure",
+      "sortid": 335,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "f",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUIs and Extras"
+    },
+    {
+      "name": "G",
+      "type": "procedure",
+      "sortid": 336,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "g",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUIs and Extras"
+    },
+    {
+      "name": "H",
+      "type": "procedure",
+      "sortid": 337,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "h",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUIs and Extras"
+    },
+    {
+      "name": "FNAF4WallRoomBottom",
+      "type": "block",
+      "sortid": 338,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fnaf_4_wall_room_bottom",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "FNAF4WallBottomHall",
+      "type": "block",
+      "sortid": 339,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fnaf_4_wall_bottom_hall",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "FNAF4WallTopRoom",
+      "type": "block",
+      "sortid": 340,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fnaf_4_wall_top_room",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "FNAF4WallTopHall",
+      "type": "block",
+      "sortid": 341,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fnaf_4_wall_top_hall",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "ClosetLeftBottom",
+      "type": "block",
+      "sortid": 342,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "closet_left_bottom",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "ClosetLeftTop",
+      "type": "block",
+      "sortid": 343,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "closet_left_top",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "ClosetLeftBottomBlockIsPlacedBy",
+      "type": "procedure",
+      "sortid": 344,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "closet_left_bottom_block_is_placed_by",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "ClosetLeftBottomBlockDestroyedByPlayer",
+      "type": "procedure",
+      "sortid": 345,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "closet_left_bottom_block_destroyed_by_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "ClosetLeftTopBlockDestroyedByPlayer",
+      "type": "procedure",
+      "sortid": 346,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "closet_left_top_block_destroyed_by_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "ClosetRightBottom",
+      "type": "block",
+      "sortid": 347,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "closet_right_bottom",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "ClosetRightTop",
+      "type": "block",
+      "sortid": 348,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "closet_right_top",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "ClosetRightBottomBlockIsPlacedBy",
+      "type": "procedure",
+      "sortid": 349,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "closet_right_bottom_block_is_placed_by",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "ClosetRightBottomBlockDestroyedByPlayer",
+      "type": "procedure",
+      "sortid": 350,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "closet_right_bottom_block_destroyed_by_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "ClosetRightTopBlockDestroyedByPlayer",
+      "type": "procedure",
+      "sortid": 351,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "closet_right_top_block_destroyed_by_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "ClosetLeftOpenBottom",
+      "type": "block",
+      "sortid": 352,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "closet_left_open_bottom",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "ClosetLeftOpenTop",
+      "type": "block",
+      "sortid": 353,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "closet_left_open_top",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "ClosetLeftBottomOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 354,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "closet_left_bottom_on_block_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "ClosetLeftTopOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 355,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "closet_left_top_on_block_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "ClosetLeftOpenBottomOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 356,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "closet_left_open_bottom_on_block_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "ClosetLeftOpenTopOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 357,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "closet_left_open_top_on_block_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "ClosetLeftOpenBottomBlockDestroyedByPlayer",
+      "type": "procedure",
+      "sortid": 358,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "closet_left_open_bottom_block_destroyed_by_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "ClosetLeftOpenTopBlockDestroyedByPlayer",
+      "type": "procedure",
+      "sortid": 359,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "closet_left_open_top_block_destroyed_by_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Code Stuff"
+    },
+    {
+      "name": "ClosetRightOpenBottom",
+      "type": "block",
+      "sortid": 360,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "closet_right_open_bottom",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "ClosetRightOpenTop",
+      "type": "block",
+      "sortid": 361,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "closet_right_open_top",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "ClosetRightBottomOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 362,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "closet_right_bottom_on_block_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ClosetRightTopOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 363,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "closet_right_top_on_block_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ClosetRightOpenBottomOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 364,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "closet_right_open_bottom_on_block_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ClosetRightOpenBottomBlockDestroyedByPlayer",
+      "type": "procedure",
+      "sortid": 365,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "closet_right_open_bottom_block_destroyed_by_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ClosetRightOpenTopOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 366,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "closet_right_open_top_on_block_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ClosetRightOpenTopBlockDestroyedByPlayer",
+      "type": "procedure",
+      "sortid": 367,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "closet_right_open_top_block_destroyed_by_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
       }
     }
   ],
@@ -4695,7 +6005,7 @@
     {
       "name": "PlayerFacing",
       "type": "number",
-      "scope": "player_persistent",
+      "scope": "world",
       "value": "0"
     },
     {
@@ -4748,41 +6058,48 @@
   "language_map": {
     "en_us": {
       "entity.fnaf_mod.withered_chica": "Withered Chica",
+      "block.fnaf_mod.fan": "Fan",
       "entity.fnaf_mod.endo_02": "Endo-02",
       "item.fnaf_mod.red_plastic": "Red Plastic",
       "entity.fnaf_mod.shadow_freddy": "Shadow Freddy",
-      "item.fnaf_mod.withered_bonnie_spawn_egg": "Withered Bonnie Spawn Egg",
       "entity.fnaf_mod.secret_springtrap": "Freddy Fazbear",
+      "item.fnaf_mod.withered_bonnie_spawn_egg": "Withered Bonnie Spawn Egg",
       "entity.fnaf_mod.toy_bonnie": "Toy Bonnie",
-      "block.fnaf_mod.white_black_wall_tile": "FNAF 2 Wall Tiles",
+      "block.fnaf_mod.white_black_wall_tile": "White Wall Tiles",
       "item.fnaf_mod.spring_lock_suit_leggings": "Spring Lock Suit Legs",
       "item.fnaf_mod.passive_chica_spawn_egg": "Chica the Chicken Spawn Egg",
       "item.fnaf_mod.flash_light_on": "FlashLight",
+      "block.fnaf_mod.locket_bottom": "Locker",
+      "block.fnaf_mod.closet_right_open_bottom": "Closet Door Right",
       "item.fnaf_mod.freddy_mask_helmet": "Freddy Mask",
       "entity.fnaf_mod.sitting_fredbear": "Fredbear",
       "item.fnaf_mod.puppet_spawn_egg": "Puppet Spawn Egg",
       "entity.fnaf_mod.foxy_pirate": "Foxy the Pirate",
       "item.fnaf_mod.freddy": "Freddy",
-      "block.fnaf_mod.wall_tile": "Wall Tile",
+      "block.fnaf_mod.wall_tile": "Wall Tiles",
       "block.fnaf_mod.backstage_door": "Backstage Door",
+      "block.fnaf_mod.closet_left_bottom": "Closet Door Left",
       "entity.fnaf_mod.chica_chicken": "Chica the Chicken",
       "item.fnaf_mod.toy_chica_spawn_egg": "Toy Chica Spawn Egg",
       "block.fnaf_mod.light_button_off": "Light Button Off",
       "item.fnaf_mod.yellow_plastic": "Yellow Plastic",
       "entity.fnaf_mod.withered_foxy": "Withered Foxy",
+      "block.fnaf_mod.closet_left_top": "Closet Door",
       "entity.fnaf_mod.arcade_machine_bonnie": "Arcade Machine",
       "item.fnaf_mod.white_plastic": "White Plastic",
       "item.fnaf_mod.dedwitheredfreddy_spawn_egg": "Withered Freddy Spawn Egg",
       "item.fnaf_mod.passive_fredbear_spawn_egg": "Fredbear Spawn Egg",
       "item.fnaf_mod.passive_foxy_spawn_egg": "Foxy the Pirate Spawn Egg",
       "entity.fnaf_mod.toy_chica": "Toy Chica",
+      "block.fnaf_mod.closet_right_open_top": "Closet Door Right",
+      "block.fnaf_mod.purple_fan": "Purple Fan",
       "item.fnaf_mod.sitting_withered_bonnie_spawn_egg": "Withered Freddy Spawn Egg",
       "item.fnaf_mod.freddy_fazbear_spawn_egg": "Freddy Fazbear Spawn Egg",
       "entity.fnaf_mod.dedwitheredfreddy": "Withered Freddy",
       "block.fnaf_mod.bonnie_head": "Bonnie Head",
       "item.fnaf_mod.flash_light": "FlashLight",
       "item.fnaf_mod.toy_cupcake": "Cupcake",
-      "block.fnaf_mod.white_red_wall_tile": "Fredbear\u0027s Wall Tiles",
+      "block.fnaf_mod.white_red_wall_tile": "White Red Wall Tiles",
       "block.fnaf_mod.chica_head": "Chica Head",
       "entity.fnaf_mod.golden_freddy": "Golden Freddy",
       "entity.fnaf_mod.mangle_sitting": "Mangle",
@@ -4814,15 +6131,18 @@
       "item.fnaf_mod.toy_freddy_spawn_egg": "Toy Freddy  Spawn Egg",
       "entity.fnaf_mod.sitting_spring_bonnie": "Spring Bonnie",
       "block.fnaf_mod.red_blue_tile": "Red Blue Tile",
+      "block.fnaf_mod.closet_left_open_top": "Closet Door Left",
       "block.fnaf_mod.stars": "Stars",
       "item.fnaf_mod.black_plastic": "Black Plastic",
       "block.fnaf_mod.light_button_on": "Light Button On",
+      "block.fnaf_mod.closet_right_bottom": "Closet Door Right",
       "block.fnaf_mod.table_cloth": "Table Cloth",
       "block.fnaf_mod.red_black_tile": "Red Black Tile",
       "item.fnaf_mod.toy_bonnie_spawn_egg": "Toy Bonnie Spawn Egg",
       "block.fnaf_mod.security_door_open": "Office Door",
       "block.fnaf_mod.arcade_machine_foxy": "Arcade Machine Foxy",
       "entity.fnaf_mod.passive_bonnie": "Bonnie the Bunny",
+      "block.fnaf_mod.fnaf_4_wall_room_bottom": "Tapestry Bottom Blue",
       "item.fnaf_mod.sitting_spring_bonnie_spawn_egg": "Spring Bonnie Spawn Egg",
       "entity.fnaf_mod.passive_fredbear": "Fredbear",
       "item.fnaf_mod.fredbear_item": "Fredbear",
@@ -4833,20 +6153,25 @@
       "entity.fnaf_mod.fredbear_creature": "Fredbear  Creature",
       "item.fnaf_mod.withered_foxy_spawn_egg": "Withered Foxy Spawn Egg",
       "item.fnaf_mod.pink_plastic": "Pink Plastic",
+      "block.fnaf_mod.fnaf_wall_top_rotable": "Tapestry Top Rotable Type A",
       "item.fnaf_mod.spring_lock_suit_boots": "Spring Lock Suit Boots",
       "item.fnaf_mod.passive_spring_bonnie_spawn_egg": "Spring Bonnie Spawn Egg",
+      "block.fnaf_mod.fnaf_4_wall_bottom_hall": "Tapestry Bottom Orange",
       "subtitles.door_close": "Door Close",
       "block.fnaf_mod.spring_bonnie_plushie": "Bonnie Plushie",
       "block.fnaf_mod.fredbear_floor": "Fredbear\u0027s Floor",
       "item.fnaf_mod.light_blue_plastic": "Light Blue Plastic",
+      "block.fnaf_mod.fnaf_4_wall_bottom_rotable": "Tapestry Bottom Rotable Type A",
       "item.fnaf_mod.yellowbear": "Yellowbear",
       "subtitles.fnaf1_scream": "Jumpscare Sound",
+      "block.fnaf_mod.locker_top": "Locket Top",
       "entity.fnaf_mod.purple_guy": "Purple Guy",
       "item.fnaf_mod.chica_fabric": "Yellow Fabric",
       "item.fnaf_mod.secret_springtrap_spawn_egg": "Freddy Fazbear Spawn Egg",
       "block.fnaf_mod.bonnie_plushie": "Bonnie Plushie",
       "block.fnaf_mod.door_button_on": "Door Button On",
       "item.fnaf_mod.withered_freddy_spawn_egg": "Withered Freddy Spawn Egg",
+      "block.fnaf_mod.closet_left_open_bottom": "Closet Door Left",
       "entity.fnaf_mod.passive_chica": "Chica the Chicken",
       "itemGroup.tabfnaf_items": "FNAF Items",
       "block.fnaf_mod.foxy_head": "Foxy Head",
@@ -4855,7 +6180,7 @@
       "block.fnaf_mod.black_white_tile": "Black White Tile",
       "block.fnaf_mod.freddy_plushie": "Freddy Plushie",
       "block.fnaf_mod.shelf": "Chair",
-      "block.fnaf_mod.fnaf_3_floor": "FNAF 3 Floor Tiles",
+      "block.fnaf_mod.fnaf_3_floor": "Rancid Floor",
       "item.fnaf_mod.fredbear_creature_spawn_egg": "Fredbear  Creature Spawn Egg",
       "item.fnaf_mod.sitting_fredbear_spawn_egg": "Fredbear Spawn Egg",
       "item.fnaf_mod.withered_chica_spawn_egg": "Withered Chica Spawn Egg",
@@ -4863,6 +6188,7 @@
       "entity.fnaf_mod.sitting_withered_bonnie": "Withered Freddy",
       "block.fnaf_mod.pizza_box_closed": "Pizza Box Closed",
       "entity.fnaf_mod.freddy_fazbear": "Freddy Fazbear",
+      "block.fnaf_mod.fnaf_4_wall_top_hall": "Tapestry Top Red",
       "block.fnaf_mod.golden_freddy_plushie": "Golden Freddy Plushie",
       "entity.fnaf_mod.bb": "Balloon Boy",
       "entity.fnaf_mod.shadow_bonnie": "Shadow Bonnie",
@@ -4871,7 +6197,10 @@
       "subtitles.animatronic_step": "Footstep",
       "item.fnaf_mod.bonnie_fabric": "Purple Fabric",
       "item.fnaf_mod.shadow_remnant": "Shadow Remnant",
+      "block.fnaf_mod.fnaf_4_wall_bottom_rotable_2": "Tapestry Bottom Rotable Type B",
+      "block.fnaf_mod.fnaf_4_wall_bottom_rotable_3": "Tapestry Bottom Rotable Type C",
       "item.fnaf_mod.mangle_spawn_egg": "Mangle Spawn Egg",
+      "block.fnaf_mod.fnaf_4_wall_bottom_rotable_4": "Tapestry Bottom Rotable Type D",
       "item.fnaf_mod.passive_bonnie_spawn_egg": "Bonnie the Bunny Spawn Egg",
       "entity.fnaf_mod.nightime_toy_chica": "Nightime Toy Chica",
       "gamerule.fnafDrop": "FNAF Drops",
@@ -4880,9 +6209,10 @@
       "item.fnaf_mod.circuit_board": "Circuit Board",
       "item.fnaf_mod.passive_freddy_spawn_egg": "Freddy Fazbear Spawn Egg",
       "item.fnaf_mod.spring_bonnie": "Spring Bonnie",
-      "block.fnaf_mod.fnaf_3_wall_tile": "FNAF 3 Wall Tile",
+      "block.fnaf_mod.fnaf_3_wall_tile": "Rancid Wall Tiles",
       "block.fnaf_mod.office_door": "Office Door",
       "item.fnaf_mod.endo_02_spawn_egg": "Endo-02 Spawn Egg",
+      "block.fnaf_mod.fnaf_4_wall_top_room": "Tapestry Top Blue",
       "entity.fnaf_mod.passive_goldie": "YellowBear",
       "item.fnaf_mod.microphone": "Microphone",
       "entity.fnaf_mod.withered_golden_freddy": "Withered Golden Freddy",
@@ -4891,6 +6221,7 @@
       "item.fnaf_mod.chica_chicken_spawn_egg": "Chica the Chicken Spawn Egg",
       "entity.fnaf_mod.withered_freddy": "Withered Freddy",
       "block.fnaf_mod.black_wall": "Black Wall",
+      "block.fnaf_mod.closet_right_top": "Closet Door",
       "block.fnaf_mod.chair": "Chair",
       "itemGroup.tabfnaf_mobs": "FNAF Mobs",
       "block.fnaf_mod.fredbear_plushie": "Fredbear Plushie",
@@ -4898,6 +6229,7 @@
       "item.fnaf_mod.passive_goldie_spawn_egg": "YellowBear Spawn Egg",
       "item.fnaf_mod.shadow_bonnie_spawn_egg": "Shadow Bonnie Spawn Egg",
       "item.fnaf_mod.freddy_mask_leggings": "Freddy Mask Leggings",
+      "block.fnaf_mod.fnaf_4_door": "White Wood Door",
       "item.fnaf_mod.withered_golden_freddy_spawn_egg": "Withered Golden Freddy Spawn Egg",
       "block.fnaf_mod.purple_curtain": "Purple Curtain",
       "subtitles.golden_freddy_scram": "Jumpscare",
@@ -4908,11 +6240,14 @@
       "block.fnaf_mod.endo_block": "Endo Block",
       "entity.fnaf_mod.passive_foxy": "Foxy the Pirate",
       "block.fnaf_mod.pizza_box_open": "Pizza Box Open",
-      "block.fnaf_mod.fnaf_3_wall": "FNAF 3 Wall",
+      "block.fnaf_mod.fnaf_3_wall": "Rancid Wall",
       "item.fnaf_mod.guitar": "Guitar",
       "entity.fnaf_mod.passive_freddy": "Freddy Fazbear",
+      "block.fnaf_mod.fnaf_wall_top_rotable_4": "Tapestry Top Rotable Type D",
       "block.fnaf_mod.blue_black_tile": "Blue Black Tile",
-      "item.fnaf_mod.sitting_withered_chica_spawn_egg": "Withered Freddy Spawn Egg"
+      "item.fnaf_mod.sitting_withered_chica_spawn_egg": "Withered Freddy Spawn Egg",
+      "block.fnaf_mod.fnaf_wall_top_rotable_2": "Tapestry Top Rotable Type B",
+      "block.fnaf_mod.fnaf_wall_top_rotable_3": "Tapestry Top Rotable Type C"
     }
   },
   "foldersRoot": {
@@ -4949,6 +6284,10 @@
       {
         "name": "LootTables",
         "children": []
+      },
+      {
+        "name": "GUIs and Extras",
+        "children": []
       }
     ]
   },
@@ -4956,18 +6295,21 @@
     "modid": "fnaf_mod",
     "modName": "FNAF Mod",
     "version": "1.0.0",
-    "author": "mephilis, MCreator",
-    "websiteURL": "https://mcreator.net",
+    "description": "Five Nights at Freddy\u0027s in Minecraft!",
+    "author": "mephilis,",
+    "websiteURL": "https://www.curseforge.com/minecraft/mc-mods/the-five-nights-at-freddys-mod",
     "license": "Academic Free License v3.0",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
+    "modPicture": "fnafmodlogo",
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "forge-1.16.5",
+    "credits": "Made Using Mcreator, Models By Mephilis,Rashibald,ThatDreamCoat,Kiseki and Mosdi. Code By Mephilis Aditional Help By WyldDog and Sajevius. Animatronic Models Inspired by Cutie_Tree",
     "modElementsPackage": "net.mcreator.fnafmod",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202100118117
+  "mcreatorVersion": 202100236710
 }

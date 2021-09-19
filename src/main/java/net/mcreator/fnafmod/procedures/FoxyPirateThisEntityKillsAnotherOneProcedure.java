@@ -13,17 +13,11 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.entity.Entity;
 
 import net.mcreator.fnafmod.FnafModModVariables;
-import net.mcreator.fnafmod.FnafModModElements;
 import net.mcreator.fnafmod.FnafModMod;
 
 import java.util.Map;
 
-@FnafModModElements.ModElement.Tag
-public class FoxyPirateThisEntityKillsAnotherOneProcedure extends FnafModModElements.ModElement {
-	public FoxyPirateThisEntityKillsAnotherOneProcedure(FnafModModElements instance) {
-		super(instance, 68);
-	}
-
+public class FoxyPirateThisEntityKillsAnotherOneProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))

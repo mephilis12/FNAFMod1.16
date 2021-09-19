@@ -148,7 +148,7 @@ public class Endo02Entity extends FnafModModElements.ModElement {
 
 		protected void dropSpecialItems(DamageSource source, int looting, boolean recentlyHitIn) {
 			super.dropSpecialItems(source, looting, recentlyHitIn);
-			this.entityDropItem(new ItemStack(EndoItem.block, (int) (1)));
+			this.entityDropItem(new ItemStack(EndoItem.block));
 		}
 
 		@Override
@@ -197,6 +197,7 @@ public class Endo02Entity extends FnafModModElements.ModElement {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
+				$_dependencies.put("world", world);
 				Endo02OnInitialEntitySpawnProcedure.executeProcedure($_dependencies);
 			}
 			return retval;

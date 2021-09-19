@@ -12,18 +12,12 @@ import net.minecraft.entity.Entity;
 
 import net.mcreator.fnafmod.entity.WitheredFreddyEntity;
 import net.mcreator.fnafmod.entity.DedwitheredfreddyEntity;
-import net.mcreator.fnafmod.FnafModModElements;
 import net.mcreator.fnafmod.FnafModMod;
 
 import java.util.Map;
 import java.util.Collections;
 
-@FnafModModElements.ModElement.Tag
-public class WitheredFreddyOnEntityTickUpdateProcedure extends FnafModModElements.ModElement {
-	public WitheredFreddyOnEntityTickUpdateProcedure(FnafModModElements instance) {
-		super(instance, 288);
-	}
-
+public class WitheredFreddyOnEntityTickUpdateProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))

@@ -3,17 +3,11 @@ package net.mcreator.fnafmod.procedures;
 import net.minecraft.entity.Entity;
 
 import net.mcreator.fnafmod.FnafModModVariables;
-import net.mcreator.fnafmod.FnafModModElements;
 import net.mcreator.fnafmod.FnafModMod;
 
 import java.util.Map;
 
-@FnafModModElements.ModElement.Tag
-public class FoxyFrame2Procedure extends FnafModModElements.ModElement {
-	public FoxyFrame2Procedure(FnafModModElements instance) {
-		super(instance, 70);
-	}
-
+public class FoxyFrame2Procedure {
 	public static boolean executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))

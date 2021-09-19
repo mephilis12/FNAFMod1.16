@@ -7,17 +7,11 @@ import net.minecraft.block.BlockState;
 
 import net.mcreator.fnafmod.block.LightButtonOnBlock;
 import net.mcreator.fnafmod.block.LightButtonOffBlock;
-import net.mcreator.fnafmod.FnafModModElements;
 import net.mcreator.fnafmod.FnafModMod;
 
 import java.util.Map;
 
-@FnafModModElements.ModElement.Tag
-public class LightButtonOffOnBlockRightClickedProcedure extends FnafModModElements.ModElement {
-	public LightButtonOffOnBlockRightClickedProcedure(FnafModModElements instance) {
-		super(instance, 41);
-	}
-
+public class LightButtonOffOnBlockRightClickedProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))
@@ -43,7 +37,7 @@ public class LightButtonOffOnBlockRightClickedProcedure extends FnafModModElemen
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-		if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == LightButtonOffBlock.block.getDefaultState().getBlock())) {
+		if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == LightButtonOffBlock.block)) {
 			{
 				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
 				BlockState _bs = LightButtonOnBlock.block.getDefaultState();

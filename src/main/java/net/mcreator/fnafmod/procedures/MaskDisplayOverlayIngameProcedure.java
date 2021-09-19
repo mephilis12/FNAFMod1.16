@@ -6,17 +6,11 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 
 import net.mcreator.fnafmod.item.FreddyMaskItem;
-import net.mcreator.fnafmod.FnafModModElements;
 import net.mcreator.fnafmod.FnafModMod;
 
 import java.util.Map;
 
-@FnafModModElements.ModElement.Tag
-public class MaskDisplayOverlayIngameProcedure extends FnafModModElements.ModElement {
-	public MaskDisplayOverlayIngameProcedure(FnafModModElements instance) {
-		super(instance, 277);
-	}
-
+public class MaskDisplayOverlayIngameProcedure {
 	public static boolean executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
@@ -24,7 +18,7 @@ public class MaskDisplayOverlayIngameProcedure extends FnafModModElements.ModEle
 			return false;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
-		if ((new ItemStack(FreddyMaskItem.helmet, (int) (1)).getItem() == ((entity instanceof LivingEntity)
+		if ((FreddyMaskItem.helmet == ((entity instanceof LivingEntity)
 				? ((LivingEntity) entity).getItemStackFromSlot(EquipmentSlotType.fromSlotTypeAndIndex(EquipmentSlotType.Group.ARMOR, (int) 3))
 				: ItemStack.EMPTY).getItem())) {
 			return (true);

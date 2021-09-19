@@ -13,17 +13,11 @@ import net.minecraft.entity.Entity;
 
 import net.mcreator.fnafmod.item.EndoItem;
 import net.mcreator.fnafmod.entity.EndoSkeletonEntity;
-import net.mcreator.fnafmod.FnafModModElements;
 import net.mcreator.fnafmod.FnafModMod;
 
 import java.util.Map;
 
-@FnafModModElements.ModElement.Tag
-public class EndoRightClickedOnBlockProcedure extends FnafModModElements.ModElement {
-	public EndoRightClickedOnBlockProcedure(FnafModModElements instance) {
-		super(instance, 179);
-	}
-
+public class EndoRightClickedOnBlockProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
@@ -64,7 +58,7 @@ public class EndoRightClickedOnBlockProcedure extends FnafModModElements.ModElem
 			world.addEntity(entityToSpawn);
 		}
 		if (entity instanceof PlayerEntity) {
-			ItemStack _stktoremove = new ItemStack(EndoItem.block, (int) (1));
+			ItemStack _stktoremove = new ItemStack(EndoItem.block);
 			((PlayerEntity) entity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
 					((PlayerEntity) entity).container.func_234641_j_());
 		}

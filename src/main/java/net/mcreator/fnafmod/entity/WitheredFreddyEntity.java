@@ -233,6 +233,7 @@ public class WitheredFreddyEntity extends FnafModModElements.ModElement {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
+				$_dependencies.put("world", world);
 				WitheredFreddyOnInitialEntitySpawnProcedure.executeProcedure($_dependencies);
 			}
 			return retval;

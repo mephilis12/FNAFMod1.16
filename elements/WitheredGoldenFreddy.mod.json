@@ -1,6 +1,6 @@
 {
-  "_fv": 18,
-  "_type": "mob",
+  "_fv": 24,
+  "_type": "livingentity",
   "definition": {
     "mobName": "Withered Golden Freddy",
     "mobLabel": "",
@@ -102,7 +102,7 @@
       "name": "GoldenFreddyThisEntityKillsAnotherOne"
     },
     "onMobTickUpdate": {
-      "name": "GoldenFreddyOnEntityTickUpdate"
+      "name": "FreddyFazbearOnEntityTickUpdate"
     },
     "onInitialSpawn": {
       "name": "WitheredGoldenFreddyOnInitialEntitySpawn"

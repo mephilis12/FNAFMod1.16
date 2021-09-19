@@ -1,24 +1,17 @@
 package net.mcreator.fnafmod.procedures;
 
-import net.minecraftforge.items.ItemHandlerHelper;
-
+import net.minecraft.util.Hand;
 import net.minecraft.item.ItemStack;
-import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.player.ServerPlayerEntity;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 
-import net.mcreator.fnafmod.item.FlashLightOnItem;
 import net.mcreator.fnafmod.item.FlashLightItem;
-import net.mcreator.fnafmod.FnafModModElements;
 import net.mcreator.fnafmod.FnafModMod;
 
 import java.util.Map;
 
-@FnafModModElements.ModElement.Tag
-public class FlashLightOnRightClickedInAirProcedure extends FnafModModElements.ModElement {
-	public FlashLightOnRightClickedInAirProcedure(FnafModModElements instance) {
-		super(instance, 308);
-	}
-
+public class FlashLightOnRightClickedInAirProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
@@ -26,22 +19,12 @@ public class FlashLightOnRightClickedInAirProcedure extends FnafModModElements.M
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
-		if (entity instanceof PlayerEntity) {
-			ItemStack _stktoremove = new ItemStack(FlashLightOnItem.block, (int) (1));
-			((PlayerEntity) entity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
-					((PlayerEntity) entity).container.func_234641_j_());
-		}
-		if (((entity.getPersistentData().getDouble("FNAFTimer")) == 0)) {
-			if (entity instanceof PlayerEntity) {
-				ItemStack _setstack = new ItemStack(FlashLightItem.block, (int) (1));
-				_setstack.setCount((int) 1);
-				ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
-			}
-		}
-		if (((entity.getPersistentData().getDouble("FNAFTimer")) == 0)) {
-			entity.getPersistentData().putDouble("FNAFTimer", 20);
-		} else {
-			entity.getPersistentData().putDouble("FNAFTimer", ((entity.getPersistentData().getDouble("FNAFTimer")) - 1));
+		if (entity instanceof LivingEntity) {
+			ItemStack _setstack = new ItemStack(FlashLightItem.block);
+			_setstack.setCount((int) 1);
+			((LivingEntity) entity).setHeldItem(Hand.MAIN_HAND, _setstack);
+			if (entity instanceof ServerPlayerEntity)
+				((ServerPlayerEntity) entity).inventory.markDirty();
 		}
 	}
 }

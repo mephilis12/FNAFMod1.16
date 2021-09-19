@@ -1,36 +1,36 @@
 package net.mcreator.fnafmod.procedures;
 
+import net.minecraft.world.IWorld;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 
 import net.mcreator.fnafmod.entity.BonnieBunnyEntity;
 import net.mcreator.fnafmod.FnafModModVariables;
-import net.mcreator.fnafmod.FnafModModElements;
 import net.mcreator.fnafmod.FnafModMod;
 
 import java.util.Map;
 
-@FnafModModElements.ModElement.Tag
-public class BonnieBunnyOnInitialEntitySpawnProcedure extends FnafModModElements.ModElement {
-	public BonnieBunnyOnInitialEntitySpawnProcedure(FnafModModElements instance) {
-		super(instance, 215);
-	}
-
+public class BonnieBunnyOnInitialEntitySpawnProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
 				FnafModMod.LOGGER.warn("Failed to load dependency entity for procedure BonnieBunnyOnInitialEntitySpawn!");
 			return;
 		}
+		if (dependencies.get("world") == null) {
+			if (!dependencies.containsKey("world"))
+				FnafModMod.LOGGER.warn("Failed to load dependency world for procedure BonnieBunnyOnInitialEntitySpawn!");
+			return;
+		}
 		Entity entity = (Entity) dependencies.get("entity");
+		IWorld world = (IWorld) dependencies.get("world");
 		entity.getPersistentData().putDouble("spawnX", (entity.getPosX()));
 		entity.getPersistentData().putDouble("spawnY", (entity.getPosY()));
 		entity.getPersistentData().putDouble("spawnZ", (entity.getPosZ()));
 		if ((entity instanceof BonnieBunnyEntity.CustomEntity)) {
 			if (((entity.getPersistentData().getBoolean("alreadyset")) == (false))) {
 				entity.getPersistentData().putBoolean("alreadyset", (false));
-				if ((((entity.getCapability(FnafModModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new FnafModModVariables.PlayerVariables())).PlayerFacing) == 1)) {
+				if ((FnafModModVariables.WorldVariables.get(world).PlayerFacing == 1)) {
 					entity.rotationYaw = (float) (0);
 					entity.setRenderYawOffset(entity.rotationYaw);
 					entity.prevRotationYaw = entity.rotationYaw;
@@ -40,8 +40,7 @@ public class BonnieBunnyOnInitialEntitySpawnProcedure extends FnafModModElements
 						((LivingEntity) entity).prevRotationYawHead = entity.rotationYaw;
 					}
 					entity.rotationPitch = (float) (0);
-				} else if ((((entity.getCapability(FnafModModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new FnafModModVariables.PlayerVariables())).PlayerFacing) == 2)) {
+				} else if ((FnafModModVariables.WorldVariables.get(world).PlayerFacing == 2)) {
 					entity.rotationYaw = (float) ((-90));
 					entity.setRenderYawOffset(entity.rotationYaw);
 					entity.prevRotationYaw = entity.rotationYaw;
@@ -51,8 +50,7 @@ public class BonnieBunnyOnInitialEntitySpawnProcedure extends FnafModModElements
 						((LivingEntity) entity).prevRotationYawHead = entity.rotationYaw;
 					}
 					entity.rotationPitch = (float) (0);
-				} else if ((((entity.getCapability(FnafModModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new FnafModModVariables.PlayerVariables())).PlayerFacing) == 3)) {
+				} else if ((FnafModModVariables.WorldVariables.get(world).PlayerFacing == 3)) {
 					entity.rotationYaw = (float) (180);
 					entity.setRenderYawOffset(entity.rotationYaw);
 					entity.prevRotationYaw = entity.rotationYaw;
@@ -62,8 +60,7 @@ public class BonnieBunnyOnInitialEntitySpawnProcedure extends FnafModModElements
 						((LivingEntity) entity).prevRotationYawHead = entity.rotationYaw;
 					}
 					entity.rotationPitch = (float) (0);
-				} else if ((((entity.getCapability(FnafModModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new FnafModModVariables.PlayerVariables())).PlayerFacing) == 4)) {
+				} else if ((FnafModModVariables.WorldVariables.get(world).PlayerFacing == 4)) {
 					entity.rotationYaw = (float) (90);
 					entity.setRenderYawOffset(entity.rotationYaw);
 					entity.prevRotationYaw = entity.rotationYaw;

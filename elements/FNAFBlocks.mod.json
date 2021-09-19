@@ -1,11 +1,11 @@
 {
-  "_fv": 18,
+  "_fv": 24,
   "_type": "tab",
   "definition": {
     "name": "FNAF Blocks",
     "icon": {
       "value": "CUSTOM:BlackWhiteTile"
     },
-    "showSearch": true
+    "showSearch": false
   }
 }

@@ -12,18 +12,12 @@ import net.minecraft.entity.Entity;
 
 import net.mcreator.fnafmod.entity.ToyChicaEntity;
 import net.mcreator.fnafmod.entity.NightimeToyChicaEntity;
-import net.mcreator.fnafmod.FnafModModElements;
 import net.mcreator.fnafmod.FnafModMod;
 
 import java.util.Map;
 import java.util.Collections;
 
-@FnafModModElements.ModElement.Tag
-public class NightimeToyChicaOnEntityTickUpdateProcedure extends FnafModModElements.ModElement {
-	public NightimeToyChicaOnEntityTickUpdateProcedure(FnafModModElements instance) {
-		super(instance, 274);
-	}
-
+public class NightimeToyChicaOnEntityTickUpdateProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))

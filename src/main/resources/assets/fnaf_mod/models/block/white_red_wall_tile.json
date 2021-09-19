@@ -1,12 +1,12 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "fnaf_mod:blocks/white_wall",
-    "up": "fnaf_mod:blocks/white_wall",
-    "north": "fnaf_mod:blocks/white_wall_tile_red",
-    "east": "fnaf_mod:blocks/white_wall_tile_red",
-    "south": "fnaf_mod:blocks/white_wall_tile_red",
-    "west": "fnaf_mod:blocks/white_wall_tile_red",
+    "down": "fnaf_mod:blocks/light_wall",
+    "up": "fnaf_mod:blocks/light_wall",
+    "north": "fnaf_mod:blocks/light_wall_tile",
+    "east": "fnaf_mod:blocks/light_wall_tile",
+    "south": "fnaf_mod:blocks/light_wall_tile",
+    "west": "fnaf_mod:blocks/light_wall_tile",
     "particle": "fnaf_mod:blocks/white_wall_tile_red"
   }
 }

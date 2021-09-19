@@ -170,7 +170,7 @@ public class PassiveFredbearEntity extends FnafModModElements.ModElement {
 
 		protected void dropSpecialItems(DamageSource source, int looting, boolean recentlyHitIn) {
 			super.dropSpecialItems(source, looting, recentlyHitIn);
-			this.entityDropItem(new ItemStack(FredbearItemItem.block, (int) (1)));
+			this.entityDropItem(new ItemStack(FredbearItemItem.block));
 		}
 
 		@Override
@@ -219,6 +219,7 @@ public class PassiveFredbearEntity extends FnafModModElements.ModElement {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
+				$_dependencies.put("world", world);
 				PassiveFredbearOnInitialEntitySpawnProcedure.executeProcedure($_dependencies);
 			}
 			return retval;

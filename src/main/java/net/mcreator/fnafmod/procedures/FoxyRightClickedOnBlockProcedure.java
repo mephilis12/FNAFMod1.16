@@ -13,17 +13,11 @@ import net.minecraft.entity.Entity;
 
 import net.mcreator.fnafmod.item.FoxyItem;
 import net.mcreator.fnafmod.entity.PassiveFoxyEntity;
-import net.mcreator.fnafmod.FnafModModElements;
 import net.mcreator.fnafmod.FnafModMod;
 
 import java.util.Map;
 
-@FnafModModElements.ModElement.Tag
-public class FoxyRightClickedOnBlockProcedure extends FnafModModElements.ModElement {
-	public FoxyRightClickedOnBlockProcedure(FnafModModElements instance) {
-		super(instance, 176);
-	}
-
+public class FoxyRightClickedOnBlockProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
@@ -64,7 +58,7 @@ public class FoxyRightClickedOnBlockProcedure extends FnafModModElements.ModElem
 			world.addEntity(entityToSpawn);
 		}
 		if (entity instanceof PlayerEntity) {
-			ItemStack _stktoremove = new ItemStack(FoxyItem.block, (int) (1));
+			ItemStack _stktoremove = new ItemStack(FoxyItem.block);
 			((PlayerEntity) entity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
 					((PlayerEntity) entity).container.func_234641_j_());
 		}

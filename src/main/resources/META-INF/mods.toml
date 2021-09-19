@@ -6,9 +6,13 @@ license="Academic Free License v3.0"
 modId="fnaf_mod"
 version="1.0.0"
 displayName="FNAF Mod"
-credits="Created using mod maker MCreator - https://mcreator.net/about"
-displayURL="https://mcreator.net"
-authors="mephilis, MCreator"
+credits="Made Using Mcreator, Models By Mephilis,Rashibald,ThatDreamCoat,Kiseki and Mosdi. Code By Mephilis Aditional Help By WyldDog and Sajevius. Animatronic Models Inspired by Cutie_Tree"
+displayURL="https://www.curseforge.com/minecraft/mc-mods/the-five-nights-at-freddys-mod"
+logoFile="logo.png"
+authors="mephilis,"
+description='''
+Five Nights at Freddy's in Minecraft!
+'''
 
 [[dependencies.fnaf_mod]]
     modId="minecraft"

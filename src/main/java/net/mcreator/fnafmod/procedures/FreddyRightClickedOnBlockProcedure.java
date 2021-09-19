@@ -13,17 +13,11 @@ import net.minecraft.entity.Entity;
 
 import net.mcreator.fnafmod.item.FreddyItem;
 import net.mcreator.fnafmod.entity.PassiveFreddyEntity;
-import net.mcreator.fnafmod.FnafModModElements;
 import net.mcreator.fnafmod.FnafModMod;
 
 import java.util.Map;
 
-@FnafModModElements.ModElement.Tag
-public class FreddyRightClickedOnBlockProcedure extends FnafModModElements.ModElement {
-	public FreddyRightClickedOnBlockProcedure(FnafModModElements instance) {
-		super(instance, 171);
-	}
-
+public class FreddyRightClickedOnBlockProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
@@ -64,7 +58,7 @@ public class FreddyRightClickedOnBlockProcedure extends FnafModModElements.ModEl
 			world.addEntity(entityToSpawn);
 		}
 		if (entity instanceof PlayerEntity) {
-			ItemStack _stktoremove = new ItemStack(FreddyItem.block, (int) (1));
+			ItemStack _stktoremove = new ItemStack(FreddyItem.block);
 			((PlayerEntity) entity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
 					((PlayerEntity) entity).container.func_234641_j_());
 		}

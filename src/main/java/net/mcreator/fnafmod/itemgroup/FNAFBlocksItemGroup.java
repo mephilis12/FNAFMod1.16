@@ -22,14 +22,14 @@ public class FNAFBlocksItemGroup extends FnafModModElements.ModElement {
 			@OnlyIn(Dist.CLIENT)
 			@Override
 			public ItemStack createIcon() {
-				return new ItemStack(BlackWhiteTileBlock.block, (int) (1));
+				return new ItemStack(BlackWhiteTileBlock.block);
 			}
 
 			@OnlyIn(Dist.CLIENT)
 			public boolean hasSearchBar() {
-				return true;
+				return false;
 			}
-		}.setBackgroundImageName("item_search.png");
+		};
 	}
 	public static ItemGroup tab;
 }

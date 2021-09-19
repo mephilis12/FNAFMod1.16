@@ -3,17 +3,11 @@ package net.mcreator.fnafmod.procedures;
 import net.minecraft.entity.Entity;
 
 import net.mcreator.fnafmod.FnafModModVariables;
-import net.mcreator.fnafmod.FnafModModElements;
 import net.mcreator.fnafmod.FnafModMod;
 
 import java.util.Map;
 
-@FnafModModElements.ModElement.Tag
-public class BonnieFrameOverlay2DisplayOverlayIngameProcedure extends FnafModModElements.ModElement {
-	public BonnieFrameOverlay2DisplayOverlayIngameProcedure(FnafModModElements instance) {
-		super(instance, 102);
-	}
-
+public class BonnieFrameOverlay2DisplayOverlayIngameProcedure {
 	public static boolean executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))

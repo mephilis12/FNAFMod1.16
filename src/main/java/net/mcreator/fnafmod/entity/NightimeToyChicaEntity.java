@@ -232,6 +232,7 @@ public class NightimeToyChicaEntity extends FnafModModElements.ModElement {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
+				$_dependencies.put("world", world);
 				NightimeToyChicaOnInitialEntitySpawnProcedure.executeProcedure($_dependencies);
 			}
 			return retval;

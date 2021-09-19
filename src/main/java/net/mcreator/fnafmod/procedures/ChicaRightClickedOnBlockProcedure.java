@@ -13,17 +13,11 @@ import net.minecraft.entity.Entity;
 
 import net.mcreator.fnafmod.item.ChicaItem;
 import net.mcreator.fnafmod.entity.PassiveChicaEntity;
-import net.mcreator.fnafmod.FnafModModElements;
 import net.mcreator.fnafmod.FnafModMod;
 
 import java.util.Map;
 
-@FnafModModElements.ModElement.Tag
-public class ChicaRightClickedOnBlockProcedure extends FnafModModElements.ModElement {
-	public ChicaRightClickedOnBlockProcedure(FnafModModElements instance) {
-		super(instance, 174);
-	}
-
+public class ChicaRightClickedOnBlockProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
@@ -64,7 +58,7 @@ public class ChicaRightClickedOnBlockProcedure extends FnafModModElements.ModEle
 			world.addEntity(entityToSpawn);
 		}
 		if (entity instanceof PlayerEntity) {
-			ItemStack _stktoremove = new ItemStack(ChicaItem.block, (int) (1));
+			ItemStack _stktoremove = new ItemStack(ChicaItem.block);
 			((PlayerEntity) entity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
 					((PlayerEntity) entity).container.func_234641_j_());
 		}

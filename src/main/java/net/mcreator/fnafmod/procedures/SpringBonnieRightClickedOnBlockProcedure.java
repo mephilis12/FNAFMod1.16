@@ -13,17 +13,11 @@ import net.minecraft.entity.Entity;
 
 import net.mcreator.fnafmod.item.SpringBonnieItem;
 import net.mcreator.fnafmod.entity.PassiveSpringBonnieEntity;
-import net.mcreator.fnafmod.FnafModModElements;
 import net.mcreator.fnafmod.FnafModMod;
 
 import java.util.Map;
 
-@FnafModModElements.ModElement.Tag
-public class SpringBonnieRightClickedOnBlockProcedure extends FnafModModElements.ModElement {
-	public SpringBonnieRightClickedOnBlockProcedure(FnafModModElements instance) {
-		super(instance, 183);
-	}
-
+public class SpringBonnieRightClickedOnBlockProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
@@ -64,7 +58,7 @@ public class SpringBonnieRightClickedOnBlockProcedure extends FnafModModElements
 			world.addEntity(entityToSpawn);
 		}
 		if (entity instanceof PlayerEntity) {
-			ItemStack _stktoremove = new ItemStack(SpringBonnieItem.block, (int) (1));
+			ItemStack _stktoremove = new ItemStack(SpringBonnieItem.block);
 			((PlayerEntity) entity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
 					((PlayerEntity) entity).container.func_234641_j_());
 		}

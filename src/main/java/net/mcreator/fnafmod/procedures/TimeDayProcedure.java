@@ -1,26 +1,32 @@
 package net.mcreator.fnafmod.procedures;
 
+import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.TickEvent;
-import net.minecraftforge.common.MinecraftForge;
 
 import net.minecraft.world.World;
 import net.minecraft.world.IWorld;
 
 import net.mcreator.fnafmod.FnafModModVariables;
-import net.mcreator.fnafmod.FnafModModElements;
 import net.mcreator.fnafmod.FnafModMod;
 
 import java.util.Map;
 import java.util.HashMap;
 
-@FnafModModElements.ModElement.Tag
-public class TimeDayProcedure extends FnafModModElements.ModElement {
-	public TimeDayProcedure(FnafModModElements instance) {
-		super(instance, 273);
-		MinecraftForge.EVENT_BUS.register(this);
+public class TimeDayProcedure {
+	@Mod.EventBusSubscriber
+	private static class GlobalTrigger {
+		@SubscribeEvent
+		public static void onWorldTick(TickEvent.WorldTickEvent event) {
+			if (event.phase == TickEvent.Phase.END) {
+				IWorld world = event.world;
+				Map<String, Object> dependencies = new HashMap<>();
+				dependencies.put("world", world);
+				dependencies.put("event", event);
+				executeProcedure(dependencies);
+			}
+		}
 	}
-
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("world") == null) {
 			if (!dependencies.containsKey("world"))
@@ -34,16 +40,5 @@ public class TimeDayProcedure extends FnafModModElements.ModElement {
 		}
 		FnafModModVariables.WorldVariables.get(world).TimeDay = (boolean) (false);
 		FnafModModVariables.WorldVariables.get(world).syncData(world);
-	}
-
-	@SubscribeEvent
-	public void onWorldTick(TickEvent.WorldTickEvent event) {
-		if (event.phase == TickEvent.Phase.END) {
-			IWorld world = event.world;
-			Map<String, Object> dependencies = new HashMap<>();
-			dependencies.put("world", world);
-			dependencies.put("event", event);
-			this.executeProcedure(dependencies);
-		}
 	}
 }
